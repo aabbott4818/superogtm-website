@@ -148,7 +148,7 @@ nav {
     display: block;
     width: 22px;
     height: 2px;
-    background: var(--text);
+    background: #ffffff;
     border-radius: 2px;
     transition: transform var(--transition), opacity var(--transition);
 }
