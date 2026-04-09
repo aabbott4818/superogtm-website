@@ -670,7 +670,7 @@ footer {
     .footer-links { grid-template-columns: repeat(2, 1fr); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     section { padding: 3.5rem 0; }
     .nav-inner {
         display: flex;
@@ -695,8 +695,8 @@ footer {
 
 /* --- Hero Content (Option B layout) --- */
 .hero {
-    align-items: flex-start;
-    text-align: left;
+    align-items: center;
+    text-align: center;
     gap: 5rem;
     padding: 6rem 0 6rem;
 }
@@ -707,6 +707,7 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.08);
     padding-top: 2.5rem;
     padding-bottom: 2rem;
+    text-align: center;
 }
 .hero-logos-label {
     font-size: 0.7rem;
