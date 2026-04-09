@@ -674,14 +674,15 @@ footer {
 
 @media (max-width: 768px) {
     section { padding: 3.5rem 0; }
-    .nav-inner { flex-wrap: wrap; align-items: flex-start; height: auto; padding: 0 1.5rem; }
-    .nav-inner > .nav-logo { height: var(--nav-height); display: flex; align-items: center; }
-    .nav-inner > .hamburger { height: var(--nav-height); display: flex; align-items: center; }
-    .nav-links { display: none; flex-direction: column; gap: 0; width: 100%; padding: 0.5rem 0 1rem; border-top: 1px solid var(--border); }
-    .nav-links.active { display: flex; }
-    .nav-links a { padding: 0.75rem 0; font-size: 0.95rem; border-bottom: none; }
-    .nav-links .nav-cta { margin: 0.75rem 0 0; text-align: center; justify-content: center; padding: 0.75rem 1.5rem; }
-    .hamburger { display: flex; }
+    .nav-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: var(--nav-height);
+        padding: 0 1.5rem;
+        flex-wrap: nowrap;
+    }
+    .hamburger { display: flex; align-items: center; align-self: center; }
     .selectors { grid-template-columns: 1fr; max-width: 480px; }
     .hero { min-height: auto; padding-bottom: 4rem; }
     .proof-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
@@ -841,19 +842,7 @@ footer {
 }
 .overlay-nav .overlay-cta:hover { opacity: 0.9; }
 
-/* --- Fix hamburger vertical alignment --- */
-.nav-inner {
-    align-items: center;
-}
-@media (max-width: 768px) {
-    .nav-inner {
-        align-items: center;
-        flex-wrap: nowrap;
-        height: var(--nav-height);
-        display: flex;
-        justify-content: space-between;
-    }
-}
+/* hamburger alignment handled in main responsive block */
 
 /* --- Eyebrow spacing --- */
 .hero-content { padding-top: 3.5rem; }
