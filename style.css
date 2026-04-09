@@ -861,3 +861,13 @@ footer {
 
 /* --- More space before white section --- */
 .selectors-section { padding-top: 5rem; }
+
+/* --- Stage 2 responsive grids --- */
+@media (max-width: 1024px) {
+    .stage2-grid { grid-template-columns: 1fr !important; max-width: 560px; }
+    .stage2-instruments { grid-template-columns: 1fr !important; max-width: 560px; }
+    .stage2-process { grid-template-columns: repeat(2,1fr) !important; }
+}
+@media (max-width: 768px) {
+    .stage2-process { grid-template-columns: 1fr !important; }
+}
