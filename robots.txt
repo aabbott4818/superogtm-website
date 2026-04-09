@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /light-diagnostic.html
+Disallow: /newsletter.html
+
+Sitemap: https://www.superogtm.com/sitemap.xml
