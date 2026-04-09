@@ -49,7 +49,7 @@ h1, h2, h3, h4 {
 }
 .on-dark h1, .on-dark h2, .on-dark h3 { color: var(--text-on-dark); }
 
-.display { font-size: clamp(2.5rem, 5vw, 4rem); }
+.display { font-size: clamp(2.2rem, 4vw, 3.2rem); }
 .headline { font-size: clamp(2rem, 4vw, 3rem); }
 .subheadline { font-size: clamp(1.4rem, 2.5vw, 2rem); }
 .body-lg { font-size: 1.125rem; line-height: 1.75; color: var(--text-secondary); }
@@ -705,8 +705,8 @@ footer {
 .hero {
     align-items: center;
     text-align: center;
-    gap: 5rem;
-    padding: 6rem 0 6rem;
+    gap: 4rem;
+    padding: 4.5rem 0 5rem;
 }
 .hero-content { max-width: var(--container); width: 100%; }
 .hero-logos {
