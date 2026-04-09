@@ -170,7 +170,7 @@ nav {
     background: rgba(165,28,96,0.06);
     padding: 0.4rem 1rem;
     border-radius: 100px;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
 }
 .hero-eyebrow::before {
     content: '';
@@ -696,8 +696,8 @@ footer {
 .hero {
     align-items: flex-start;
     text-align: left;
-    gap: 4rem;
-    padding: 5rem 0 4rem;
+    gap: 5rem;
+    padding: 6rem 0 6rem;
 }
 .hero-content { max-width: var(--container); width: 100%; }
 .hero-logos {
@@ -705,6 +705,7 @@ footer {
     max-width: var(--container);
     border-top: 1px solid rgba(255,255,255,0.08);
     padding-top: 2.5rem;
+    padding-bottom: 2rem;
 }
 .hero-logos-label {
     font-size: 0.7rem;
