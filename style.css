@@ -136,6 +136,7 @@ nav {
     padding: 8px;
     border-radius: 8px;
     cursor: pointer;
+    align-self: center;
 }
 .hamburger span {
     display: block;
@@ -712,7 +713,7 @@ footer {
     font-weight: 600;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: rgba(241,239,245,0.25);
+    color: rgba(241,239,245,0.6);
     margin-bottom: 1.25rem;
 }
 .hero-logos-row {
@@ -726,7 +727,7 @@ footer {
 /* --- Selectors Section (light version) --- */
 .selectors-section {
     background: var(--bg-alt);
-    padding: 4rem 0 5rem;
+    padding: 5rem 0 5rem;
 }
 .selector-card-light {
     background: var(--bg);
@@ -849,15 +850,17 @@ footer {
         align-items: center;
         flex-wrap: nowrap;
         height: var(--nav-height);
+        display: flex;
+        justify-content: space-between;
     }
 }
 
 /* --- Eyebrow spacing --- */
-.hero-content { padding-top: 1.5rem; }
+.hero-content { padding-top: 3.5rem; }
 
 /* --- Brighter logos --- */
-.hero-logos-row img { opacity: 0.75; filter: brightness(0) invert(1); }
-.hero-logos { padding-bottom: 3.5rem; }
+.hero-logos-row img { opacity: 0.9; filter: brightness(0) invert(1); }
+.hero-logos { padding-bottom: 5rem; }
 
 /* --- More space before white section --- */
 .selectors-section { padding-top: 5rem; }
