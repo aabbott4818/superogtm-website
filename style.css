@@ -84,8 +84,8 @@ section.hero-section { padding: 0; }
 
 /* --- Navigation --- */
 nav {
-    background: #ffffff;
-    border-bottom: 1px solid var(--border);
+    background: var(--bg-dark);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
 }
 .nav-inner {
     display: grid;
@@ -108,14 +108,14 @@ nav {
 .nav-links a {
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: rgba(241,239,245,0.65);
     padding: 0.5rem 0.875rem;
     border-radius: 8px;
     white-space: nowrap;
     transition: color var(--transition), background var(--transition);
 }
-.nav-links a:hover { color: var(--text); background: var(--bg-alt); }
-.nav-links a.active { color: var(--text); font-weight: 600; }
+.nav-links a:hover { color: #ffffff; background: rgba(255,255,255,0.06); }
+.nav-links a.active { color: #ffffff; font-weight: 600; }
 .nav-actions {
     justify-self: end;
     display: flex;
@@ -853,7 +853,7 @@ footer {
 /* hamburger alignment handled in main responsive block */
 
 /* --- Eyebrow spacing --- */
-.hero-content { padding-top: 3.5rem; }
+.hero-content { padding-top: 2.5rem; }
 
 /* --- Brighter logos --- */
 .hero-logos-row img { opacity: 0.9; filter: brightness(0) invert(1); }
