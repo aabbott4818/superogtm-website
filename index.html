@@ -77,7 +77,7 @@ Supero is a diagnostic-first firm for B2B revenue leaders founded by Alex Abbott
 <nav id="main-nav" aria-label="Main navigation">
     <div class="nav-inner">
         <a href="./index.html" class="nav-logo" aria-label="Supero GTM home">
-            <img src="./assets/logo-light.png" alt="Supero" height="44">
+            <img src="./assets/logo-light.png" alt="Supero" height="60">
         </a>
         <ul class="nav-links" id="navLinks" role="list">
             <li><a href="./revenue-ai-diagnostic.html">Revenue AI Diagnostic</a></li>
@@ -86,6 +86,10 @@ Supero is a diagnostic-first firm for B2B revenue leaders founded by Alex Abbott
             <li><a href="./about.html">About</a></li>
             <li><a href="./newsletter.html">Newsletter</a></li>
         </ul>
+        <div class="nav-actions">
+            <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta"
+               onclick="gtag('event', 'diagnostic_cta_click', {'cta_location': 'nav'})">Book a conversation</a>
+        </div>
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
             <span></span><span></span><span></span>
         </button>
@@ -97,7 +101,9 @@ Supero is a diagnostic-first firm for B2B revenue leaders founded by Alex Abbott
 
 <!-- HERO: HEADLINE + LOGOS + SELECTORS -->
 <section class="hero hero-section" id="hero">
-<div class="container">
+<img src="./assets/supero-s-watermark.svg" alt="" aria-hidden="true"
+     style="position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); height:80%; max-height:580px; opacity:0.12; pointer-events:none; z-index:0; filter:saturate(1.5);">
+<div class="container" style="position:relative; z-index:1;">
     <!-- Headline block -->
     <div class="hero-content">
         <div class="hero-eyebrow">B2B Revenue Diagnostics</div>
