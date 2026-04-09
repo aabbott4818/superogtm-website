@@ -4,12 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Supero GTM</title>
+    <meta name="description" content="Supero is a diagnostic-first transformation unit built by two operators: Alex Abbott, a 30-year B2B revenue leader, and Cumai Aboul Housn, an enterprise AI architect.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZSF43WMJM"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LZSF43WMJM');</script>
+    <style>
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        .profile-photo {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            display: block;
+        }
+        .profile-meta {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+        }
+        .credential-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+        .credential-list li {
+            font-size: 0.875rem;
+            color: var(--text-secondary);
+            line-height: 1.5;
+            padding-left: 1.1rem;
+            position: relative;
+        }
+        .credential-list li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.55em;
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--magenta);
+        }
+        .stat-strip {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2px;
+            border-radius: 12px;
+            overflow: hidden;
+            background: var(--border);
+        }
+        .stat-cell {
+            background: var(--bg);
+            padding: 2rem 1.5rem;
+            text-align: center;
+        }
+        .stat-number {
+            font-size: clamp(2rem, 4vw, 2.75rem);
+            font-weight: 700;
+            letter-spacing: -0.04em;
+            background: linear-gradient(135deg, var(--magenta), var(--purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            line-height: 1;
+            margin-bottom: 0.4rem;
+        }
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--text-secondary);
+            line-height: 1.4;
+        }
+        .divider-line {
+            border: none;
+            border-top: 1px solid var(--border);
+            margin: 0;
+        }
+        @media (max-width: 768px) {
+            .profile-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            .profile-photo {
+                width: 120px;
+                height: 120px;
+            }
+            .stat-strip {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -22,45 +116,224 @@
             <li><a href="./revenue-ai-diagnostic.html">Revenue AI Diagnostic</a></li>
             <li><a href="./team-performance-diagnostic.html">Team Performance Diagnostic</a></li>
             <li><a href="./full-pipeline-diagnostic.html">Full Pipeline Diagnostic</a></li>
-            <li><a href="./about.html">About</a></li>
+            <li><a href="./about.html" class="active">About</a></li>
             <li><a href="./perspectives.html">Perspectives</a></li>
-            
         </ul>
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta btn-primary">Book a conversation</a>
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
             <span></span><span></span><span></span>
         </button>
     </div>
 </nav>
 </header>
+
 <main>
-<section style="min-height:80vh; display:flex; align-items:center; padding-top:var(--nav-height);">
-    <div class="container fade-up">
-        <span class="label">About</span>
-        <h1 class="headline" style="margin-top:0.75rem; margin-bottom:1.25rem;">Two operators. One diagnostic framework.</h1>
-        <p class="body-lg" style="max-width:560px; margin-bottom:2rem;">Meet Alex Abbott and Cumai Aboul Housn. The operators behind the Supero diagnostic methodology. Coming soon.</p>
-        <div style="display:flex; gap:1rem; flex-wrap:wrap;">
-            <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a conversation</a>
-            <a href="./index.html" class="btn-secondary">Back to home</a>
+
+<!-- HERO -->
+<section style="background:var(--bg-dark); padding:9rem 0 6rem; position:relative; overflow:hidden;">
+    <!-- S watermark -->
+    <div aria-hidden="true" style="position:absolute; right:-80px; top:50%; transform:translateY(-50%); opacity:0.04; pointer-events:none; user-select:none;">
+        <svg width="500" height="500" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="50" y="85" font-size="110" font-family="DM Sans, sans-serif" font-weight="700" text-anchor="middle" fill="white">S</text>
+        </svg>
+    </div>
+    <div class="container" style="position:relative; z-index:1;">
+        <span class="label" style="color:var(--magenta);">Who we are</span>
+        <h1 style="font-size:clamp(2rem, 5vw, 3.5rem); color:#ffffff; font-weight:700; letter-spacing:-0.03em; line-height:1.15; margin:0.75rem 0 1.25rem; max-width:800px;">Two operators.<br>No passengers.</h1>
+        <p style="font-size:1.05rem; color:rgba(241,239,245,0.65); max-width:560px; line-height:1.75;">Supero is not a firm of practitioners. We are two people who have built, deployed, and lived inside revenue systems. The diagnostic is ours. The accountability is ours.</p>
+    </div>
+</section>
+
+<!-- WHAT SUPERO IS -->
+<section style="background:var(--bg); padding:6rem 0;">
+    <div class="container">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:4rem; align-items:start;" class="stage2-grid">
+
+            <div>
+                <span class="label">Why we built this</span>
+                <h2 class="headline" style="margin-top:0.75rem; margin-bottom:1.25rem;">The diagnostic-first model exists because everything else fails in the same way.</h2>
+            </div>
+
+            <div style="display:flex; flex-direction:column; gap:1.25rem; padding-top:0.5rem;">
+                <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8;">Most revenue interventions start with a solution. A sales methodology. An AI platform. A coaching programme. The solution is deployed before anyone has measured the actual problem. Behaviours change briefly. Numbers move. Then they revert. The system reasserts itself.</p>
+                <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8;">Supero starts with measurement. The Conversation Score, Pipeline Integrity Score, AI Maturity Index, and Financial Impact Model are deployed first. We find out where value is leaking, what it costs, and what the recovery is worth before a single recommendation is made.</p>
+                <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8;">Our outcomes are linked to agreed KPIs. We have no tools to sell, no methodology to licence, and no incentive to recommend anything other than what the data shows.</p>
+            </div>
+
         </div>
     </div>
 </section>
+
+<!-- BENCHMARK STATS -->
+<section style="background:var(--bg-alt); padding:5rem 0;">
+    <div class="container">
+        <div style="max-width:560px; margin-bottom:3rem;">
+            <span class="label">The benchmark</span>
+            <h2 class="headline" style="margin-top:0.75rem; margin-bottom:0.5rem;">What the data says.</h2>
+            <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.7;">The Conversation Operating System is built on a three-year proprietary benchmark study across B2B revenue organisations.</p>
+        </div>
+        <div class="stat-strip">
+            <div class="stat-cell">
+                <span class="stat-number">9%</span>
+                <span class="stat-label">Average B2B conversation rate across organisations studied</span>
+            </div>
+            <div class="stat-cell">
+                <span class="stat-number">34%</span>
+                <span class="stat-label">Average call progression rate in the benchmark dataset</span>
+            </div>
+            <div class="stat-cell">
+                <span class="stat-number">15x</span>
+                <span class="stat-label">Increase in territory penetration achieved at LiveRamp</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ALEX PROFILE -->
+<section style="background:var(--bg); padding:6rem 0;">
+    <div class="container">
+
+        <div class="profile-grid">
+            <div>
+                <img src="./assets/alex-abbott.png" alt="Alex Abbott" class="profile-photo">
+            </div>
+            <div class="profile-meta">
+                <div>
+                    <h2 style="font-size:1.75rem; font-weight:700; color:var(--text); letter-spacing:-0.03em; margin:0 0 0.25rem;">Alex Abbott</h2>
+                    <p style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--magenta); margin:0;">Founder</p>
+                </div>
+                <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8; margin:0;">30 years of direct B2B sales leadership in enterprise technology. Alex has carried a quota as an individual contributor, led revenue organisations across EMEA and Asia, and built a business unit from $2M to $22M ARR in year one with a team of 40 across the Middle East. He has trained and coached over 1,000 sellers across global organisations including Oracle, Responsys, and enterprise SaaS companies.</p>
+                <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8; margin:0;">The Conversation Operating System (COS) is Alex's proprietary framework, built from a three-year benchmark study of B2B conversation behaviour. It is the diagnostic engine that sits underneath every Supero engagement.</p>
+                <ul class="credential-list">
+                    <li>Fellow of the Institute of Sales Professionals (F.ISP)</li>
+                    <li>30 years B2B sales and revenue leadership — Oracle, Responsys, enterprise technology</li>
+                    <li>Built $22M ARR marketing cloud business from $2M in year one</li>
+                    <li>Quota-carrying experience in EMEA, Middle East, and Asia</li>
+                    <li>Creator of the Conversation Operating System (COS)</li>
+                    <li>Trained and coached 1,000+ sellers across global organisations</li>
+                </ul>
+                <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+                    <a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.875rem; font-weight:600; color:var(--magenta); text-decoration:none;">
+                        LinkedIn
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                    <a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.875rem; font-weight:600; color:var(--text-secondary); text-decoration:none;">
+                        Walking Digital Corridors
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<hr class="divider-line">
+
+<!-- CUMAI PROFILE -->
+<section style="background:var(--bg); padding:6rem 0;">
+    <div class="container">
+
+        <div class="profile-grid">
+            <div>
+                <img src="./assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn" class="profile-photo">
+            </div>
+            <div class="profile-meta">
+                <div>
+                    <h2 style="font-size:1.75rem; font-weight:700; color:var(--text); letter-spacing:-0.03em; margin:0 0 0.25rem;">Cumai Aboul Housn</h2>
+                    <p style="font-size:0.8rem; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; color:var(--magenta); margin:0;">Co-Founder &amp; AI Architect</p>
+                </div>
+                <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8; margin:0;">Cumai is an Enterprise Transformation Architect with 15+ years taking AI from pilot to production in complex, regulated environments. He has architected AI-enabled operational intelligence systems at scale, including large-scale work for the Abu Dhabi Pension Fund. His work spans enterprise data intelligence, LLM deployment, and the human-system design layer that determines whether AI actually changes behaviour or just generates reports.</p>
+                <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8; margin:0;">Cumai is the reason Supero's AI Maturity Index measures what actually works in production, not what was demonstrated in a proof of concept. He is co-founder of AlterSapiens and Biennale.io, holds a filed UK IPO patent for AI-driven visual medium analysis, and is a published researcher commended by the UAE Presidential Office.</p>
+                <ul class="credential-list">
+                    <li>15+ years deploying AI and ML systems at enterprise scale in production</li>
+                    <li>Architected AI-enabled operational intelligence for Abu Dhabi Pension Fund</li>
+                    <li>Co-founder, AlterSapiens and Biennale.io</li>
+                    <li>UK IPO patent filed — AI-driven visual medium analysis</li>
+                    <li>Published researcher in enterprise AI and human-system design</li>
+                    <li>UAE Presidential commendation</li>
+                </ul>
+                <div>
+                    <a href="https://www.linkedin.com/in/cumai/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; font-size:0.875rem; font-weight:600; color:var(--magenta); text-decoration:none;">
+                        LinkedIn
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FINAL CTA -->
+<section style="background:var(--bg-dark); padding:7rem 0; text-align:center;">
+<div class="container">
+    <span class="label" style="color:rgba(165,28,96,0.8); display:block; margin-bottom:1.25rem;">Start here</span>
+    <h2 style="font-size:clamp(1.75rem, 3.5vw, 2.75rem); color:#ffffff; font-weight:700; letter-spacing:-0.03em; max-width:700px; margin:0 auto 1.25rem; line-height:1.2;">We'll tell you where revenue is leaking, what it's costing, and what to do about it.</h2>
+    <p style="font-size:1rem; color:rgba(241,239,245,0.5); max-width:440px; margin:0 auto 2.5rem; line-height:1.7;">One conversation. That's where it starts.</p>
+    <div class="cta-buttons">
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary" onclick="gtag('event', 'diagnostic_cta_click', {'cta_location': 'about_final_cta'})">Book a conversation</a>
+        <a href="./index.html#diagnostic" class="btn-ghost">See how the Supero Diagnostic works</a>
+    </div>
+</div>
+</section>
+
 </main>
+
+<!-- FOOTER -->
 <footer>
     <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="./assets/logo-dark.svg" alt="Supero" height="36" style="margin-bottom:1rem; opacity:0.7;">
+                <p>Diagnostic-first firm for B2B revenue leaders. EMEA primary, US secondary. Independent of every platform in your stack.</p>
+            </div>
+            <div>
+                <p class="footer-heading">Diagnostics</p>
+                <ul>
+                    <li><a href="./revenue-ai-diagnostic.html">Revenue AI Diagnostic</a></li>
+                    <li><a href="./team-performance-diagnostic.html">Team Performance Diagnostic</a></li>
+                    <li><a href="./full-pipeline-diagnostic.html">Full Pipeline Diagnostic</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-heading">Supero</p>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./perspectives.html">Perspectives</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-heading">Connect</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer">Newsletter</a></li>
+                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer">Book a conversation</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Supero. All rights reserved.</p>
             <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
         </div>
     </div>
 </footer>
+
 <script>
 const nav = document.getElementById('main-nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
-hamburger.addEventListener('click', () => navLinks.classList.toggle('active'));
-const observer = new IntersectionObserver(entries => entries.forEach(e => { if(e.isIntersecting) e.target.classList.add('visible'); }), {threshold:0.1});
-document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+});
+document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target)) {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('open');
+    }
+});
 </script>
 </body>
 </html>
