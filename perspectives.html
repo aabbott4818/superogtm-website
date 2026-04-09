@@ -4,12 +4,174 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perspectives | Supero GTM</title>
+    <meta name="description" content="Intelligence for revenue and transformation leaders. Perspectives from Alex Abbott and Cumai Aboul Housn on revenue systems, AI, and commercial performance.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700;9..40,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-LZSF43WMJM"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-LZSF43WMJM');</script>
+    <style>
+        .perspectives-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.75rem;
+        }
+        .article-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 1.75rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+            transition: border-color 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+        }
+        .article-card:hover {
+            border-color: var(--magenta);
+            box-shadow: 0 4px 24px rgba(165,28,96,0.08);
+        }
+        .article-source {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.35rem;
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--magenta);
+            margin-bottom: 1rem;
+        }
+        .article-source-dot {
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background: var(--magenta);
+            flex-shrink: 0;
+        }
+        .article-edition {
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            margin-bottom: 0.5rem;
+        }
+        .article-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.35;
+            letter-spacing: -0.02em;
+            margin-bottom: 0.75rem;
+        }
+        .article-excerpt {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            flex: 1;
+            margin-bottom: 1.25rem;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        .article-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+            margin-top: auto;
+        }
+        .article-author {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .author-avatar {
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+        .author-name {
+            font-size: 0.775rem;
+            font-weight: 600;
+            color: var(--text-secondary);
+        }
+        .article-date {
+            font-size: 0.75rem;
+            color: var(--text-muted);
+        }
+        .read-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+            font-size: 0.775rem;
+            font-weight: 600;
+            color: var(--magenta);
+            margin-top: 0.9rem;
+            text-decoration: none;
+        }
+        .cumai-placeholder {
+            background: var(--bg-alt);
+            border: 1.5px dashed var(--border);
+            border-radius: 14px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.75rem;
+        }
+        .subscribe-strip {
+            background: linear-gradient(135deg, var(--magenta), var(--purple));
+            border-radius: 14px;
+            padding: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 2rem;
+        }
+        .subscribe-strip h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #fff;
+            margin: 0 0 0.35rem;
+        }
+        .subscribe-strip p {
+            font-size: 0.875rem;
+            color: rgba(255,255,255,0.75);
+            margin: 0;
+            line-height: 1.5;
+        }
+        .subscribe-strip a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            background: rgba(255,255,255,0.15);
+            border: 1px solid rgba(255,255,255,0.3);
+            color: #fff;
+            font-size: 0.875rem;
+            font-weight: 600;
+            padding: 0.65rem 1.4rem;
+            border-radius: 100px;
+            text-decoration: none;
+            white-space: nowrap;
+            transition: background 0.2s;
+        }
+        .subscribe-strip a:hover {
+            background: rgba(255,255,255,0.25);
+        }
+        @media (max-width: 1024px) {
+            .perspectives-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+        @media (max-width: 600px) {
+            .perspectives-grid { grid-template-columns: 1fr; }
+            .subscribe-strip { flex-direction: column; }
+        }
+    </style>
 </head>
 <body>
 <header>
@@ -23,41 +185,271 @@
             <li><a href="./team-performance-diagnostic.html">Team Performance Diagnostic</a></li>
             <li><a href="./full-pipeline-diagnostic.html">Full Pipeline Diagnostic</a></li>
             <li><a href="./about.html">About</a></li>
-            <li><a href="./perspectives.html">Perspectives</a></li>
+            <li><a href="./perspectives.html" class="active">Perspectives</a></li>
         </ul>
-        <div class="nav-actions">
-            <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta">Book a conversation</a>
-        </div>
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta btn-primary">Book a conversation</a>
         <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
             <span></span><span></span><span></span>
         </button>
     </div>
 </nav>
 </header>
+
 <main>
-<section style="background:var(--bg-dark); padding:calc(80px + 4rem) 0 6rem;">
-    <div class="container">
-        <span class="label" style="color:rgba(165,28,96,0.8);">Supero Perspectives</span>
-        <h1 class="headline" style="color:#ffffff; margin-top:0.75rem; margin-bottom:1.25rem; max-width:720px;">Intelligence for revenue and transformation leaders.</h1>
-        <p style="color:rgba(241,239,245,0.6); font-size:1.05rem; max-width:560px; line-height:1.75;">Occasional long-form perspectives from Alex Abbott and Cumai Aboul Housn on revenue systems, operational intelligence, and AI in the context of commercial performance. Coming soon.</p>
+
+<!-- HERO -->
+<section style="background:var(--bg-dark); padding:9rem 0 6rem; position:relative; overflow:hidden;">
+    <div aria-hidden="true" style="position:absolute; right:-60px; top:50%; transform:translateY(-50%); opacity:0.04; pointer-events:none; user-select:none;">
+        <svg width="500" height="500" viewBox="0 0 100 100" fill="none"><text x="50" y="85" font-size="110" font-family="DM Sans, sans-serif" font-weight="700" text-anchor="middle" fill="white">S</text></svg>
+    </div>
+    <div class="container" style="position:relative; z-index:1;">
+        <span class="label" style="color:var(--magenta);">Supero Perspectives</span>
+        <h1 style="font-size:clamp(2rem, 4.5vw, 3.25rem); color:#ffffff; font-weight:700; letter-spacing:-0.03em; line-height:1.2; margin:0.75rem 0 1.25rem; max-width:800px;">Intelligence for revenue and transformation leaders.</h1>
+        <p style="font-size:1.05rem; color:rgba(241,239,245,0.65); max-width:560px; line-height:1.75;">Perspectives from Alex Abbott and Cumai Aboul Housn on revenue systems, AI, buyer behaviour, and commercial performance. No filler. No broad-brush takes. Just pattern-matched thinking from people who work inside these problems every week.</p>
     </div>
 </section>
+
+
+<!-- ARTICLES FROM ALEX -->
+<section style="background:var(--bg-alt); padding:6rem 0;">
+<div class="container">
+
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:2.5rem; gap:1rem; flex-wrap:wrap;">
+        <div>
+            <span class="label">Walking Digital Corridors</span>
+            <h2 class="headline" style="margin-top:0.5rem; margin-bottom:0.25rem;">Alex Abbott</h2>
+            <p style="font-size:0.875rem; color:var(--text-secondary); margin:0;">Weekly briefing on buyer behaviour, social selling, and digital signals for GTM teams.</p>
+        </div>
+        <a href="https://beardedsalesguy.substack.com/archive" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.875rem; font-weight:600; color:var(--magenta); text-decoration:none; white-space:nowrap; flex-shrink:0;">
+            Full archive
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+    </div>
+
+    <div class="perspectives-grid">
+
+        <!-- Edition 63 -->
+        <div class="article-card">
+            <span class="article-source"><span class="article-source-dot"></span>Walking Digital Corridors</span>
+            <div class="article-edition">Edition 63</div>
+            <div class="article-title">You're Selling to One Person. The Decision Involves Thirteen.</div>
+            <p class="article-excerpt">Forrester's 2026 State of Business Buying puts the buying group at 13 internal stakeholders and nine external influencers. That's 22 people shaping the outcome, and most sellers are talking to two of them. The committee isn't a monolith. It's a constellation.</p>
+            <div class="article-footer">
+                <div class="article-author">
+                    <img src="./assets/alex-abbott.png" alt="Alex Abbott" class="author-avatar">
+                    <span class="author-name">Alex Abbott</span>
+                </div>
+                <span class="article-date">3 Apr 2026</span>
+            </div>
+            <a href="https://beardedsalesguy.substack.com/p/youre-selling-to-one-person-the-decision" target="_blank" rel="noopener noreferrer" class="read-link" onclick="gtag('event','perspectives_article_click',{'article':'ed63'})">
+                Read on Substack
+                <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <!-- Edition 62 -->
+        <div class="article-card">
+            <span class="article-source"><span class="article-source-dot"></span>Walking Digital Corridors</span>
+            <div class="article-edition">Edition 62</div>
+            <div class="article-title">The Algorithm Just Told You What It Wants. Are You Listening?</div>
+            <p class="article-excerpt">LinkedIn's biggest algorithm overhaul in years has fundamentally shifted from network-driven to interest-driven distribution. It no longer matters who you know. It matters what you know, and whether you can prove it.</p>
+            <div class="article-footer">
+                <div class="article-author">
+                    <img src="./assets/alex-abbott.png" alt="Alex Abbott" class="author-avatar">
+                    <span class="author-name">Alex Abbott</span>
+                </div>
+                <span class="article-date">27 Mar 2026</span>
+            </div>
+            <a href="https://beardedsalesguy.substack.com/p/the-algorithm-just-told-you-what" target="_blank" rel="noopener noreferrer" class="read-link" onclick="gtag('event','perspectives_article_click',{'article':'ed62'})">
+                Read on Substack
+                <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <!-- Edition 61 -->
+        <div class="article-card">
+            <span class="article-source"><span class="article-source-dot"></span>Walking Digital Corridors</span>
+            <div class="article-edition">Edition 61</div>
+            <div class="article-title">Your Deals Are Being Decided in Rooms You Weren't Invited To</div>
+            <p class="article-excerpt">81% of B2B buyers have already chosen a winner before they talk to sales. The buying committee has quietly doubled to 22 people. And 73% of the buying journey now happens somewhere you cannot see. The corridors moved. Did you?</p>
+            <div class="article-footer">
+                <div class="article-author">
+                    <img src="./assets/alex-abbott.png" alt="Alex Abbott" class="author-avatar">
+                    <span class="author-name">Alex Abbott</span>
+                </div>
+                <span class="article-date">20 Mar 2026</span>
+            </div>
+            <a href="https://beardedsalesguy.substack.com/p/your-deals-are-being-decided-in-rooms" target="_blank" rel="noopener noreferrer" class="read-link" onclick="gtag('event','perspectives_article_click',{'article':'ed61'})">
+                Read on Substack
+                <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <!-- Edition 60 -->
+        <div class="article-card">
+            <span class="article-source"><span class="article-source-dot"></span>Walking Digital Corridors</span>
+            <div class="article-edition">Edition 60</div>
+            <div class="article-title">The Machines Are Selling. But Who's Actually Buying?</div>
+            <p class="article-excerpt">AI agents are now outnumbering human sellers in some organisations. LinkedIn's algorithm is actively penalising AI-generated content. And buyers are making 80% of their decision before a seller even gets a look-in. The volume game has been automated. The question is what you're building instead.</p>
+            <div class="article-footer">
+                <div class="article-author">
+                    <img src="./assets/alex-abbott.png" alt="Alex Abbott" class="author-avatar">
+                    <span class="author-name">Alex Abbott</span>
+                </div>
+                <span class="article-date">15 Mar 2026</span>
+            </div>
+            <a href="https://beardedsalesguy.substack.com/p/the-machines-are-selling-but-whos" target="_blank" rel="noopener noreferrer" class="read-link" onclick="gtag('event','perspectives_article_click',{'article':'ed60'})">
+                Read on Substack
+                <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <!-- Edition 58 -->
+        <div class="article-card">
+            <span class="article-source"><span class="article-source-dot"></span>Walking Digital Corridors</span>
+            <div class="article-edition">Edition 58</div>
+            <div class="article-title">AI Is Accelerating GTM. Conversations Are Slowing Down.</div>
+            <p class="article-excerpt">AI is saving time and accelerating GTM execution. Yet conversations are getting harder to start. The tools are faster. The outreach is higher volume. The response rates are lower. Signal without sense-making is just noise at scale.</p>
+            <div class="article-footer">
+                <div class="article-author">
+                    <img src="./assets/alex-abbott.png" alt="Alex Abbott" class="author-avatar">
+                    <span class="author-name">Alex Abbott</span>
+                </div>
+                <span class="article-date">25 Jan 2026</span>
+            </div>
+            <a href="https://beardedsalesguy.substack.com/p/ai-is-accelerating-gtm-conversations" target="_blank" rel="noopener noreferrer" class="read-link" onclick="gtag('event','perspectives_article_click',{'article':'ed58'})">
+                Read on Substack
+                <svg width="11" height="11" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <!-- Subscribe card -->
+        <div style="background:var(--bg); border:1px solid var(--border); border-radius:14px; padding:1.75rem; display:flex; flex-direction:column; justify-content:space-between; gap:1.25rem;">
+            <div>
+                <span class="label" style="margin-bottom:0.75rem; display:block;">63 editions and counting</span>
+                <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.7; margin:0;">Walking Digital Corridors is a weekly briefing for GTM teams on buyer behaviour, AI, and digital signals. Free to read. New edition every week.</p>
+            </div>
+            <a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.4rem; background:var(--magenta); color:#fff; font-size:0.875rem; font-weight:600; padding:0.7rem 1.4rem; border-radius:100px; text-decoration:none; width:fit-content;" onclick="gtag('event','perspectives_subscribe_click',{})">
+                Subscribe on Substack
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- CUMAI SECTION -->
+<section style="background:var(--bg); padding:6rem 0;">
+<div class="container">
+
+    <div style="display:flex; align-items:flex-end; justify-content:space-between; margin-bottom:2.5rem; gap:1rem; flex-wrap:wrap;">
+        <div>
+            <span class="label">AI Systems &amp; Operational Intelligence</span>
+            <h2 class="headline" style="margin-top:0.5rem; margin-bottom:0.25rem;">Cumai Aboul Housn</h2>
+            <p style="font-size:0.875rem; color:var(--text-secondary); margin:0;">Perspectives on enterprise AI, operational intelligence, and the systems layer that determines whether transformation lands.</p>
+        </div>
+        <a href="https://www.linkedin.com/in/cumai/" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:0.35rem; font-size:0.875rem; font-weight:600; color:var(--magenta); text-decoration:none; white-space:nowrap; flex-shrink:0;">
+            LinkedIn
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+    </div>
+
+    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:1.75rem;" class="cumai-grid">
+
+        <div class="cumai-placeholder">
+            <span style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted);">Coming soon</span>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.7; margin:0;">Cumai's writing on enterprise AI, operational intelligence, and the systems decisions that determine whether AI actually changes behaviour or just generates reports.</p>
+            <a href="https://www.linkedin.com/in/cumai/" target="_blank" rel="noopener noreferrer" style="font-size:0.8rem; font-weight:600; color:var(--magenta); text-decoration:none;">Follow on LinkedIn</a>
+        </div>
+
+        <div class="cumai-placeholder">
+            <span style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted);">Coming soon</span>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.7; margin:0;">Perspectives on AI maturity in production — what separates organisations that use AI as decoration from those using it as infrastructure.</p>
+        </div>
+
+        <div class="cumai-placeholder">
+            <span style="font-size:0.65rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--text-muted);">Coming soon</span>
+            <p style="font-size:0.875rem; color:var(--text-secondary); line-height:1.7; margin:0;">The data quality and governance questions that most AI strategies never address — and why that's where most AI programmes quietly fail.</p>
+        </div>
+
+    </div>
+
+</div>
+</section>
+
+
+<!-- FINAL CTA -->
+<section style="background:var(--bg-dark); padding:7rem 0; text-align:center;">
+<div class="container">
+    <span class="label" style="color:rgba(165,28,96,0.8); display:block; margin-bottom:1.25rem;">Start here</span>
+    <h2 style="font-size:clamp(1.75rem, 3.5vw, 2.75rem); color:#ffffff; font-weight:700; letter-spacing:-0.03em; max-width:700px; margin:0 auto 1.25rem; line-height:1.2;">We'll tell you where revenue is leaking, what it's costing, and what to do about it.</h2>
+    <p style="font-size:1rem; color:rgba(241,239,245,0.5); max-width:440px; margin:0 auto 2.5rem; line-height:1.7;">One conversation. That's where it starts.</p>
+    <div class="cta-buttons">
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary" onclick="gtag('event','perspectives_cta_click',{'cta_location':'final_cta'})">Book a conversation</a>
+        <a href="./index.html#diagnostic" class="btn-ghost">See how the Supero Diagnostic works</a>
+    </div>
+</div>
+</section>
+
 </main>
+
+<!-- FOOTER -->
 <footer>
     <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="./assets/logo-dark.svg" alt="Supero" height="36" style="margin-bottom:1rem; opacity:0.7;">
+                <p>Diagnostic-first firm for B2B revenue leaders. EMEA primary, US secondary. Independent of every platform in your stack.</p>
+            </div>
+            <div>
+                <p class="footer-heading">Diagnostics</p>
+                <ul>
+                    <li><a href="./revenue-ai-diagnostic.html">Revenue AI Diagnostic</a></li>
+                    <li><a href="./team-performance-diagnostic.html">Team Performance Diagnostic</a></li>
+                    <li><a href="./full-pipeline-diagnostic.html">Full Pipeline Diagnostic</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-heading">Supero</p>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./perspectives.html">Perspectives</a></li>
+                </ul>
+            </div>
+            <div>
+                <p class="footer-heading">Connect</p>
+                <ul>
+                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer">Newsletter</a></li>
+                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer">Book a conversation</a></li>
+                </ul>
+            </div>
+        </div>
         <div class="footer-bottom">
             <p>&copy; 2026 Supero. All rights reserved.</p>
             <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
         </div>
     </div>
 </footer>
+
 <script>
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
 const hamburger = document.getElementById('hamburger');
-const overlay = document.getElementById('mobileOverlay');
-if(hamburger && overlay) {
-    hamburger.addEventListener('click', () => overlay.classList.add('active'));
-    overlay.querySelector('.overlay-close')?.addEventListener('click', () => overlay.classList.remove('active'));
-}
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+});
+document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target)) {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('open');
+    }
+});
 </script>
 </body>
 </html>
