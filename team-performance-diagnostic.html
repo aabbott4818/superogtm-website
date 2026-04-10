@@ -703,6 +703,14 @@ function openMobileNav() {
         link.addEventListener('click', closeMobileNav);
         overlay.appendChild(link);
     });
+    
+    // Add Book a conversation link
+    const cta = document.createElement('a');
+    cta.href = 'https://calendly.com/alex_abbott/chat-with-alex';
+    cta.target = '_blank';
+    cta.textContent = 'Book a conversation';
+    cta.style.cssText = 'font-size:1rem;color:#fff;text-decoration:none;padding:0.75rem 1.5rem;font-family:DM Sans,sans-serif;font-weight:600;background:#A51C60;border-radius:100px;margin-top:1.5rem;display:inline-block;';
+    overlay.appendChild(cta);
 
     // Close button
     const closeBtn = document.createElement('button');
