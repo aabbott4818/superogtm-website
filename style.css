@@ -691,7 +691,22 @@ footer {
     }
     .nav-links { display: none; }
     .nav-cta { display: none !important; }
-    .nav-inner { display: flex; justify-content: space-between; align-items: center; padding: 0 1.25rem; }
+    .nav-inner { display: flex !important; justify-content: space-between; align-items: center; padding: 0 1.25rem; }
+
+    /* Force ALL multi-column inline grids to stack on mobile */
+    [style*="grid-template-columns:repeat(4"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:repeat(3"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:1.5fr 1fr 1fr 1fr 1fr"] { grid-template-columns: 1fr 1fr !important; }
+    [style*="grid-template-columns:1fr 1fr 1fr"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:repeat(2,1fr)"] { grid-template-columns: 1fr !important; }
+    [style*="grid-template-columns:1fr 1fr;"] { grid-template-columns: 1fr !important; }
+    .stage2-grid { grid-template-columns: 1fr !important; }
+    .stage2-instruments { grid-template-columns: 1fr !important; }
+    .diagnostics-grid { grid-template-columns: 1fr !important; }
+    .testimonials-grid { grid-template-columns: 1fr !important; }
+
+    /* Hide S watermark on mobile — causes iOS Safari horizontal overflow */
+    [aria-hidden="true"][style*="position:absolute"][style*="right:-"] { display: none !important; }
     .nav-links.active {
         display: flex !important;
         flex-direction: column;
