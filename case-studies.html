@@ -310,17 +310,50 @@
 <script>
 const nav = document.getElementById('main-nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
-hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-    hamburger.classList.toggle('open');
-});
-document.addEventListener('click', (e) => {
-    if (!nav.contains(e.target)) {
-        navLinks.classList.remove('active');
-        hamburger.classList.remove('open');
+let overlay = null;
+
+function openMobileNav() {
+    if (overlay) return;
+    overlay = document.createElement('div');
+    overlay.id = 'mobileNavOverlay';
+    overlay.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;background:#0D0618;z-index:9999;display:flex;flex-direction:column;padding:6rem 2rem 2rem;gap:0.25rem;overflow-y:auto;';
+    
+    // Clone nav links
+    const links = navLinks.querySelectorAll('a');
+    links.forEach(a => {
+        const link = document.createElement('a');
+        link.href = a.href;
+        link.textContent = a.textContent;
+        link.style.cssText = 'font-size:1.25rem;color:rgba(241,239,245,0.85);text-decoration:none;padding:0.75rem 0;font-family:DM Sans,sans-serif;font-weight:600;';
+        link.addEventListener('click', closeMobileNav);
+        overlay.appendChild(link);
+    });
+
+    // Close button
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>';
+    closeBtn.style.cssText = 'position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;cursor:pointer;padding:0.5rem;';
+    closeBtn.addEventListener('click', closeMobileNav);
+    overlay.appendChild(closeBtn);
+    
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+}
+
+function closeMobileNav() {
+    if (overlay) {
+        overlay.remove();
+        overlay = null;
+        document.body.style.overflow = '';
     }
+}
+
+hamburger.addEventListener('click', () => {
+    if (overlay) closeMobileNav();
+    else openMobileNav();
 });
 </script>
 </body>
