@@ -204,6 +204,20 @@
         .instrument-grid { grid-template-columns: 1fr; }
         .process-row { grid-template-columns: 1fr; }
     }
+
+    .footer-5col {
+        grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    }
+    @media (max-width: 900px) {
+        .footer-5col {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    @media (max-width: 480px) {
+        .footer-5col {
+            grid-template-columns: 1fr;
+        }
+    }
 </style>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-41ZC9G3HZJ"></script>
     <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-41ZC9G3HZJ');</script>
@@ -492,15 +506,15 @@
     <div style="max-width:860px; margin:0 auto;">
         <span class="label">Proof in practice</span>
         <h2 class="headline" style="margin-top:0.75rem; margin-bottom:1.5rem;">14 Tools. 3 Producing Value.</h2>
-        <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8; margin-bottom:2.5rem;">A mid-market technology company had invested heavily in AI across its revenue motion &#8212; prospecting tools, content generation, call intelligence, CRM enrichment, forecasting, and coaching platforms. The board asked: &#8220;What is our AI strategy for sales?&#8221; The CRO could not answer with confidence. Usage dashboards showed adoption. Revenue had not moved.</p>
+        <p style="color:var(--text-secondary); font-size:0.95rem; line-height:1.8; margin-bottom:2.5rem;">A mid-market technology company had invested heavily in AI across its revenue motion: prospecting tools, content generation, call intelligence, CRM enrichment, forecasting, and coaching platforms. The board asked: &#8220;What is our AI strategy for sales?&#8221; The CRO could not answer with confidence. Usage dashboards showed adoption. Revenue had not moved.</p>
 
         <h3 style="font-size:1rem; font-weight:700; color:var(--text); margin-bottom:1rem;">What the diagnostic uncovered</h3>
         <ul style="list-style:none; padding:0; margin:0 0 2.5rem; display:flex; flex-direction:column; gap:0.6rem;">
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>14 AI tools were deployed across the revenue team. Only 3 were producing measurable pipeline impact.</li>
-            <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>&#163;180K in annual AI spend was generating no attributable revenue &#8212; tools bought, installed, and either ignored or misused.</li>
+            <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>&#163;180K in annual AI spend was generating no attributable revenue. Tools bought, installed, and either ignored or misused.</li>
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>The AI Maturity Index scored the organisation at 2.1 out of 5. Tools were present but operated as isolated islands.</li>
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Prompt maturity was low: teams were experimenting randomly rather than using structured frameworks connected to commercial conversations.</li>
-            <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Call intelligence was recording everything but coaching nothing &#8212; data captured, never acted upon.</li>
+            <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Call intelligence was recording everything but coaching nothing. Data captured, never acted upon.</li>
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Two tools were creating compliance risk through uncontrolled data sharing with third-party LLMs.</li>
         </ul>
 
@@ -509,7 +523,7 @@
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Retired 6 tools immediately, saving &#163;95K annually with zero impact on performance.</li>
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Connected the 3 high-performing tools to CRM and coaching workflows so output drove action rather than sitting in dashboards.</li>
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Implemented prompt frameworks and data governance policy across all AI usage.</li>
-            <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Adopted the AI Maturity Index as a quarterly benchmark &#8212; tracking progress, not just adoption.</li>
+            <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Adopted the AI Maturity Index as a quarterly benchmark, tracking progress, not just adoption.</li>
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Shifted call intelligence from passive recording to structured coaching with AI-assisted review.</li>
         </ul>
 
@@ -518,10 +532,10 @@
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>AI spend reduced by 40% while measurable AI-driven pipeline contribution increased.</li>
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>AI Maturity Index moved from 2.1 to 3.4 within two quarters.</li>
             <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>Coaching cadence improved from ad hoc to weekly structured review.</li>
-            <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>The CRO presented the board with a credible AI strategy for the first time &#8212; backed by data, not aspiration.</li>
+            <li style="font-size:0.9rem; color:var(--text-secondary); padding-left:1.1rem; position:relative; line-height:1.65;"><span style="position:absolute; left:0; top:0.6em; width:5px; height:5px; border-radius:50%; background:var(--magenta);"></span>The CRO presented the board with a credible AI strategy for the first time, backed by data, not aspiration.</li>
         </ul>
 
-        <blockquote style="border-left:3px solid var(--magenta); padding-left:1.25rem; margin:0; font-style:italic; color:var(--text-secondary); font-size:0.9rem; line-height:1.75;">&#8220;We thought we had an AI strategy. The diagnostic showed us we had an AI problem disguised as progress. We made the changes ourselves &#8212; Supero gave us the map. Now we know exactly what&#8217;s working and what we&#8217;ve stopped wasting money on.&#8221;<br><span style="font-style:normal; font-weight:600; color:var(--text-muted); font-size:0.8rem;">CRO, Mid-Market Technology Company</span></blockquote>
+        <blockquote style="border-left:3px solid var(--magenta); padding-left:1.25rem; margin:0; font-style:italic; color:var(--text-secondary); font-size:0.9rem; line-height:1.75;">&#8220;We thought we had an AI strategy. The diagnostic showed us we had an AI problem disguised as progress. We made the changes ourselves. Supero gave us the map. Now we know exactly what&#8217;s working and what we&#8217;ve stopped wasting money on.&#8221;<br><span style="font-style:normal; font-weight:600; color:var(--text-muted); font-size:0.8rem;">CRO, Mid-Market Technology Company</span></blockquote>
     </div>
 </div>
 </section>
@@ -605,40 +619,66 @@
 
 </main>
 
-<footer>
-    <div class="container">
-        <div class="footer-grid">
-            <div class="footer-brand">
-                <img src="./assets/logo-dark.svg" alt="Supero" height="36" style="margin-bottom:1rem; opacity:0.7;">
-                <p>Diagnostic-first firm for B2B revenue leaders. EMEA primary, US secondary. Independent of every platform in your stack.</p>
-            </div>
+<footer style="background:var(--bg-dark); border-top:1px solid rgba(255,255,255,0.06);">
+    <div class="container" style="padding-top:4rem; padding-bottom:2rem;">
+        <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr 1fr; gap:2.5rem; margin-bottom:3rem;" class="footer-5col">
+
+            <!-- Brand -->
             <div>
-                <p class="footer-heading">Diagnostics</p>
-                <ul>
-                    <li><a href="./revenue-ai-diagnostic.html">Revenue AI Diagnostic</a></li>
-                    <li><a href="./team-performance-diagnostic.html">Team Performance Diagnostic</a></li>
-                    <li><a href="./full-pipeline-diagnostic.html">Full Pipeline Diagnostic</a></li>
+                <a href="./index.html" aria-label="Supero GTM home">
+                    <img src="./assets/logo-dark.svg" alt="Supero" height="36" style="margin-bottom:1rem; opacity:0.7;">
+                </a>
+                <p style="font-size:0.8rem; color:rgba(241,239,245,0.4); line-height:1.7; margin:0;">Diagnostic-first firm for B2B revenue leaders.<br>EMEA primary, US secondary. Independent of any vendor, methodology, or tool.</p>
+            </div>
+
+            <!-- Diagnostics -->
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Diagnostics</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="./revenue-ai-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Revenue AI Diagnostic</a></li>
+                    <li><a href="./team-performance-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Team Performance Diagnostic</a></li>
+                    <li><a href="./full-pipeline-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Full Pipeline Diagnostic</a></li>
                 </ul>
             </div>
+
+            <!-- Proof & Insight -->
             <div>
-                <p class="footer-heading">Supero</p>
-                <ul>
-                    <li><a href="./about.html">About</a></li>
-                    <li><a href="./perspectives.html">Perspectives</a></li>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Proof &amp; Insight</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="./case-studies.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Case Studies</a></li>
+                    <li><a href="./perspectives.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Perspectives</a></li>
                 </ul>
             </div>
+
+            <!-- Company -->
             <div>
-                <p class="footer-heading">Connect</p>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
-                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer">Newsletter</a></li>
-                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer">Book a conversation</a></li>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Company</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="./index.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Home</a></li>
+                    <li><a href="./about.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">About</a></li>
+                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Newsletter</a></li>
                 </ul>
             </div>
+
+            <!-- Connect -->
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Connect</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">LinkedIn</a></li>
+                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Book a conversation</a></li>
+                </ul>
+            </div>
+
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Supero. All rights reserved.</p>
-            <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+
+        <!-- Legal bar -->
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+            <p style="font-size:0.75rem; color:rgba(241,239,245,0.3); margin:0;">&copy; 2026 Supero Ltd</p>
+            <div style="display:flex; gap:1.5rem;">
+                <a href="#" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Privacy Policy</a>
+                <a href="#" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Terms</a>
+                <a href="#" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Cookie Policy</a>
+            </div>
         </div>
     </div>
 </footer>

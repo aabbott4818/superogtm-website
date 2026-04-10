@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Studies | Supero GTM</title>
+    <meta name="description" content="Real diagnostic results from B2B revenue organisations. Three anonymised case studies showing what the Supero Diagnostic uncovered, what clients implemented, and the outcomes they achieved.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,600;9..40,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon-180.png">
+    <meta property="og:title" content="Case Studies | Supero GTM">
+    <meta property="og:description" content="Real diagnostic results from B2B revenue organisations. What the Supero Diagnostic uncovered, what clients implemented, and the outcomes they achieved.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.superogtm.com/case-studies.html">
+    <meta property="og:site_name" content="Supero GTM">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Case Studies | Supero GTM">
+    <meta name="twitter:description" content="Real diagnostic results from B2B revenue organisations. What the Supero Diagnostic uncovered, what clients implemented, and the outcomes they achieved.">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41ZC9G3HZJ"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-41ZC9G3HZJ');</script>
+    <style>
+        .case-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 14px;
+            padding: 2.5rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+        .case-tag {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--magenta);
+        }
+        .case-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text);
+            letter-spacing: -0.02em;
+            line-height: 1.25;
+        }
+        .case-intro {
+            font-size: 0.95rem;
+            color: var(--text-secondary);
+            line-height: 1.75;
+        }
+        .case-proof {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1px;
+            background: var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        .case-proof-cell {
+            background: var(--bg-alt);
+            padding: 1rem 1.25rem;
+        }
+        .case-proof-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            margin-bottom: 0.35rem;
+        }
+        .case-proof-text {
+            font-size: 0.85rem;
+            line-height: 1.55;
+            margin: 0;
+        }
+        .case-quote {
+            border-left: 3px solid var(--magenta);
+            padding-left: 1.25rem;
+            font-style: italic;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.75;
+        }
+        .case-quote-attr {
+            font-style: normal;
+            font-weight: 600;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+        .case-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--magenta);
+            text-decoration: none;
+        }
+        .cases-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        .footer-5col {
+            grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+        }
+        @media (max-width: 768px) {
+            .case-proof { grid-template-columns: 1fr; }
+        }
+        @media (max-width: 900px) {
+            .footer-5col { grid-template-columns: 1fr 1fr; }
+        }
+        @media (max-width: 480px) {
+            .footer-5col { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+<header>
+<nav id="main-nav">
+    <div class="nav-inner">
+        <a href="./index.html" class="nav-logo" aria-label="Supero GTM home">
+            <img src="./assets/logo-dark.svg" alt="Supero" height="60">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="./revenue-ai-diagnostic.html">Revenue AI Diagnostic</a></li>
+            <li><a href="./team-performance-diagnostic.html">Team Performance Diagnostic</a></li>
+            <li><a href="./full-pipeline-diagnostic.html">Full Pipeline Diagnostic</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./perspectives.html">Perspectives</a></li>
+        </ul>
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta btn-primary">Book a conversation</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section style="background:var(--bg-dark); padding:9rem 0 6rem; position:relative; overflow:hidden;">
+    <div aria-hidden="true" style="position:absolute; right:-60px; top:50%; transform:translateY(-50%); opacity:0.04; pointer-events:none; user-select:none;">
+        <svg width="500" height="500" viewBox="0 0 100 100" fill="none"><text x="50" y="85" font-size="110" font-family="DM Sans, sans-serif" font-weight="700" text-anchor="middle" fill="white">S</text></svg>
+    </div>
+    <div class="container" style="position:relative; z-index:1;">
+        <span class="label" style="color:var(--magenta);">Case Studies</span>
+        <h1 style="font-size:clamp(2rem, 4.5vw, 3.25rem); color:#ffffff; font-weight:700; letter-spacing:-0.03em; line-height:1.2; margin:0.75rem 0 1.25rem; max-width:800px;">Real diagnostics. Real outcomes.</h1>
+        <p style="font-size:1.05rem; color:rgba(241,239,245,0.65); max-width:560px; line-height:1.75;">Three anonymised case studies showing what the Supero Diagnostic uncovered, what clients built using the findings, and the results they achieved. No inflated claims. No Supero as hero. Just the diagnostic at work.</p>
+    </div>
+</section>
+
+
+<!-- CASE STUDIES -->
+<section style="background:var(--bg-alt); padding:6rem 0;">
+<div class="container">
+    <div class="cases-grid" style="max-width:860px; margin:0 auto;">
+
+        <!-- Case A: Zombie Pipeline -->
+        <div class="case-card">
+            <span class="case-tag">Full Pipeline Diagnostic</span>
+            <h2 class="case-title">The Zombie Pipeline</h2>
+            <p class="case-intro">A European SaaS company had 3.5x pipeline coverage and a 6% win rate. The CEO described his company as "a zombie." The CRM said healthy. The Pipeline Integrity Score said otherwise. They had outreach tools, discovery frameworks, and a methodology they had invested in two years earlier. None of it was connected to how buyers actually make decisions.</p>
+
+            <div class="case-proof">
+                <div class="case-proof-cell">
+                    <p class="case-proof-label" style="color:var(--text-muted);">Before</p>
+                    <p class="case-proof-text" style="color:var(--text-secondary);">3.5x coverage. 6% win rate. Fewer than 1 in 10 deals had genuine buying intent.</p>
+                </div>
+                <div class="case-proof-cell">
+                    <p class="case-proof-label" style="color:var(--magenta);">After (6 months)</p>
+                    <p class="case-proof-text" style="color:var(--text); font-weight:600;">Win rate tripled to 19%. Pipeline shrank 30% but every deal was real. First quarter the board saw numbers they could trust.</p>
+                </div>
+            </div>
+
+            <blockquote class="case-quote">"We didn't need more tools. We needed someone to show us why the tools we had weren't producing results. Supero diagnosed the problem, gave us the framework, and we built from there."<br><span class="case-quote-attr">CEO, European SaaS Company</span></blockquote>
+
+            <a href="./full-pipeline-diagnostic.html" class="case-link">
+                Read the full case on the Full Pipeline Diagnostic page
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <!-- Case B: 3x Performance Gap -->
+        <div class="case-card">
+            <span class="case-tag">Team Performance Diagnostic</span>
+            <h2 class="case-title">The 3x Performance Gap</h2>
+            <p class="case-intro">A global data and marketing services company with 3,000+ employees had a familiar problem: the top 20% of their enterprise sales team consistently hit target, while the rest were stuck in a cycle of activity without progression. Leadership could see the gap but could not diagnose why the same tools and training produced wildly different results.</p>
+
+            <div class="case-proof">
+                <div class="case-proof-cell">
+                    <p class="case-proof-label" style="color:var(--text-muted);">Before</p>
+                    <p class="case-proof-text" style="color:var(--text-secondary);">Same tools, same training, 3.2x gap between top and bottom performers. 67% of pipeline single-threaded.</p>
+                </div>
+                <div class="case-proof-cell">
+                    <p class="case-proof-label" style="color:var(--magenta);">After (90 days)</p>
+                    <p class="case-proof-text" style="color:var(--text); font-weight:600;">15x territory penetration. 6.4x stakeholder engagement. Performance variance narrowed from 3.2x to 1.8x.</p>
+                </div>
+            </div>
+
+            <blockquote class="case-quote">"We had the platform, the methodology, and the training budget. What we didn't have was visibility into why half the team was thriving and half wasn't. The diagnostic gave us that clarity. We did the work. Supero showed us where to focus."<br><span class="case-quote-attr">SVP Enterprise Sales, Global Data &amp; Marketing Services Company</span></blockquote>
+
+            <a href="./team-performance-diagnostic.html" class="case-link">
+                Read the full case on the Team Performance Diagnostic page
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <!-- Case C: 14 Tools -->
+        <div class="case-card">
+            <span class="case-tag">Revenue AI Diagnostic</span>
+            <h2 class="case-title">14 Tools. 3 Producing Value.</h2>
+            <p class="case-intro">A mid-market technology company had invested heavily in AI across its revenue motion: prospecting tools, content generation, call intelligence, CRM enrichment, forecasting, and coaching platforms. The board asked "What is our AI strategy for sales?" The CRO could not answer with confidence. Usage dashboards showed adoption. Revenue had not moved.</p>
+
+            <div class="case-proof">
+                <div class="case-proof-cell">
+                    <p class="case-proof-label" style="color:var(--text-muted);">Before</p>
+                    <p class="case-proof-text" style="color:var(--text-secondary);">14 AI tools deployed. &pound;180K annual spend. AI Maturity Index: 2.1/5. No attributable revenue.</p>
+                </div>
+                <div class="case-proof-cell">
+                    <p class="case-proof-label" style="color:var(--magenta);">After (6 months)</p>
+                    <p class="case-proof-text" style="color:var(--text); font-weight:600;">40% AI spend reduction. AI Maturity Index: 3.4/5. First credible, data-backed AI strategy presented to the board.</p>
+                </div>
+            </div>
+
+            <blockquote class="case-quote">"We thought we had an AI strategy. The diagnostic showed us we had an AI problem disguised as progress. We made the changes ourselves. Supero gave us the map."<br><span class="case-quote-attr">CRO, Mid-Market Technology Company</span></blockquote>
+
+            <a href="./revenue-ai-diagnostic.html" class="case-link">
+                Read the full case on the Revenue AI Diagnostic page
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+    </div>
+</div>
+</section>
+
+
+<!-- CTA -->
+<section style="background:var(--bg-dark); padding:7rem 0; text-align:center;">
+<div class="container">
+    <span class="label" style="color:rgba(165,28,96,0.8); display:block; margin-bottom:1.25rem;">Start here</span>
+    <h2 style="font-size:clamp(1.75rem, 3.5vw, 2.75rem); color:#ffffff; font-weight:700; letter-spacing:-0.03em; max-width:700px; margin:0 auto 1.25rem; line-height:1.2;">Find where revenue is leaking and quantify the cost before you decide what to do next.</h2>
+    <p style="font-size:1rem; color:rgba(241,239,245,0.5); max-width:480px; margin:0 auto 1rem; line-height:1.7;">Supero helps B2B revenue leaders diagnose where performance is breaking down and where to focus first.</p>
+    <p style="font-size:0.825rem; color:rgba(241,239,245,0.35); max-width:460px; margin:0 auto 2.5rem; line-height:1.6;">Every conversation is confidential, diagnostic-led, and independent of any vendor, methodology, or tool.</p>
+    <div class="cta-buttons">
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a conversation</a>
+        <a href="./index.html#diagnostic" class="btn-ghost">See how the diagnostic works</a>
+    </div>
+</div>
+</section>
+
+</main>
+
+<footer style="background:var(--bg-dark); border-top:1px solid rgba(255,255,255,0.06);">
+    <div class="container" style="padding-top:4rem; padding-bottom:2rem;">
+        <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr 1fr; gap:2.5rem; margin-bottom:3rem;" class="footer-5col">
+            <div>
+                <a href="./index.html" aria-label="Supero GTM home">
+                    <img src="./assets/logo-dark.svg" alt="Supero" height="36" style="margin-bottom:1rem; opacity:0.7;">
+                </a>
+                <p style="font-size:0.8rem; color:rgba(241,239,245,0.4); line-height:1.7; margin:0;">Diagnostic-first firm for B2B revenue leaders.<br>EMEA primary, US secondary. Independent of any vendor, methodology, or tool.</p>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Diagnostics</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="./revenue-ai-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Revenue AI Diagnostic</a></li>
+                    <li><a href="./team-performance-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Team Performance Diagnostic</a></li>
+                    <li><a href="./full-pipeline-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Full Pipeline Diagnostic</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Proof &amp; Insight</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="./case-studies.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Case Studies</a></li>
+                    <li><a href="./perspectives.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Perspectives</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Company</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="./index.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Home</a></li>
+                    <li><a href="./about.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">About</a></li>
+                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Newsletter</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Connect</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">LinkedIn</a></li>
+                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Book a conversation</a></li>
+                </ul>
+            </div>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+            <p style="font-size:0.75rem; color:rgba(241,239,245,0.3); margin:0;">&copy; 2026 Supero Ltd</p>
+            <div style="display:flex; gap:1.5rem;">
+                <a href="#" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Privacy Policy</a>
+                <a href="#" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Terms</a>
+                <a href="#" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="./analytics.js" defer></script>
+<script>
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('open');
+});
+document.addEventListener('click', (e) => {
+    if (!nav.contains(e.target)) {
+        navLinks.classList.remove('active');
+        hamburger.classList.remove('open');
+    }
+});
+</script>
+</body>
+</html>
