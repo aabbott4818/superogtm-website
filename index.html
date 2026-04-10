@@ -722,6 +722,21 @@ Supero is a diagnostic-first firm for B2B revenue leaders founded by Alex Abbott
     </div>
 </footer>
 
+<!-- Mobile nav overlay -->
+<div class="mobile-overlay" id="mobileOverlay" aria-modal="true" role="dialog" aria-label="Navigation">
+    <button class="overlay-close" id="overlayClose" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav class="overlay-nav">
+        <a href="./revenue-ai-diagnostic.html">Revenue AI Diagnostic</a>
+        <a href="./team-performance-diagnostic.html">Team Performance Diagnostic</a>
+        <a href="./full-pipeline-diagnostic.html">Full Pipeline Diagnostic</a>
+        <a href="./about.html">About</a>
+        <a href="./perspectives.html">Perspectives</a>
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="overlay-cta">Book a confidential conversation</a>
+    </nav>
+</div>
+
 <script>
 // Navigation scroll state
 const nav = document.getElementById('main-nav');
@@ -760,20 +775,7 @@ document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 </script>
 
 
-<!-- Mobile nav overlay -->
-<div class="mobile-overlay" id="mobileOverlay" aria-modal="true" role="dialog" aria-label="Navigation">
-    <button class="overlay-close" id="overlayClose" aria-label="Close menu">
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>
-    </button>
-    <nav class="overlay-nav">
-        <a href="./revenue-ai-diagnostic.html">Revenue AI Diagnostic</a>
-        <a href="./team-performance-diagnostic.html">Team Performance Diagnostic</a>
-        <a href="./full-pipeline-diagnostic.html">Full Pipeline Diagnostic</a>
-        <a href="./about.html">About</a>
-        <a href="./perspectives.html">Perspectives</a>
-        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="overlay-cta">Book a confidential conversation</a>
-    </nav>
-</div>
+
 <script src="./analytics.js" defer></script>
 </body>
 </html>
