@@ -28,8 +28,8 @@
 
 /* --- Reset --- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
-body {
+html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+body { overflow-x: hidden;
     font-family: 'DM Sans', system-ui, -apple-system, sans-serif;
     font-size: 16px;
     line-height: 1.6;
@@ -713,6 +713,9 @@ footer {
     .hamburger { display: flex; align-items: center; }
     .hamburger.open { position: fixed; top: 1.25rem; right: 1.5rem; z-index: 10000; }
     .selectors { grid-template-columns: 1fr; max-width: 480px; }
+    .footer-5col { grid-template-columns: 1fr 1fr !important; gap: 2rem !important; }
+    .proof-4col { grid-template-columns: 1fr 1fr !important; }
+    .cumai-grid { grid-template-columns: 1fr !important; }
     .hero { min-height: auto; padding-bottom: 4rem; }
     .proof-grid { grid-template-columns: repeat(2, 1fr); gap: 1.5rem; }
     .footer-links { grid-template-columns: 1fr; }
@@ -721,6 +724,7 @@ footer {
 
 @media (max-width: 480px) {
     .proof-grid { grid-template-columns: 1fr; }
+    .footer-5col { grid-template-columns: 1fr !important; }
 }
 
 /* --- Hero Content (Option B layout) --- */
