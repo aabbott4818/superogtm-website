@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Governance for Revenue Leaders: When Everyone Gets a Superpowered Assistant, Who Runs the Enterprise? | Supero</title>
+    <meta name="description" content="A flagship Supero perspective by Cumai Aboul Housn and Alex Abbott on AI sprawl, the EU AI Act, explainability, responsibility, and transparency in the revenue engine.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.superogtm.com/perspectives/ai-governance-revenue-leaders.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="AI Governance for Revenue Leaders: When Everyone Gets a Superpowered Assistant, Who Runs the Enterprise?">
+    <meta property="og:description" content="When intelligence is everywhere, who is actually steering the business? A flagship Supero perspective on AI in the revenue engine.">
+    <meta property="og:url" content="https://www.superogtm.com/perspectives/ai-governance-revenue-leaders.html">
+    <meta property="og:image" content="https://www.superogtm.com/assets/og-supero.png">
+    <meta property="article:author" content="Cumai Aboul Housn">
+    <meta property="article:author" content="Alex Abbott">
+    <meta property="article:published_time" content="2026-04-28">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41ZC9G3HZJ"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-41ZC9G3HZJ');</script>
+
+    <!-- Article + FAQPage JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "Article",
+          "@id": "https://www.superogtm.com/perspectives/ai-governance-revenue-leaders.html#article",
+          "headline": "AI Governance for Revenue Leaders: When Everyone Gets a Superpowered Assistant, Who Runs the Enterprise?",
+          "description": "A flagship Supero perspective on AI sprawl, the EU AI Act, explainability, responsibility, and transparency in the revenue engine.",
+          "author": [
+            {
+              "@type": "Person",
+              "name": "Cumai Aboul Housn",
+              "jobTitle": "Enterprise Transformation Architect, AI and Digital Innovation",
+              "worksFor": { "@type": "Organization", "name": "Supero" }
+            },
+            {
+              "@type": "Person",
+              "name": "Alex Abbott",
+              "jobTitle": "Founder and Chief Revenue Officer",
+              "worksFor": { "@type": "Organization", "name": "Supero" },
+              "url": "https://www.superogtm.com/about.html#alex"
+            }
+          ],
+          "datePublished": "2026-04-28",
+          "dateModified": "2026-04-28",
+          "publisher": {
+            "@type": "Organization",
+            "name": "Supero",
+            "url": "https://www.superogtm.com",
+            "logo": { "@type": "ImageObject", "url": "https://www.superogtm.com/assets/logo-dark.svg" }
+          },
+          "mainEntityOfPage": "https://www.superogtm.com/perspectives/ai-governance-revenue-leaders.html",
+          "articleSection": "Perspectives",
+          "keywords": "AI governance, AI in the revenue engine, EU AI Act, AI sprawl, CRO, CEO, explainable AI, responsible AI, transparent AI, human in the loop, vendor governance"
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is AI governance for revenue leaders?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI governance for revenue leaders is the set of structures, ownership models, controls, and oversight practices that keep AI use aligned to strategy, risk tolerance, and commercial reality across the revenue engine."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is AI sprawl in the enterprise?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI sprawl describes the spread of many small, decentralised AI influences across teams, tools, workflows, and decisions, often without one coherent model of control or accountability."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why should CROs care about the EU AI Act?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "CROs should care because regulation is increasingly shaping how AI can be used in decisions that affect customers, people, pricing, and enterprise accountability. Even before enforcement becomes the main issue, the disciplines behind regulation help commercial teams reduce drift and operate with more control."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is human-in-the-loop enough for enterprise AI?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Not by itself. Human oversight only works when the person reviewing AI output has enough context, authority, and understanding to challenge or stop the system when needed."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How should enterprise teams govern AI vendors?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Teams should govern AI vendors as providers of decision-influencing capability, not just software. That means approved use cases, visibility into data flows, monitoring after deployment, and clear ownership across commercial and control functions."
+              }
+            }
+          ]
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        .footer-5col { grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; }
+        @media (max-width: 900px) { .footer-5col { grid-template-columns: 1fr 1fr !important; } }
+        @media (max-width: 560px) { .footer-5col { grid-template-columns: 1fr !important; } }
+
+        .article-hero {
+            background: var(--bg-dark);
+            padding: 7rem 2rem 3.5rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .article-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 20% 0%, rgba(165,28,96,0.10) 0%, transparent 55%);
+            pointer-events: none;
+        }
+        .article-hero-inner {
+            max-width: 820px;
+            margin: 0 auto;
+            position: relative;
+        }
+        .article-eyebrow {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--magenta, #A51C60);
+            margin: 0 0 1.25rem;
+            padding: 0.4rem 0.9rem;
+            border: 1px solid rgba(165,28,96,0.4);
+            border-radius: 100px;
+            background: rgba(165,28,96,0.06);
+        }
+        .article-hero h1 {
+            font-size: clamp(1.85rem, 4.2vw, 3rem);
+            font-weight: 700;
+            color: var(--text-light, #f1eff5);
+            line-height: 1.12;
+            letter-spacing: -0.025em;
+            margin: 0 0 1.5rem;
+        }
+        .article-hero .deck {
+            font-size: 1.075rem;
+            color: rgba(241,239,245,0.7);
+            line-height: 1.65;
+            margin: 0 0 2.5rem;
+            max-width: 720px;
+        }
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .byline-authors {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+        .byline-avatars {
+            display: flex;
+        }
+        .byline-avatars img {
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            border: 2px solid var(--bg-dark);
+            object-fit: cover;
+        }
+        .byline-avatars img:not(:first-child) { margin-left: -12px; }
+        .byline-text p {
+            margin: 0;
+            line-height: 1.4;
+        }
+        .byline-text .names {
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: rgba(241,239,245,0.9);
+        }
+        .byline-text .meta {
+            font-size: 0.75rem;
+            color: rgba(241,239,245,0.45);
+        }
+
+        .article-body {
+            background: #fff;
+            padding: 4.5rem 2rem 5rem;
+        }
+        .article-body .inner {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .article-body .lede {
+            font-size: 1.125rem;
+            color: var(--text, #110e1a);
+            line-height: 1.7;
+            margin: 0 0 3rem;
+            padding-bottom: 2.5rem;
+            border-bottom: 1px solid #ebe8f0;
+            font-weight: 500;
+        }
+        .article-body h2 {
+            font-size: 1.55rem;
+            font-weight: 700;
+            color: var(--text, #110e1a);
+            line-height: 1.2;
+            letter-spacing: -0.015em;
+            margin: 3.5rem 0 1.25rem;
+        }
+        .article-body h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--text, #110e1a);
+            margin: 2.25rem 0 0.75rem;
+        }
+        .article-body p {
+            font-size: 1rem;
+            color: #2c2737;
+            line-height: 1.8;
+            margin: 0 0 1.25rem;
+        }
+        .article-body ul {
+            margin: 0 0 1.5rem 0;
+            padding: 0 0 0 1.25rem;
+        }
+        .article-body ul li {
+            font-size: 1rem;
+            color: #2c2737;
+            line-height: 1.75;
+            margin-bottom: 0.5rem;
+        }
+        .article-body strong {
+            color: var(--text, #110e1a);
+            font-weight: 700;
+        }
+        .article-body a {
+            color: var(--magenta, #A51C60);
+            text-decoration: underline;
+        }
+
+        .pull-quote {
+            margin: 2.75rem 0;
+            padding: 0;
+            border: none;
+            text-align: left;
+        }
+        .pull-quote p {
+            font-size: 1.45rem;
+            font-weight: 500;
+            line-height: 1.35;
+            letter-spacing: -0.015em;
+            color: var(--magenta, #A51C60);
+            margin: 0;
+            padding: 1rem 0 1rem 1.5rem;
+            border-left: 3px solid var(--magenta, #A51C60);
+        }
+
+        .skim-callout {
+            background: linear-gradient(180deg, #f8f6fb 0%, #f1edf8 100%);
+            border: 1px solid #e0d8ed;
+            border-radius: 12px;
+            padding: 1.75rem 2rem;
+            margin: 3rem 0;
+        }
+        .skim-callout .label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--magenta, #A51C60);
+            margin: 0 0 0.65rem;
+        }
+        .skim-callout h3 {
+            font-size: 1.075rem;
+            font-weight: 700;
+            margin: 0 0 0.5rem;
+            color: var(--text, #110e1a);
+        }
+        .skim-callout p {
+            font-size: 0.925rem;
+            color: #4a4558;
+            line-height: 1.6;
+            margin: 0 0 1rem;
+        }
+        .skim-callout a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            font-size: 0.875rem;
+            font-weight: 600;
+            color: var(--magenta, #A51C60);
+            text-decoration: none;
+        }
+        .skim-callout a:hover { text-decoration: underline; }
+
+        .faq-list { margin-top: 1rem; }
+        .faq-item {
+            border-top: 1px solid #ebe8f0;
+            padding: 1.5rem 0;
+        }
+        .faq-item:last-child { border-bottom: 1px solid #ebe8f0; }
+        .faq-item h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 0 0 0.6rem;
+        }
+        .faq-item p { margin: 0; }
+
+        .article-footer-cta {
+            background: var(--bg-dark);
+            padding: 5rem 2rem;
+            text-align: center;
+        }
+        .article-footer-cta .inner { max-width: 640px; margin: 0 auto; }
+        .article-footer-cta h2 {
+            font-size: clamp(1.5rem, 3vw, 2rem);
+            font-weight: 700;
+            color: var(--text-light, #f1eff5);
+            line-height: 1.2;
+            letter-spacing: -0.015em;
+            margin: 0 0 1rem;
+        }
+        .article-footer-cta p {
+            font-size: 0.95rem;
+            color: rgba(241,239,245,0.65);
+            line-height: 1.6;
+            margin: 0 0 2rem;
+        }
+        .article-footer-cta .cta-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .article-footer-cta .btn-primary {
+            display: inline-block;
+            padding: 0.85rem 1.85rem;
+            background: var(--magenta, #A51C60);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .article-footer-cta .btn-primary:hover { background: #bd2971; }
+        .article-footer-cta .btn-ghost {
+            display: inline-block;
+            padding: 0.85rem 1.85rem;
+            background: transparent;
+            color: rgba(241,239,245,0.85);
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .article-footer-cta .btn-ghost:hover {
+            border-color: rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.04);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<nav id="main-nav">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo" aria-label="Supero GTM home">
+            <img src="../assets/logo-dark.svg" alt="Supero" height="60">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../revenue-ai-diagnostic.html">AI Revenue Sprint</a></li>
+            <li><a href="../team-performance-diagnostic.html">Team Revenue Sprint</a></li>
+            <li><a href="../full-revenue-diagnostic.html">Full Revenue Sprint</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../perspectives.html">Perspectives</a></li>
+        </ul>
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta btn-primary">Book a conversation</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+</header>
+
+<!-- HERO -->
+<section class="article-hero">
+    <div class="article-hero-inner">
+        <span class="article-eyebrow">Flagship POV &middot; AI in the revenue engine</span>
+        <h1>AI Governance for Revenue Leaders: When Everyone Gets a Superpowered Assistant, Who Runs the Enterprise?</h1>
+        <p class="deck">Intelligence is no longer arriving in the enterprise as a single project. It is showing up across sales, marketing, customer success, finance, HR, and operations. Without structure, AI does not just make the business faster. It makes it faster at becoming inconsistent.</p>
+        <div class="byline">
+            <div class="byline-authors">
+                <div class="byline-avatars">
+                    <img src="../assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn">
+                    <img src="../assets/alex-abbott.png" alt="Alex Abbott">
+                </div>
+                <div class="byline-text">
+                    <p class="names">Cumai Aboul Housn and Alex Abbott</p>
+                    <p class="meta">Supero &middot; 28 April 2026 &middot; 9 min read</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BODY -->
+<article class="article-body">
+    <div class="inner">
+
+        <p class="lede">AI is no longer arriving in the enterprise as a single centralised project. It is showing up across sales, marketing, customer success, finance, HR, and operations through productivity tools, CRM platforms, vendor add-ons, and browser tabs.</p>
+
+        <p>For CROs and CEOs, the real challenge is not simply how to deploy more AI. It is how to keep strategy, accountability, and commercial judgement coherent as AI begins to influence thousands of day-to-day decisions across the revenue engine.</p>
+
+        <p>Without structure, AI does not just make organisations faster. It makes them faster at becoming inconsistent, with drift showing up in customer promises, forecasts, pricing, messaging, risk exposure, and data handling.</p>
+
+        <p>This article sets out a practical leadership lens for enterprise AI: explainability, responsibility, transparency, meaningful human oversight, and disciplined vendor governance.</p>
+
+        <div class="skim-callout">
+            <p class="label">Short on time?</p>
+            <h3>Read the executive brief instead</h3>
+            <p>Five-minute version of this thinking, designed for CROs, CEOs, CCOs, and senior RevOps leaders to share with peers and boards.</p>
+            <a href="./executive-brief-ai-governance.html">Open the executive brief
+                <svg width="14" height="14" viewBox="0 0 12 12" fill="none"><path d="M2 10L10 2M10 2H4M10 2v6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+        </div>
+
+        <h2>The new leadership question</h2>
+
+        <p>Imagine a Monday morning inside a large commercial organisation. Every seller, marketer, customer success manager, and revenue leader opens their laptop and finds a powerful AI assistant waiting for them. It can draft emails, summarise calls, analyse pipeline spreadsheets, prepare QBRs, review contracts, and generate polished output at speed.</p>
+
+        <p>At first, this looks like a breakthrough in productivity. Teams move faster, outputs look cleaner, and work that once took days now happens before lunch.</p>
+
+        <p>Then the cracks appear. A proposal includes a capability that has not been approved. Messaging drifts away from what legal has signed off. AI-generated hiring criteria introduce fairness concerns. A customer receives a confident answer that is wrong. Sensitive information is pasted into a tool that should never have seen it.</p>
+
+        <p>Individually, these moments look small. Collectively, they reveal a more important problem: each assistant may help one person move faster without understanding the enterprise around them.</p>
+
+        <p>That creates the central strategic question for modern commercial leadership:</p>
+
+        <blockquote class="pull-quote">
+            <p>If intelligence is now everywhere, who is actually steering the business?</p>
+        </blockquote>
+
+        <h2>From AI projects to AI sprawl</h2>
+
+        <p>For years, many executive teams asked how to bring AI into the organisation. That question is now outdated because AI is already inside the organisation, embedded into tools teams already use and quietly expanded by vendors over time.</p>
+
+        <p>The harder question is what happens when intelligence is no longer centralised. Instead of one approved initiative, enterprises now face thousands of small moments of AI influence across the business: a recommendation here, a rewritten sentence there, an AI-generated answer to a customer in one region, a commercially meaningful judgement shaped elsewhere.</p>
+
+        <p>Without structure, that does not create a more coherent company. It creates inconsistency.</p>
+
+        <p>For revenue leaders, AI sprawl can show up as:</p>
+        <ul>
+            <li>Different teams making different promises to the same kind of customer.</li>
+            <li>Forecasts influenced by tools nobody has properly validated.</li>
+            <li>Messaging and pricing drifting across regions and channels.</li>
+            <li>Sensitive data being copied into tools that were never approved.</li>
+        </ul>
+
+        <p>You often do not see one catastrophic failure. You see drift in the numbers, in the customer experience, and in the risk profile.</p>
+
+        <h2>Why the EU AI Act matters to CROs</h2>
+
+        <p>Regulation such as the <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener noreferrer">EU AI Act</a> matters not only as a compliance topic, but as a management discipline for how AI should operate inside the enterprise and the revenue engine.</p>
+
+        <p>At a practical level, leadership teams need to operationalise three principles that are often discussed but weakly implemented: explainability, responsibility, and transparency.</p>
+
+        <h3>Explainable AI</h3>
+        <p>Explainability means the enterprise can understand what a system is doing, where it is being used, what logic or model behaviour sits behind its output, and how its limitations are communicated to the people relying on it.</p>
+        <p>For revenue teams, this matters whenever AI touches customers, pricing, commitments, hiring, or financial judgement. A polished answer is not enough if nobody can properly challenge, trace, or explain it.</p>
+
+        <h3>Responsible AI</h3>
+        <p>Responsibility means ownership cannot stay vague. Someone must be accountable for the use case, the data, the risk classification, the human oversight, the vendor dependency, and the consequences when something goes wrong.</p>
+        <p>It also means recognising that not all AI use cases carry equal weight. Tidying an internal paragraph is not the same as screening applicants. Summarising a pipeline call is not the same as influencing a financial decision. Drafting a social post is not the same as making a product or pricing commitment.</p>
+
+        <h3>Transparent AI</h3>
+        <p>Transparency means visibility across the whole lifecycle. Leaders need to know which tools are in use, which teams are using them, what data is flowing through them, which vendors and foundation models sit underneath them, whether outputs can be audited, and whether model changes can be monitored over time.</p>
+        <p>This shifts AI transformation away from a catalogue of exciting use cases and toward a map of influence across the enterprise.</p>
+
+        <h2>Human in the loop is not enough</h2>
+
+        <p>"Human in the loop" sounds reassuring, but in practice it is often weaker than it appears. If a person simply skims an AI-generated answer and approves it because it looks professional, that is not meaningful oversight. It is ritual rather than control.</p>
+
+        <p>Real oversight requires time, context, authority, and the confidence to challenge the machine. The reviewer needs to understand the system's limitations, the risk level of the task, the consequence of error, and when to override or escalate.</p>
+
+        <blockquote class="pull-quote">
+            <p>The difference between genuine judgement and the final click can become commercially material very quickly.</p>
+        </blockquote>
+
+        <h2>Vendor governance is now commercial governance</h2>
+
+        <p>Most enterprises are not building every AI system themselves. They are buying tools with embedded AI, subscribing to platforms that evolve over time, and relying on foundation models hidden inside products they already use.</p>
+
+        <p>That means vendor selection is no longer just software procurement. It is the onboarding of decision-influencing capability into the revenue engine.</p>
+
+        <p>A mature organisation does not try to block every assistant. It gives AI a clear place to operate. It knows which tools are approved, which use cases are acceptable, which risks require stronger controls, where human judgement is non-negotiable, and how systems will be monitored after deployment.</p>
+
+        <h2>What strong AI governance looks like</h2>
+
+        <p>For commercial leaders, a mature operating model for AI often includes:</p>
+        <ul>
+            <li>A clear inventory of which AI tools influence which parts of the revenue engine.</li>
+            <li>Shared ownership across business leaders, legal, security, procurement, and risk functions.</li>
+            <li>Risk classification based on the decision being shaped, not just the tool being used.</li>
+            <li>Real human oversight for customer-facing, people-related, and financially material decisions.</li>
+            <li>Ongoing monitoring for drift, model change, bias, and unintended commercial impact.</li>
+        </ul>
+        <p>This may sound slower than experimentation. In reality, it is what separates experimentation from transformation.</p>
+
+        <h2>What CROs should ask now</h2>
+
+        <p>Senior revenue leaders should be asking questions such as:</p>
+        <ul>
+            <li>Where is AI already influencing customer promises, pricing, pipeline judgement, or forecasting?</li>
+            <li>Which AI-assisted workflows are low-risk productivity aids, and which are edging into binding commercial decisions?</li>
+            <li>Who is accountable for each high-impact use case?</li>
+            <li>Where is "human in the loop" real, and where is it just a final click?</li>
+            <li>Which vendors are quietly introducing AI behaviours into systems the business already depends on?</li>
+        </ul>
+
+        <h2>Frequently asked questions</h2>
+
+        <div class="faq-list">
+
+            <div class="faq-item">
+                <h3>What is AI governance for revenue leaders?</h3>
+                <p>AI governance for revenue leaders is the set of structures, ownership models, controls, and oversight practices that keep AI use aligned to strategy, risk tolerance, and commercial reality across the revenue engine.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>What is AI sprawl in the enterprise?</h3>
+                <p>AI sprawl describes the spread of many small, decentralised AI influences across teams, tools, workflows, and decisions, often without one coherent model of control or accountability.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Why should CROs care about the EU AI Act?</h3>
+                <p>CROs should care because regulation is increasingly shaping how AI can be used in decisions that affect customers, people, pricing, and enterprise accountability. Even before enforcement becomes the main issue, the disciplines behind regulation help commercial teams reduce drift and operate with more control.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is human-in-the-loop enough for enterprise AI?</h3>
+                <p>Not by itself. Human oversight only works when the person reviewing AI output has enough context, authority, and understanding to challenge or stop the system when needed.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How should enterprise teams govern AI vendors?</h3>
+                <p>Teams should govern AI vendors as providers of decision-influencing capability, not just software. That means approved use cases, visibility into data flows, monitoring after deployment, and clear ownership across commercial and control functions.</p>
+            </div>
+
+        </div>
+
+        <h2>Final thought</h2>
+
+        <p>The most important shift is not giving every employee a powerful assistant. It is designing an enterprise that knows how those assistants should behave, what they are allowed to influence, where they must stop, and when human judgement must take over.</p>
+
+        <p><strong>That is the difference between an organisation that merely adopts AI and one that can actually steer it.</strong></p>
+
+    </div>
+</article>
+
+<!-- BOTTOM CTA -->
+<section class="article-footer-cta">
+    <div class="inner">
+        <h2>Ready to put this into your revenue engine?</h2>
+        <p>If you are wrestling with where AI is already shaping your forecast, your messaging, or your customer commitments, this is exactly the conversation we have with CROs and CEOs.</p>
+        <div class="cta-row">
+            <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a conversation</a>
+            <a href="./executive-brief-ai-governance.html" class="btn-ghost">Read the executive brief</a>
+        </div>
+    </div>
+</section>
+
+<footer style="background:var(--bg-dark); border-top:1px solid rgba(255,255,255,0.06);">
+    <div class="container" style="padding-top:4rem; padding-bottom:2rem;">
+        <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr 1fr; gap:2.5rem; margin-bottom:3rem;" class="footer-5col">
+            <div>
+                <a href="../index.html" aria-label="Supero GTM home"><img src="../assets/logo-dark.svg" alt="Supero" height="60" style="margin-bottom:1rem; opacity:0.7;"></a>
+                <p style="font-size:0.8rem; color:rgba(241,239,245,0.4); line-height:1.7; margin:0;">Diagnostic-first firm for B2B revenue leaders, independent of any vendor, methodology, or tool.</p>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Revenue Sprints</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../revenue-ai-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">AI Revenue Sprint</a></li>
+                    <li><a href="../team-performance-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Team Revenue Sprint</a></li>
+                    <li><a href="../full-revenue-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Full Revenue Sprint</a></li>
+                    <li><a href="../full-revenue-diagnostic.html#for-ceos" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">For CEOs: AI Governance</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Proof &amp; Insight</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../case-studies.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Case Studies</a></li>
+                    <li><a href="../perspectives.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Perspectives</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Company</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../index.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Home</a></li>
+                    <li><a href="../about.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">About</a></li>
+                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Newsletter</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Connect</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">LinkedIn</a></li>
+                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Book a conversation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding:1.25rem 0; display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+            <span style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--magenta, #A51C60);">Explainable &middot; Responsible &middot; Transparent</span>
+            <span style="font-size:0.75rem; color:rgba(241,239,245,0.45);">Supero foundations, EU AI Act aligned by design</span>
+            <a href="../ai-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.7); text-decoration:underline;">Read our AI Policy</a>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+            <p style="font-size:0.75rem; color:rgba(241,239,245,0.3); margin:0;">&copy; 2026 Supero Ltd</p>
+            <div style="display:flex; gap:1.5rem;">
+                <a href="../ai-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">AI Policy</a>
+                <a href="../privacy-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Privacy Policy</a>
+                <a href="../terms.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Terms</a>
+                <a href="../cookie-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../analytics.js" defer></script>
+<script>
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+let overlay = null;
+function openMobileNav() {
+    if (overlay) return;
+    overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;background:#0D0618;z-index:9999;display:flex;flex-direction:column;padding:6rem 2rem 2rem;gap:0.25rem;overflow-y:auto;';
+    navLinks.querySelectorAll('a').forEach(a => {
+        const link = document.createElement('a');
+        link.href = a.href;
+        link.textContent = a.textContent;
+        link.style.cssText = 'font-size:1.25rem;color:rgba(241,239,245,0.85);text-decoration:none;padding:0.75rem 0;font-family:DM Sans,sans-serif;font-weight:600;';
+        link.addEventListener('click', closeMobileNav);
+        overlay.appendChild(link);
+    });
+    const cta = document.createElement('a');
+    cta.href = 'https://calendly.com/alex_abbott/chat-with-alex';
+    cta.target = '_blank';
+    cta.textContent = 'Book a conversation';
+    cta.style.cssText = 'font-size:1rem;color:#fff;text-decoration:none;padding:0.75rem 1.5rem;font-family:DM Sans,sans-serif;font-weight:600;background:#A51C60;border-radius:100px;margin-top:1.5rem;display:inline-block;';
+    overlay.appendChild(cta);
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>';
+    closeBtn.style.cssText = 'position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;cursor:pointer;padding:0.5rem;';
+    closeBtn.addEventListener('click', closeMobileNav);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+}
+function closeMobileNav() { if (overlay) { overlay.remove(); overlay = null; document.body.style.overflow = ''; } }
+hamburger.addEventListener('click', () => { if (overlay) closeMobileNav(); else openMobileNav(); });
+</script>
+
+</body>
+</html>

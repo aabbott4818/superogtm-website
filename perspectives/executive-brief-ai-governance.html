@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Executive Brief: When Everyone Gets a Superpowered Assistant, Who Runs the Enterprise? | Supero</title>
+    <meta name="description" content="A 5-minute executive brief by Cumai Aboul Housn and Alex Abbott on AI in the revenue engine. For CROs, CEOs, and senior revenue leaders.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.superogtm.com/perspectives/executive-brief-ai-governance.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Executive Brief: When Everyone Gets a Superpowered Assistant, Who Runs the Enterprise?">
+    <meta property="og:description" content="Five-minute brief for CROs and CEOs on AI sprawl, accountability, and steering the revenue engine.">
+    <meta property="og:url" content="https://www.superogtm.com/perspectives/executive-brief-ai-governance.html">
+    <meta property="article:author" content="Cumai Aboul Housn">
+    <meta property="article:author" content="Alex Abbott">
+    <meta property="article:published_time" content="2026-04-28">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41ZC9G3HZJ"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-41ZC9G3HZJ');</script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Executive Brief: When Everyone Gets a Superpowered Assistant, Who Runs the Enterprise?",
+      "description": "Five-minute executive brief for CROs and CEOs on AI sprawl, accountability, and steering the revenue engine.",
+      "author": [
+        {
+          "@type": "Person",
+          "name": "Cumai Aboul Housn",
+          "worksFor": { "@type": "Organization", "name": "Supero" }
+        },
+        {
+          "@type": "Person",
+          "name": "Alex Abbott",
+          "worksFor": { "@type": "Organization", "name": "Supero" },
+          "url": "https://www.superogtm.com/about.html#alex"
+        }
+      ],
+      "datePublished": "2026-04-28",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Supero",
+        "url": "https://www.superogtm.com"
+      },
+      "mainEntityOfPage": "https://www.superogtm.com/perspectives/executive-brief-ai-governance.html"
+    }
+    </script>
+
+    <style>
+        .footer-5col { grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; }
+        @media (max-width: 900px) { .footer-5col { grid-template-columns: 1fr 1fr !important; } }
+        @media (max-width: 560px) { .footer-5col { grid-template-columns: 1fr !important; } }
+
+        .brief-hero {
+            background: var(--bg-dark);
+            padding: 6.5rem 2rem 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .brief-hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse at 80% 0%, rgba(165,28,96,0.10) 0%, transparent 55%);
+            pointer-events: none;
+        }
+        .brief-hero-inner { max-width: 760px; margin: 0 auto; position: relative; }
+        .brief-eyebrow {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.14em;
+            color: var(--magenta, #A51C60);
+            margin: 0 0 1.25rem;
+            padding: 0.4rem 0.9rem;
+            border: 1px solid rgba(165,28,96,0.4);
+            border-radius: 100px;
+            background: rgba(165,28,96,0.06);
+        }
+        .brief-hero h1 {
+            font-size: clamp(1.75rem, 3.8vw, 2.6rem);
+            font-weight: 700;
+            color: var(--text-light, #f1eff5);
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin: 0 0 1.25rem;
+        }
+        .brief-hero .subtitle {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--magenta, #A51C60);
+            letter-spacing: 0.005em;
+            margin: 0 0 2rem;
+        }
+        .byline {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+        }
+        .byline-authors { display: flex; align-items: center; gap: 0.75rem; }
+        .byline-avatars { display: flex; }
+        .byline-avatars img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 2px solid var(--bg-dark);
+            object-fit: cover;
+        }
+        .byline-avatars img:not(:first-child) { margin-left: -12px; }
+        .byline-text p { margin: 0; line-height: 1.4; }
+        .byline-text .names { font-size: 0.85rem; font-weight: 600; color: rgba(241,239,245,0.9); }
+        .byline-text .meta { font-size: 0.75rem; color: rgba(241,239,245,0.45); }
+
+        .brief-body { background: #fff; padding: 4rem 2rem 4.5rem; }
+        .brief-body .inner { max-width: 720px; margin: 0 auto; }
+        .brief-body h2 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--text, #110e1a);
+            line-height: 1.25;
+            letter-spacing: -0.01em;
+            margin: 2.75rem 0 1rem;
+        }
+        .brief-body h2:first-of-type { margin-top: 0; }
+        .brief-body h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: var(--text, #110e1a);
+            margin: 1.75rem 0 0.5rem;
+        }
+        .brief-body p {
+            font-size: 1rem;
+            color: #2c2737;
+            line-height: 1.75;
+            margin: 0 0 1rem;
+        }
+        .brief-body ul {
+            margin: 0 0 1.5rem 0;
+            padding: 0;
+            list-style: none;
+        }
+        .brief-body ul li {
+            font-size: 1rem;
+            color: #2c2737;
+            line-height: 1.65;
+            margin-bottom: 0.85rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+        .brief-body ul li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.7rem;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--magenta, #A51C60);
+        }
+        .brief-body strong { color: var(--text, #110e1a); font-weight: 700; }
+
+        .brief-callout {
+            background: linear-gradient(180deg, #fbf6f9 0%, #f5edf3 100%);
+            border-left: 4px solid var(--magenta, #A51C60);
+            border-radius: 0 10px 10px 0;
+            padding: 1.5rem 1.75rem;
+            margin: 2.5rem 0;
+        }
+        .brief-callout p {
+            font-size: 1.05rem;
+            color: var(--text, #110e1a);
+            line-height: 1.55;
+            font-weight: 500;
+            margin: 0;
+        }
+
+        .deep-dive {
+            margin-top: 3rem;
+            padding: 1.75rem 2rem;
+            background: #f8f6fb;
+            border: 1px solid #e5dded;
+            border-radius: 12px;
+            display: flex;
+            gap: 1.5rem;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .deep-dive-text { flex: 1; min-width: 240px; }
+        .deep-dive-text .label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.12em;
+            color: var(--magenta, #A51C60);
+            margin: 0 0 0.5rem;
+        }
+        .deep-dive-text h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin: 0 0 0.35rem;
+            color: var(--text, #110e1a);
+        }
+        .deep-dive-text p {
+            font-size: 0.875rem;
+            color: #4a4558;
+            line-height: 1.55;
+            margin: 0;
+        }
+        .deep-dive a {
+            display: inline-block;
+            padding: 0.65rem 1.4rem;
+            background: var(--magenta, #A51C60);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            white-space: nowrap;
+            transition: background 0.2s;
+        }
+        .deep-dive a:hover { background: #bd2971; }
+
+        .brief-footer-cta {
+            background: var(--bg-dark);
+            padding: 4.5rem 2rem;
+            text-align: center;
+        }
+        .brief-footer-cta .inner { max-width: 600px; margin: 0 auto; }
+        .brief-footer-cta h2 {
+            font-size: clamp(1.4rem, 2.8vw, 1.9rem);
+            font-weight: 700;
+            color: var(--text-light, #f1eff5);
+            line-height: 1.25;
+            letter-spacing: -0.015em;
+            margin: 0 0 1rem;
+        }
+        .brief-footer-cta p {
+            font-size: 0.95rem;
+            color: rgba(241,239,245,0.65);
+            line-height: 1.6;
+            margin: 0 0 1.75rem;
+        }
+        .brief-footer-cta .cta-row {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .brief-footer-cta .btn-primary {
+            display: inline-block;
+            padding: 0.85rem 1.85rem;
+            background: var(--magenta, #A51C60);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: background 0.2s;
+        }
+        .brief-footer-cta .btn-primary:hover { background: #bd2971; }
+        .brief-footer-cta .btn-ghost {
+            display: inline-block;
+            padding: 0.85rem 1.85rem;
+            background: transparent;
+            color: rgba(241,239,245,0.85);
+            text-decoration: none;
+            border: 1px solid rgba(255,255,255,0.18);
+            border-radius: 100px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .brief-footer-cta .btn-ghost:hover {
+            border-color: rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.04);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<nav id="main-nav">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo" aria-label="Supero GTM home">
+            <img src="../assets/logo-dark.svg" alt="Supero" height="60">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../revenue-ai-diagnostic.html">AI Revenue Sprint</a></li>
+            <li><a href="../team-performance-diagnostic.html">Team Revenue Sprint</a></li>
+            <li><a href="../full-revenue-diagnostic.html">Full Revenue Sprint</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../perspectives.html">Perspectives</a></li>
+        </ul>
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta btn-primary">Book a conversation</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+</header>
+
+<section class="brief-hero">
+    <div class="brief-hero-inner">
+        <span class="brief-eyebrow">Executive brief &middot; 5 min read</span>
+        <h1>When Everyone Gets a Superpowered Assistant, Who Runs the Enterprise?</h1>
+        <p class="subtitle">For CROs, CEOs, and senior revenue leaders.</p>
+        <div class="byline">
+            <div class="byline-authors">
+                <div class="byline-avatars">
+                    <img src="../assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn">
+                    <img src="../assets/alex-abbott.png" alt="Alex Abbott">
+                </div>
+                <div class="byline-text">
+                    <p class="names">Cumai Aboul Housn and Alex Abbott</p>
+                    <p class="meta">Supero &middot; 28 April 2026</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<article class="brief-body">
+    <div class="inner">
+
+        <h2>Why this matters now</h2>
+        <p>AI is already inside the revenue engine. It is helping sellers draft emails, helping marketers create messaging, helping managers summarise calls, and helping teams move faster across the commercial workflow.</p>
+        <p>That sounds like a productivity win. But for senior revenue leaders, the harder question is not how to give teams more AI. <strong>It is how to stop AI-driven speed becoming AI-driven drift.</strong></p>
+
+        <div class="brief-callout">
+            <p>When intelligence is spread everywhere, the enterprise can become more fragmented unless strategy, standards, and accountability spread with it.</p>
+        </div>
+
+        <h2>What this means for CROs and CEOs</h2>
+        <p>For commercial leaders, the risk rarely appears first as one dramatic failure. It appears as small inconsistencies that compound over time: different promises to similar customers, forecasts shaped by unvalidated tools, pricing and messaging divergence, and sensitive data ending up in the wrong place.</p>
+        <p>That makes this a leadership issue, not a tooling issue. If AI is helping shape customer commitments, pricing decisions, hiring judgements, and commercial narratives, someone must be clearly steering those choices.</p>
+
+        <h2>The real shift</h2>
+        <p>The enterprise is moving from isolated AI projects to AI sprawl. Intelligence is no longer sitting inside one approved system. It is arriving through CRM platforms, productivity suites, embedded vendor features, and day-to-day workflows across the business.</p>
+        <p>That means the question has changed. It is no longer "How do we bring AI into the organisation?" It is "How do we govern a business where AI is already influencing thousands of small decisions?"</p>
+
+        <h2>Three disciplines that matter</h2>
+
+        <h3>Explainability</h3>
+        <p>Leaders need to understand what a system is doing, where it is being used, and whether its outputs can be trusted, challenged, and explained.</p>
+
+        <h3>Responsibility</h3>
+        <p>Ownership cannot stay vague. Someone must be accountable for the use case, the data, the level of risk, the oversight model, and the consequences when something goes wrong.</p>
+
+        <h3>Transparency</h3>
+        <p>The organisation needs visibility into which tools are in use, what data is flowing through them, which vendors sit underneath them, and whether decisions can be audited later.</p>
+
+        <h2>Human in the loop, or just the final click?</h2>
+        <p>"Human in the loop" often sounds safer than it is. If people are only approving polished AI output without enough context or authority to challenge it, the human is not really in control.</p>
+        <p>For revenue leaders, meaningful oversight matters most where AI touches customers, people, and money. <strong>That is where judgement must be explicit, not ceremonial.</strong></p>
+
+        <h2>Where to start</h2>
+        <p>Senior revenue leaders do not need to pause all AI adoption. They do need a clearer operating model. A practical starting agenda:</p>
+        <ul>
+            <li>Map where AI is already influencing customer-facing and revenue-critical workflows.</li>
+            <li>Separate low-risk productivity use cases from high-impact commercial decisions.</li>
+            <li>Assign clear ownership for the highest-risk use cases.</li>
+            <li>Test whether "human oversight" is real or merely a final sign-off.</li>
+            <li>Review vendors as providers of decision-influencing capability, not just software.</li>
+        </ul>
+
+        <h2>A useful way to share this</h2>
+        <p>This brief works best as a conversation opener with other senior leaders because it does not argue against AI adoption. It argues for stronger commercial steering as AI spreads.</p>
+        <p>It is suitable for sending to CROs, CEOs, heads of sales, heads of RevOps, and board-level stakeholders who are asking how to move faster without losing control.</p>
+
+        <h2>Closing point</h2>
+        <p>Giving every employee a superpowered assistant does not automatically make the enterprise smarter. Without explainability, responsibility, transparency, and real oversight, it can simply make the organisation faster at becoming inconsistent.</p>
+        <p><strong>The winners in the next phase will be the organisations that treat AI not as a gadget for individual productivity, but as a set of capabilities that must be deliberately steered from the top.</strong></p>
+
+        <div class="deep-dive">
+            <div class="deep-dive-text">
+                <p class="label">Want the long view?</p>
+                <h3>Read the full article</h3>
+                <p>The deeper version of this thinking, with detail on AI sprawl, the EU AI Act, vendor governance, and what strong AI governance looks like in practice.</p>
+            </div>
+            <a href="./ai-governance-revenue-leaders.html">Open the article</a>
+        </div>
+
+    </div>
+</article>
+
+<section class="brief-footer-cta">
+    <div class="inner">
+        <h2>Talk to Supero</h2>
+        <p>If this is the conversation you are having internally, it is the conversation we have with CROs and CEOs. Supero diagnoses where AI is already shaping your revenue engine and where it needs structure.</p>
+        <div class="cta-row">
+            <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a conversation</a>
+            <a href="../revenue-ai-diagnostic.html" class="btn-ghost">See the AI Revenue Sprint</a>
+        </div>
+    </div>
+</section>
+
+<footer style="background:var(--bg-dark); border-top:1px solid rgba(255,255,255,0.06);">
+    <div class="container" style="padding-top:4rem; padding-bottom:2rem;">
+        <div style="display:grid; grid-template-columns:1.5fr 1fr 1fr 1fr 1fr; gap:2.5rem; margin-bottom:3rem;" class="footer-5col">
+            <div>
+                <a href="../index.html" aria-label="Supero GTM home"><img src="../assets/logo-dark.svg" alt="Supero" height="60" style="margin-bottom:1rem; opacity:0.7;"></a>
+                <p style="font-size:0.8rem; color:rgba(241,239,245,0.4); line-height:1.7; margin:0;">Diagnostic-first firm for B2B revenue leaders, independent of any vendor, methodology, or tool.</p>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Revenue Sprints</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../revenue-ai-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">AI Revenue Sprint</a></li>
+                    <li><a href="../team-performance-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Team Revenue Sprint</a></li>
+                    <li><a href="../full-revenue-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Full Revenue Sprint</a></li>
+                    <li><a href="../full-revenue-diagnostic.html#for-ceos" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">For CEOs: AI Governance</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Proof &amp; Insight</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../case-studies.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Case Studies</a></li>
+                    <li><a href="../perspectives.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Perspectives</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Company</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../index.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Home</a></li>
+                    <li><a href="../about.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">About</a></li>
+                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Newsletter</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Connect</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">LinkedIn</a></li>
+                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Book a conversation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding:1.25rem 0; display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+            <span style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--magenta, #A51C60);">Explainable &middot; Responsible &middot; Transparent</span>
+            <span style="font-size:0.75rem; color:rgba(241,239,245,0.45);">Supero foundations, EU AI Act aligned by design</span>
+            <a href="../ai-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.7); text-decoration:underline;">Read our AI Policy</a>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+            <p style="font-size:0.75rem; color:rgba(241,239,245,0.3); margin:0;">&copy; 2026 Supero Ltd</p>
+            <div style="display:flex; gap:1.5rem;">
+                <a href="../ai-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">AI Policy</a>
+                <a href="../privacy-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Privacy Policy</a>
+                <a href="../terms.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Terms</a>
+                <a href="../cookie-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../analytics.js" defer></script>
+<script>
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+let overlay = null;
+function openMobileNav() {
+    if (overlay) return;
+    overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;background:#0D0618;z-index:9999;display:flex;flex-direction:column;padding:6rem 2rem 2rem;gap:0.25rem;overflow-y:auto;';
+    navLinks.querySelectorAll('a').forEach(a => {
+        const link = document.createElement('a');
+        link.href = a.href;
+        link.textContent = a.textContent;
+        link.style.cssText = 'font-size:1.25rem;color:rgba(241,239,245,0.85);text-decoration:none;padding:0.75rem 0;font-family:DM Sans,sans-serif;font-weight:600;';
+        link.addEventListener('click', closeMobileNav);
+        overlay.appendChild(link);
+    });
+    const cta = document.createElement('a');
+    cta.href = 'https://calendly.com/alex_abbott/chat-with-alex';
+    cta.target = '_blank';
+    cta.textContent = 'Book a conversation';
+    cta.style.cssText = 'font-size:1rem;color:#fff;text-decoration:none;padding:0.75rem 1.5rem;font-family:DM Sans,sans-serif;font-weight:600;background:#A51C60;border-radius:100px;margin-top:1.5rem;display:inline-block;';
+    overlay.appendChild(cta);
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>';
+    closeBtn.style.cssText = 'position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;cursor:pointer;padding:0.5rem;';
+    closeBtn.addEventListener('click', closeMobileNav);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+}
+function closeMobileNav() { if (overlay) { overlay.remove(); overlay = null; document.body.style.overflow = ''; } }
+hamburger.addEventListener('click', () => { if (overlay) closeMobileNav(); else openMobileNav(); });
+</script>
+
+</body>
+</html>
