@@ -1,0 +1,213 @@
+/* Read it with your AI component
+   Works inside both magenta-accent (article, CFO brief) and teal-accent (NED brief) contexts.
+   Accent is set via --ai-accent and --ai-accent-dark CSS custom properties on the .ai-prompt-card.
+*/
+.ai-prompt-card {
+    --ai-accent: #A51C60;
+    --ai-accent-dark: #7B2D8E;
+    --ai-accent-soft: rgba(165, 28, 96, 0.08);
+    --ai-accent-border: rgba(165, 28, 96, 0.25);
+
+    background: #faf8fd;
+    border: 1px solid #e6ddf0;
+    border-radius: 16px;
+    padding: 2rem 2rem 1.5rem;
+    margin: 2.5rem 0;
+    position: relative;
+    overflow: hidden;
+}
+.ai-prompt-card.is-teal {
+    --ai-accent: #0d9488;
+    --ai-accent-dark: #14b8a6;
+    --ai-accent-soft: rgba(45, 212, 191, 0.08);
+    --ai-accent-border: rgba(45, 212, 191, 0.25);
+
+    background: #f5fbfa;
+    border-color: rgba(45, 212, 191, 0.2);
+}
+.ai-prompt-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 0% 0%, var(--ai-accent-soft) 0%, transparent 60%);
+    pointer-events: none;
+}
+
+.ai-prompt-header {
+    position: relative;
+    margin-bottom: 1.35rem;
+}
+.ai-prompt-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: 0.7rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ai-accent);
+    padding: 0.3rem 0.75rem;
+    border: 1px solid var(--ai-accent-border);
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.85rem;
+}
+.ai-prompt-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #110e1a;
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    margin: 0 0 0.5rem;
+}
+.ai-prompt-desc {
+    font-size: 0.925rem;
+    line-height: 1.6;
+    color: #4a4558;
+    margin: 0;
+    max-width: 640px;
+}
+
+/* Persona tabs */
+.ai-prompt-tabs {
+    position: relative;
+    display: flex;
+    gap: 0.4rem;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+.ai-prompt-tab {
+    padding: 0.55rem 1rem;
+    background: #fff;
+    border: 1px solid #e6ddf0;
+    border-radius: 100px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.825rem;
+    font-weight: 600;
+    color: #4a4558;
+    cursor: pointer;
+    transition: all 0.18s ease;
+}
+.ai-prompt-tab:hover {
+    border-color: var(--ai-accent);
+    color: var(--ai-accent);
+}
+.ai-prompt-tab.is-active {
+    background: linear-gradient(135deg, var(--ai-accent) 0%, var(--ai-accent-dark) 100%);
+    border-color: var(--ai-accent);
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(165, 28, 96, 0.15);
+}
+.ai-prompt-card.is-teal .ai-prompt-tab.is-active {
+    box-shadow: 0 2px 8px rgba(13, 148, 136, 0.15);
+}
+
+/* Prompt preview */
+.ai-prompt-preview {
+    position: relative;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.1rem;
+}
+.ai-prompt-preview-label {
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--ai-accent);
+    margin-bottom: 0.5rem;
+}
+.ai-prompt-preview-text {
+    font-size: 0.875rem;
+    line-height: 1.6;
+    color: #2c2737;
+    margin: 0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+/* LLM buttons row */
+.ai-prompt-buttons {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.6rem;
+    margin-bottom: 1rem;
+}
+@media (max-width: 620px) {
+    .ai-prompt-buttons { grid-template-columns: 1fr 1fr; }
+}
+.ai-prompt-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    padding: 0.8rem 0.9rem;
+    background: #0D0618;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    text-decoration: none !important;
+    cursor: pointer;
+    transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
+}
+.ai-prompt-btn:hover {
+    background: #1a0d2b;
+    border-color: var(--ai-accent);
+    transform: translateY(-1px);
+    color: #ffffff !important;
+}
+.ai-prompt-btn svg { flex-shrink: 0; }
+.ai-prompt-btn .ai-logo {
+    width: 18px; height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Foot row: copy button and caveat */
+.ai-prompt-foot {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-top: 0.85rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+.ai-prompt-copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: transparent;
+    border: none;
+    padding: 0.3rem 0;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--ai-accent);
+    cursor: pointer;
+}
+.ai-prompt-copy:hover { text-decoration: underline; }
+.ai-prompt-copy.is-copied { color: #0d9488; }
+.ai-prompt-caveat {
+    font-size: 0.75rem;
+    color: #6b6680;
+    font-style: italic;
+    margin: 0;
+    flex: 1;
+    text-align: right;
+}
+@media (max-width: 560px) {
+    .ai-prompt-caveat { text-align: left; }
+}
+
+/* Print: hide the component - briefs and article read fine without it */
+@media print {
+    .ai-prompt-card { display: none !important; }
+}

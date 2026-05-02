@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI and the board's fiduciary view | NED Brief | Supero</title>
+    <meta name="description" content="A one-page brief for a non-executive director. A plain-English risk matrix, six questions to table at the next board meeting, and a minutes-ready paragraph for the risk committee. Companion to The White-Collar Horse.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="AI and the board's fiduciary view">
+    <meta property="og:description" content="A one-page brief for a non-executive director. A plain-English risk matrix, six questions to table at the next board meeting, and a minutes-ready paragraph for the risk committee.">
+    <meta property="og:url" content="https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html">
+    <meta property="og:image" content="https://www.superogtm.com/assets/wch/hero.png">
+    <meta property="article:author" content="Cumai Aboul Housn">
+    <meta property="article:author" content="Alex Abbott">
+    <meta property="article:published_time" content="2026-05-02">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./_wch-prompt.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41ZC9G3HZJ"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-41ZC9G3HZJ');</script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "AI and the board's fiduciary view",
+      "description": "A one-page brief for a non-executive director. A plain-English risk matrix, six questions to table at the next board meeting, and a minutes-ready paragraph for the risk committee.",
+      "image": "https://www.superogtm.com/assets/wch/hero.png",
+      "author": [
+        { "@type": "Person", "name": "Cumai Aboul Housn", "jobTitle": "Enterprise Transformation Architect, AI and Digital Innovation", "worksFor": { "@type": "Organization", "name": "Supero" } },
+        { "@type": "Person", "name": "Alex Abbott", "jobTitle": "Founder and Chief Revenue Officer", "worksFor": { "@type": "Organization", "name": "Supero" } }
+      ],
+      "datePublished": "2026-05-02",
+      "dateModified": "2026-05-02",
+      "publisher": { "@type": "Organization", "name": "Supero", "url": "https://www.superogtm.com", "logo": { "@type": "ImageObject", "url": "https://www.superogtm.com/assets/logo-dark.svg" } },
+      "mainEntityOfPage": "https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html",
+      "isPartOf": { "@type": "Article", "@id": "https://www.superogtm.com/perspectives/white-collar-horse.html#article" }
+    }
+    </script>
+
+    <style>
+        .footer-5col { grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; }
+        @media (max-width: 900px) { .footer-5col { grid-template-columns: 1fr 1fr !important; } }
+        @media (max-width: 560px) { .footer-5col { grid-template-columns: 1fr !important; } }
+
+        /* NED brief uses teal accent (governance lane) instead of magenta for primary affordances.
+           Magenta is retained for brand wordmark and CTA buttons only. */
+
+        .brief-hero {
+            background: var(--bg-dark);
+            padding: 7rem 2rem 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .brief-hero::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 15% 0%, rgba(45,212,191,0.10) 0%, transparent 55%);
+            pointer-events: none;
+        }
+        .brief-hero-inner { max-width: 820px; margin: 0 auto; position: relative; }
+        .brief-eyebrow {
+            display: inline-block;
+            font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.14em;
+            color: #2DD4BF;
+            margin: 0 0 1.25rem; padding: 0.4rem 0.9rem;
+            border: 1px solid rgba(45,212,191,0.4);
+            border-radius: 100px;
+            background: rgba(45,212,191,0.06);
+        }
+        .brief-hero h1 {
+            font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+            font-weight: 700; color: var(--text-light, #f1eff5);
+            line-height: 1.15; letter-spacing: -0.02em;
+            margin: 0 0 1rem;
+        }
+        .brief-hero .deck {
+            font-size: 1rem; color: rgba(241,239,245,0.68);
+            line-height: 1.6; margin: 0 0 2rem; max-width: 680px;
+        }
+        .brief-meta {
+            display: flex; align-items: center; gap: 1.25rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            flex-wrap: wrap;
+        }
+        .brief-byline { display: flex; align-items: center; gap: 0.75rem; }
+        .brief-avatars { display: flex; }
+        .brief-avatars img {
+            width: 36px; height: 36px; border-radius: 50%;
+            border: 2px solid var(--bg-dark); object-fit: cover;
+        }
+        .brief-avatars img:not(:first-child) { margin-left: -10px; }
+        .brief-byline-text p { margin: 0; line-height: 1.3; }
+        .brief-byline-text .names { font-size: 0.825rem; font-weight: 600; color: rgba(241,239,245,0.9); }
+        .brief-byline-text .meta { font-size: 0.72rem; color: rgba(241,239,245,0.45); }
+        .brief-actions { margin-left: auto; display: flex; gap: 0.5rem; }
+        .brief-action {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            padding: 0.5rem 1rem; border-radius: 100px;
+            font-size: 0.8rem; font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.15);
+            color: rgba(241,239,245,0.85);
+            text-decoration: none;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .brief-action:hover {
+            border-color: rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.04);
+        }
+
+        .brief-body { background: #fff; padding: 3.5rem 2rem 4rem; }
+        .brief-body .inner { max-width: 820px; margin: 0 auto; }
+
+        .brief-lede {
+            font-size: 1.075rem;
+            color: var(--text, #110e1a);
+            line-height: 1.7;
+            margin: 0 0 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ebe8f0;
+            font-weight: 500;
+        }
+
+        .brief-body h2 {
+            font-size: 1.25rem; font-weight: 700;
+            color: var(--text, #110e1a);
+            line-height: 1.25; letter-spacing: -0.01em;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid #ebe8f0;
+        }
+        .brief-body h2 .count {
+            display: inline-block;
+            width: 28px; height: 28px; line-height: 28px;
+            text-align: center;
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: #fff; border-radius: 50%;
+            font-size: 0.8rem; font-weight: 700;
+            margin-right: 0.6rem;
+            vertical-align: middle;
+        }
+        .brief-body p {
+            font-size: 0.975rem; color: #2c2737;
+            line-height: 1.75; margin: 0 0 1rem;
+        }
+        .brief-body strong { color: var(--text, #110e1a); font-weight: 700; }
+
+        /* Risk matrix */
+        .risk-table {
+            border: 1px solid #ebe8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 1.5rem 0;
+            background: #fff;
+        }
+        .risk-row {
+            display: grid;
+            grid-template-columns: 1.1fr 1.6fr 1.6fr;
+            border-bottom: 1px solid #ebe8f0;
+        }
+        .risk-row:last-child { border-bottom: none; }
+        .risk-row.head {
+            background: rgba(45,212,191,0.08);
+            font-size: 0.68rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.1em;
+            color: #0d9488;
+        }
+        .risk-cell {
+            padding: 0.95rem 1.1rem;
+            font-size: 0.9rem; line-height: 1.55; color: #2c2737;
+            border-right: 1px solid #ebe8f0;
+        }
+        .risk-cell:last-child { border-right: none; }
+        .risk-row.head .risk-cell { padding: 0.7rem 1.1rem; }
+        .risk-row:not(.head) .risk-cell:first-child {
+            font-weight: 700; color: var(--text, #110e1a);
+        }
+        @media (max-width: 700px) {
+            .risk-row { grid-template-columns: 1fr; }
+            .risk-row.head { display: none; }
+            .risk-cell { border-right: none; border-bottom: 1px solid #f4f0f8; }
+            .risk-row .risk-cell:first-child { background: rgba(45,212,191,0.08); font-weight: 700; }
+        }
+
+        /* Numbered question list - teal */
+        .q-list {
+            list-style: none;
+            padding: 0; margin: 1rem 0 1.5rem;
+            counter-reset: qcount;
+        }
+        .q-list li {
+            counter-increment: qcount;
+            padding: 1rem 0 1rem 2.5rem;
+            border-bottom: 1px solid #ebe8f0;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.65;
+            color: #2c2737;
+        }
+        .q-list li:last-child { border-bottom: none; }
+        .q-list li::before {
+            content: counter(qcount);
+            position: absolute; left: 0; top: 1rem;
+            width: 28px; height: 28px;
+            line-height: 28px; text-align: center;
+            background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%);
+            color: #fff; border-radius: 50%;
+            font-size: 0.75rem; font-weight: 700;
+        }
+
+        /* Minutes paragraph block */
+        .minutes-block {
+            margin: 1.25rem 0 0.5rem;
+            padding: 1.25rem 1.5rem;
+            background: #fbfdfd;
+            border: 1px dashed rgba(45,212,191,0.4);
+            border-radius: 10px;
+            position: relative;
+        }
+        .minutes-block .label {
+            font-size: 0.65rem; font-weight: 700;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            color: #0d9488; margin: 0 0 0.65rem;
+        }
+        .minutes-block p {
+            font-size: 0.925rem; color: #2c2737;
+            line-height: 1.7; margin: 0;
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+        }
+        .minutes-block .note {
+            font-size: 0.78rem; color: #4a4558;
+            margin-top: 0.85rem; padding-top: 0.6rem;
+            border-top: 1px solid rgba(45,212,191,0.2);
+            font-style: italic;
+        }
+
+        /* Closing card */
+        .close-card {
+            margin-top: 2.5rem;
+            padding: 1.75rem 2rem;
+            background: linear-gradient(135deg, #f5fbfa 0%, #ecf7f5 100%);
+            border: 1px solid rgba(45,212,191,0.2);
+            border-radius: 14px;
+        }
+        .close-card h3 {
+            font-size: 1.05rem; font-weight: 700;
+            color: var(--text, #110e1a);
+            margin: 0 0 0.6rem; letter-spacing: -0.01em;
+        }
+        .close-card p {
+            font-size: 0.925rem; color: #4a4558;
+            line-height: 1.65; margin: 0 0 1rem;
+        }
+        .close-card .authors-note {
+            font-size: 0.85rem; color: #4a4558;
+            margin: 1rem 0 1.25rem; font-style: italic;
+            padding: 0.85rem 1rem;
+            border-left: 2px solid #14b8a6;
+            background: rgba(255,255,255,0.5);
+        }
+        .close-card .cta-row {
+            display: flex; gap: 0.7rem; flex-wrap: wrap;
+        }
+        .close-card .btn-primary {
+            display: inline-block;
+            padding: 0.7rem 1.35rem;
+            background: var(--magenta, #A51C60);
+            color: #fff !important;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 0.825rem;
+            font-weight: 600;
+        }
+        .close-card .btn-primary:hover { background: #bd2971; }
+        .close-card .btn-ghost {
+            display: inline-block;
+            padding: 0.7rem 1.35rem;
+            background: transparent;
+            color: var(--text, #110e1a) !important;
+            text-decoration: none;
+            border: 1px solid rgba(13,6,24,0.15);
+            border-radius: 100px;
+            font-size: 0.825rem;
+            font-weight: 600;
+        }
+        .close-card .btn-ghost:hover { border-color: rgba(13,6,24,0.4); }
+
+        .related-back {
+            margin-top: 2rem;
+            padding: 1.25rem 1.5rem;
+            border: 1px dashed rgba(45,212,191,0.3);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .related-back a {
+            font-size: 0.85rem;
+            color: #0d9488;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex; align-items: center; gap: 0.4rem;
+        }
+        .related-back a:hover { text-decoration: underline; }
+
+        /* Print */
+        @media print {
+            header, footer, .brief-actions { display: none !important; }
+            body { background: #fff !important; }
+            .brief-hero { background: #fff !important; padding: 1.5rem 0 1rem !important; page-break-inside: avoid; }
+            .brief-hero::before { display: none; }
+            .brief-hero h1, .brief-hero .deck, .brief-byline-text .names, .brief-byline-text .meta { color: #110e1a !important; }
+            .brief-avatars img { border-color: #fff !important; }
+            .brief-body { padding: 0.5rem 0 1rem !important; }
+            .brief-body h2 { page-break-after: avoid; margin-top: 1.5rem !important; }
+            .risk-row, .q-list li, .minutes-block, .close-card { page-break-inside: avoid; }
+            .close-card .cta-row { display: none; }
+            a { color: #0d9488 !important; text-decoration: none !important; }
+            .related-back { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+<nav id="main-nav">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo" aria-label="Supero GTM home">
+            <img src="../assets/logo-dark.svg" alt="Supero" height="60">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../revenue-ai-diagnostic.html">AI Revenue Sprint</a></li>
+            <li><a href="../team-performance-diagnostic.html">Team Revenue Sprint</a></li>
+            <li><a href="../full-revenue-diagnostic.html">Full Revenue Sprint</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../perspectives.html">Perspectives</a></li>
+        </ul>
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta btn-primary">Book a conversation</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+</header>
+
+<section class="brief-hero">
+    <div class="brief-hero-inner">
+        <span class="brief-eyebrow">NED Brief &middot; Companion to The White-Collar Horse</span>
+        <h1>AI and the board's fiduciary view</h1>
+        <p class="deck">A one-page brief for a non-executive director. A plain-English risk matrix, six questions worth tabling at the next board meeting, and a minutes-ready paragraph for the risk committee. Designed to read in five minutes between dinner and the next board dial-in.</p>
+        <div class="brief-meta">
+            <div class="brief-byline">
+                <div class="brief-avatars">
+                    <img src="../assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn">
+                    <img src="../assets/alex-abbott.png" alt="Alex Abbott">
+                </div>
+                <div class="brief-byline-text">
+                    <p class="names">Cumai Aboul Housn and Alex Abbott</p>
+                    <p class="meta">Supero &middot; 2 May 2026 &middot; 5 min read</p>
+                </div>
+            </div>
+            <div class="brief-actions">
+                <a href="#" class="brief-action" onclick="window.print();return false;" aria-label="Print this brief">
+                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M4 4V1h8v3M4 11H2V5h12v6h-2M4 9h8v6H4V9z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                    Print or save PDF
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<article class="brief-body">
+    <div class="inner">
+
+        <p class="brief-lede">AI is now embedded inside most of the executive systems that the board oversees. It is shaping commercial decisions, customer experience, and workforce judgement. For a non-executive director, the question is not whether the executive team is using AI well. It is whether the board has the visibility, the documentation, and the questions in hand to discharge its duties as the use of AI scales.</p>
+
+        <!-- AI prompt component (teal variant) -->
+        <div class="ai-prompt-card is-teal" data-wch-prompts>
+            <div class="ai-prompt-header">
+                <div class="ai-prompt-eyebrow">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L9.5 5.5L14 7L9.5 8.5L8 13L6.5 8.5L2 7L6.5 5.5L8 1Z" fill="currentColor"/></svg>
+                    AI companion
+                </div>
+                <h3 class="ai-prompt-title">Read it with your AI</h3>
+                <p class="ai-prompt-desc">Five minutes between dinner and the next dial-in? Pick the role, then pick your AI. We will hand it the article, the brief, and a prompt shaped for your seat at the table.</p>
+            </div>
+            <div class="ai-prompt-tabs" role="tablist">
+                <button class="ai-prompt-tab" data-persona="cro" role="tab" aria-selected="false">For a CRO</button>
+                <button class="ai-prompt-tab" data-persona="ceo" role="tab" aria-selected="false">For a CEO</button>
+                <button class="ai-prompt-tab is-active" data-persona="cfo" role="tab" aria-selected="true">For a CFO or NED</button>
+            </div>
+            <div class="ai-prompt-preview">
+                <div class="ai-prompt-preview-label">Prompt preview</div>
+                <p class="ai-prompt-preview-text" data-preview>Read The White-Collar Horse and the linked CFO brief. Extract the three financial exposures, the single question most worth asking at the next finance meeting, and a sentence for the risk register.</p>
+            </div>
+            <div class="ai-prompt-buttons">
+                <a href="#" class="ai-prompt-btn" data-llm="chatgpt" target="_blank" rel="noopener noreferrer" aria-label="Open in ChatGPT">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M22.282 9.821a5.985 5.985 0 0 0-.516-4.91 6.046 6.046 0 0 0-6.51-2.9A6.065 6.065 0 0 0 4.981 4.18a5.985 5.985 0 0 0-3.998 2.9 6.046 6.046 0 0 0 .743 7.097 5.98 5.98 0 0 0 .51 4.911 6.05 6.05 0 0 0 6.515 2.9A5.98 5.98 0 0 0 13.26 24a6.05 6.05 0 0 0 5.772-4.206 5.99 5.99 0 0 0 3.997-2.9 6.05 6.05 0 0 0-.747-7.073zM13.26 22.43a4.476 4.476 0 0 1-2.876-1.04l.142-.08 4.774-2.757a.776.776 0 0 0 .392-.681v-6.733l2.018 1.165a.071.071 0 0 1 .038.052v5.583a4.504 4.504 0 0 1-4.488 4.491zM3.6 18.304a4.47 4.47 0 0 1-.535-3.014l.142.085 4.774 2.757a.769.769 0 0 0 .78 0l5.832-3.367v2.33a.072.072 0 0 1-.029.062L9.74 19.95a4.5 4.5 0 0 1-6.14-1.646zM2.34 7.896a4.485 4.485 0 0 1 2.366-1.973V11.6a.766.766 0 0 0 .388.676l5.815 3.355-2.02 1.164a.076.076 0 0 1-.071 0l-4.83-2.79a4.504 4.504 0 0 1-1.65-6.108zm16.573 3.855L13.1 8.388 15.119 7.22a.076.076 0 0 1 .071 0l4.83 2.792a4.5 4.5 0 0 1-.676 8.105v-5.678a.79.79 0 0 0-.413-.687zm2.01-3.023l-.141-.085-4.773-2.782a.776.776 0 0 0-.785 0L9.409 9.23V6.9a.066.066 0 0 1 .028-.061l4.83-2.787a4.5 4.5 0 0 1 6.68 4.66zm-12.64 4.135l-2.02-1.164a.08.08 0 0 1-.038-.057V6.075a4.5 4.5 0 0 1 7.375-3.453l-.142.08L8.704 5.46a.776.776 0 0 0-.393.681zm1.097-2.365l2.602-1.5 2.607 1.5v2.999l-2.597 1.5-2.607-1.5z"/></svg>
+                    ChatGPT
+                </a>
+                <a href="#" class="ai-prompt-btn" data-llm="claude" target="_blank" rel="noopener noreferrer" aria-label="Open in Claude">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="m4.7144 15.9555 4.7174-2.6471.079-.2307-.079-.1275h-.2307l-.7893-.0486-2.6956-.0729-2.3375-.0971-2.2646-.1214-.5707-.1215-.5343-.7042.0546-.3522.4797-.3218.686.0608 1.5179.1032 2.2767.1578 1.6514.0972 2.4468.255h.3886l.0546-.1579-.1336-.0971-.1032-.0972L6.973 9.8356l-2.55-1.6879-1.3356-.9714-.7225-.4918-.3643-.4614-.1578-1.0078.6557-.7225.8803.0607.2246.0607.8925.686 1.9064 1.4754 2.4893 1.8336.3643.3035.1457-.1032.0182-.0728-.164-.2733-1.3539-2.4467-1.445-2.4893-.6435-1.032-.17-.6194c-.0607-.255-.1032-.4674-.1032-.7285L6.287.1335 6.6997 0l.9957.1336.419.3642.6192 1.4147 1.0018 2.2282 1.5543 3.0296.4553.8985.2429.8318.091.255h.1579v-.1457l.1275-1.706.2368-2.0947.2307-2.6957.0789-.7589.3764-.9107.7468-.4918.5828.2793.4797.686-.0668.4433-.2853 1.8517-.5586 2.9021-.3643 1.9429h.2125l.2429-.2429.9835-1.3053 1.6514-2.0643.7286-.8196.85-.9046.5464-.4311h1.0321l.759 1.1293-.34 1.1657-1.0625 1.3478-.8804 1.1414-1.2628 1.7-.7893 1.36.0729.1093.1882-.0183 2.8535-.607 1.5421-.2794 1.8396-.3157.8318.3886.091.3946-.3278.8075-1.967.4857-2.3072.4614-3.4364.8136-.0425.0304.0486.0607 1.5482.1457.6618.0364h1.621l3.0175.2247.7892.522.4736.6376-.079.4857-1.2142.6193-1.6393-.3886-3.825-.9107-1.3113-.3279h-.1822v.1093l1.0929 1.0686 2.0035 1.8092 2.5075 2.3314.1275.5768-.3218.4554-.34-.0486-2.2039-1.6575-.85-.7468-1.9246-1.621h-.1275v.17l.4432.6496 2.3436 3.5214.1214 1.0807-.17.3521-.6071.2125-.6679-.1214-1.3721-1.9246L14.38 17.959l-1.1414-1.9428-.1397.079-.674 7.2552-.3156.3703-.7286.2793-.6071-.4614-.3218-.7468.3218-1.4753.3886-1.9246.3157-1.53.2853-1.9004.17-.6314-.0121-.0425-.1397.0182-1.4328 1.9672-2.1796 2.9446-1.7243 1.8456-.4128.164-.7164-.3704.0667-.6618.4008-.5889 2.386-3.0357 1.4389-1.882.929-1.0868-.0062-.1579h-.0546l-6.3385 4.1164-1.1293.1457-.4857-.4554.0608-.7467.2307-.2429 1.9064-1.3114Z"/></svg>
+                    Claude
+                </a>
+                <a href="#" class="ai-prompt-btn" data-llm="perplexity" target="_blank" rel="noopener noreferrer" aria-label="Open in Perplexity">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M22.3977 7.0896h-2.3106V.0676l-7.5094 6.3542V.1577h-1.1554v6.1966L4.4904 0v7.0896H1.6023v10.3976h2.8882V24l6.932-6.3591v6.2005h1.1554v-6.0469l6.9318 6.1807v-6.4879h2.8882V7.0896zm-3.4657-4.531v4.531h-5.355l5.355-4.531zm-13.2862.0676 4.8691 4.4634H5.6458V2.6262zM2.7576 16.332V8.245h7.8476l-6.1149 6.1147v1.9723H2.7576zm2.8882 5.0404v-3.8852h.0001v-2.6488l5.7763-5.7764v7.0111l-5.7764 5.2993zm12.7086.0248-5.7766-5.1509V9.0618l5.7766 5.7766v6.5588zm2.8882-5.0652h-1.733v-1.9723L13.3948 8.245h7.8478v8.087z"/></svg>
+                    Perplexity
+                </a>
+                <a href="#" class="ai-prompt-btn" data-llm="gemini" target="_blank" rel="noopener noreferrer" aria-label="Open Gemini and paste the prompt">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="#ffffff" aria-hidden="true"><path d="M12 2C11 6.5 7.5 10 3 11c4.5 1 8 4.5 9 9 1-4.5 4.5-8 9-9-4.5-1-8-4.5-9-9z" opacity="0.95"/></svg>
+                    Gemini
+                </a>
+            </div>
+            <div class="ai-prompt-foot">
+                <button class="ai-prompt-copy" data-copy>
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 4V2h10v10h-2M2 5h10v9H2V5z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                    <span data-copy-label>Copy the prompt</span>
+                </button>
+                <p class="ai-prompt-caveat">We use AI to help leaders prepare. We do not use it to replace judgement.</p>
+            </div>
+        </div>
+
+        <h2><span class="count">1</span>The position in three lines</h2>
+
+        <p><strong>The risk is not absence of AI. It is absence of governance over AI that has already arrived.</strong> Inside most enterprises, AI sits across multiple functions, purchased separately, configured locally, and owned nowhere with a full view of consequence. The EU AI Act has already begun to reframe AI as a managed system rather than a clever tool, with literacy obligations live since 2 February 2025 and the wider high-risk regime arriving in stages.</p>
+
+        <p>The board is one of the few bodies in the organisation with the standing to ask the diagnostic questions before the system answers for it.</p>
+
+        <h2><span class="count">2</span>The plain-English risk matrix</h2>
+
+        <p>Three lenses, each with a worst-case the board should be prepared to discuss.</p>
+
+        <div class="risk-table">
+            <div class="risk-row head">
+                <div class="risk-cell">Lens</div>
+                <div class="risk-cell">Where it lands</div>
+                <div class="risk-cell">Worst case</div>
+            </div>
+            <div class="risk-row">
+                <div class="risk-cell">Regulatory</div>
+                <div class="risk-cell">EU AI Act risk classification, AI literacy obligations, documentation of high-risk systems, advance awareness in workplace deployments.</div>
+                <div class="risk-cell">A high-risk AI system identified post-deployment, with documentation reconstructed retrospectively, in front of a regulator who has already asked.</div>
+            </div>
+            <div class="risk-row">
+                <div class="risk-cell">Reputational</div>
+                <div class="risk-cell">Decisions made by AI that affect customers, candidates, or employees, with no clear human owner and no defensible rationale on the day they are challenged.</div>
+                <div class="risk-cell">A material decision attributed to AI that the executive cannot explain, surfacing in a press cycle or customer escalation before it surfaces in a board paper.</div>
+            </div>
+            <div class="risk-row">
+                <div class="risk-cell">Commercial</div>
+                <div class="risk-cell">Value-drift in the revenue engine. AI shaping lead scores, forecasts, pricing, and customer prioritisation in ways that quietly diverge from the strategy the board signed off.</div>
+                <div class="risk-cell">A materially different commercial trajectory from the one approved at strategy day, accompanied by dashboards that look healthier than the underlying numbers.</div>
+            </div>
+        </div>
+
+        <h2><span class="count">3</span>Six questions to table at the next board meeting</h2>
+
+        <p>None of these questions are hostile. They protect the executive team and the board.</p>
+
+        <ol class="q-list">
+            <li>Where in our business is AI currently making, or materially shaping, decisions, and which of those systems are classified high-risk under the EU AI Act?</li>
+            <li>For each system on that list, who is the named human owner with authority to pause, retrain, or withdraw it, and is that authority documented?</li>
+            <li>What is our policy on AI usage at work, when was it last reviewed, and how do we know our employees are operating within it?</li>
+            <li>How do we record and demonstrate meaningful human oversight, particularly for systems that influence customer, employee, or pricing decisions?</li>
+            <li>How is the executive team monitoring value-drift, the slow change in what AI-mediated workflows are optimising for, against the strategy this board approved?</li>
+            <li>If we needed to assert, on demand, that we are operating within EU AI Act obligations, what evidence could we produce in 48 hours?</li>
+        </ol>
+
+        <h2><span class="count">4</span>Minutes-ready paragraph for the risk committee</h2>
+
+        <p>If the board chooses to record its position, the following paragraph is drafted to be transferred directly into the risk committee section of the next set of minutes.</p>
+
+        <div class="minutes-block">
+            <p class="label">Suggested minute</p>
+            <p>The committee noted the increasing use of AI across operational and commercial decisions, including but not limited to lead scoring, forecasting, customer prioritisation, hiring, and performance management. It requested management to maintain and present, at the next sitting, a register of AI systems currently in use, their classification under the EU AI Act, the named human owner accountable for each, and the documented evidence of meaningful human oversight. The committee also requested confirmation that the AI literacy obligations applicable since 2 February 2025 are met by all relevant employees, and that a process for monitoring value-drift in commercial decisioning has been agreed and assigned. Management was asked to flag any high-risk AI system for which the documentation, ownership, or oversight is incomplete, and to propose remediation timelines.</p>
+            <p class="note">Adapt the language to match your committee's existing minute style. The substance, register, classification, ownership, oversight, literacy, drift, remediation, is what carries the discharge of duty.</p>
+        </div>
+
+        <div class="close-card">
+            <h3>The conversation this brief is built for</h3>
+            <p>The most fiduciarily exposed AI decisions in the next twelve months will be the ones the board never saw. Most of those decisions will already be inside an approved system, configured by a function the board does not normally interact with, owned by a person the board has not met. The remedy is not more reporting. It is the right reporting, asked for at the right cadence.</p>
+            <p class="authors-note">Alex Abbott will brief the executive team and prepare the management response. Cumai Aboul Housn carries the technical authority for the board's risk committee and the documentation that supports it.</p>
+            <div class="cta-row">
+                <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary" data-analytics="wch-ned-book">Book a conversation with Alex</a>
+                <a href="../full-revenue-diagnostic.html" class="btn-ghost">Full Revenue Diagnostic</a>
+            </div>
+        </div>
+
+        <div class="related-back">
+            <a href="./white-collar-horse.html">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M10 6H2M2 6l4-4M2 6l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Read the full article: The White-Collar Horse
+            </a>
+        </div>
+
+    </div>
+</article>
+
+<footer style="background:#0D0618; padding:3rem 2rem 2rem; border-top:1px solid rgba(255,255,255,0.06);">
+    <div style="max-width:1200px; margin:0 auto;">
+        <div class="footer-5col" style="display:grid; gap:2.5rem; margin-bottom:2.5rem;">
+            <div>
+                <a href="../index.html" aria-label="Supero GTM home" style="display:inline-block; margin-bottom:1rem;">
+                    <img src="../assets/logo-dark.svg" alt="Supero" height="40">
+                </a>
+                <p style="font-size:0.825rem; color:rgba(241,239,245,0.55); line-height:1.6; margin:0; max-width:280px;">Advisory that helps revenue leaders map, govern, and steer AI through the revenue engine.</p>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Revenue Sprints</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../revenue-ai-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">AI Revenue Sprint</a></li>
+                    <li><a href="../team-performance-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Team Revenue Sprint</a></li>
+                    <li><a href="../full-revenue-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Full Revenue Sprint</a></li>
+                    <li><a href="../full-revenue-diagnostic.html#for-ceos" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">For CEOs: AI Governance</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Proof &amp; Insight</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../case-studies.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Case Studies</a></li>
+                    <li><a href="../perspectives.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Perspectives</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Company</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../index.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Home</a></li>
+                    <li><a href="../about.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">About</a></li>
+                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Newsletter</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Connect</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">LinkedIn</a></li>
+                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Book a conversation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding:1.25rem 0; display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+            <span style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--magenta, #A51C60);">Explainable &middot; Responsible &middot; Transparent</span>
+            <span style="font-size:0.75rem; color:rgba(241,239,245,0.45);">Supero foundations, EU AI Act aligned by design</span>
+            <a href="../ai-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.7); text-decoration:underline;">Read our AI Policy</a>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+            <p style="font-size:0.75rem; color:rgba(241,239,245,0.3); margin:0;">&copy; 2026 Supero Ltd</p>
+            <div style="display:flex; gap:1.5rem;">
+                <a href="../ai-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">AI Policy</a>
+                <a href="../privacy-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Privacy Policy</a>
+                <a href="../terms.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Terms</a>
+                <a href="../cookie-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Cookie Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../analytics.js" defer></script>
+<script src="./_wch-prompt.js" defer></script>
+<script>
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+let overlay = null;
+function openMobileNav() {
+    if (overlay) return;
+    overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;background:#0D0618;z-index:9999;display:flex;flex-direction:column;padding:6rem 2rem 2rem;gap:0.25rem;overflow-y:auto;';
+    navLinks.querySelectorAll('a').forEach(a => {
+        const link = document.createElement('a');
+        link.href = a.href;
+        link.textContent = a.textContent;
+        link.style.cssText = 'font-size:1.25rem;color:rgba(241,239,245,0.85);text-decoration:none;padding:0.75rem 0;font-family:DM Sans,sans-serif;font-weight:600;';
+        link.addEventListener('click', closeMobileNav);
+        overlay.appendChild(link);
+    });
+    const cta = document.createElement('a');
+    cta.href = 'https://calendly.com/alex_abbott/chat-with-alex';
+    cta.target = '_blank';
+    cta.textContent = 'Book a conversation';
+    cta.style.cssText = 'font-size:1rem;color:#fff;text-decoration:none;padding:0.75rem 1.5rem;font-family:DM Sans,sans-serif;font-weight:600;background:#A51C60;border-radius:100px;margin-top:1.5rem;display:inline-block;';
+    overlay.appendChild(cta);
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>';
+    closeBtn.style.cssText = 'position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;cursor:pointer;padding:0.5rem;';
+    closeBtn.addEventListener('click', closeMobileNav);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+}
+function closeMobileNav() { if (overlay) { overlay.remove(); overlay = null; document.body.style.overflow = ''; } }
+hamburger.addEventListener('click', () => { if (overlay) closeMobileNav(); else openMobileNav(); });
+</script>
+
+</body>
+</html>
