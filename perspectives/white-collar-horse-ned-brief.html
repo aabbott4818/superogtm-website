@@ -339,7 +339,45 @@
         .authors-bio .bio-text { font-size: 0.85rem; line-height: 1.55; color: #2C2737; margin: 0; }
         @media (max-width: 680px) { .authors-bio .bio-row { grid-template-columns: 1fr; gap: 1.8rem; } }
 
-</style>
+
+        .key-terms {
+            background: linear-gradient(135deg, rgba(165,28,96,0.04) 0%, rgba(123,45,142,0.04) 100%);
+            border: 1px solid rgba(165,28,96,0.10);
+            border-radius: 14px;
+            padding: 1.75rem 1.85rem;
+            margin: 1.75rem 0 2.25rem;
+        }
+        .key-terms h2 {
+            font-size: 0.72rem !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.13em !important;
+            color: var(--key-terms-accent, #A51C60) !important;
+            margin: 0 0 1.1rem !important;
+            padding: 0 !important;
+            display: block !important;
+        }
+        .key-terms h2::before { content: none !important; }
+        .key-terms-list { margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
+        .key-terms .key-term { margin: 0; }
+        .key-terms dt {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #0D0618;
+            margin: 0 0 0.2rem;
+            line-height: 1.35;
+        }
+        .key-terms dd {
+            font-size: 0.86rem;
+            line-height: 1.55;
+            color: #2C2737;
+            margin: 0;
+            padding: 0;
+        }
+        .key-terms.ned-brief { background: linear-gradient(135deg, rgba(13,148,136,0.04) 0%, rgba(20,184,166,0.04) 100%); border-color: rgba(13,148,136,0.12); }
+        .key-terms.ned-brief h2 { color: #0d9488 !important; }
+
+    </style>
 
     <script type="application/ld+json">
     {
@@ -377,6 +415,47 @@
             "@type": "Answer",
             "text": "A short minutes-ready paragraph: AI is already embedded across executive systems. The board has reviewed the regulatory, reputational and commercial risk profile, and has asked the executive to map where AI is influencing decisions, name the human owner of each, document the EU AI Act risk classification, and report any deployments without those controls in place to the next risk committee."
           }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTermSet",
+      "@id": "https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html#key-terms",
+      "name": "Key terms",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "name": "Fiduciary duty regarding AI",
+          "description": "The board's responsibility to ensure visibility, documentation and challenge of AI use across the organisation. The duty applies whether or not the executive team has formalised an AI strategy.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "EU AI Act literacy obligation",
+          "description": "The requirement under Article 4 of the EU AI Act, live since 2 February 2025, for organisations to ensure adequate AI literacy among staff and management dealing with AI systems.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Risk classification",
+          "description": "The categorisation of an AI deployment under the EU AI Act risk hierarchy: unacceptable, high, limited or minimal. The classification determines documentation, oversight and reporting obligations.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Reversal authority",
+          "description": "The named individual or body with the standing to suspend, redesign or shut down an AI deployment that underperforms or drifts. A core test of governance maturity.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Minutes-ready paragraph",
+          "description": "A short, defensible board-level statement of position on AI risk, written so the chair or company secretary can lift it directly into the formal record without further drafting.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html#key-terms"
         }
       ]
     }
@@ -435,6 +514,34 @@
     <div class="inner">
 
         <p class="brief-lede">AI is now embedded inside most of the executive systems that the board oversees. It is shaping commercial decisions, customer experience, and workforce judgement. For a non-executive director, the question is not whether the executive team is using AI well. It is whether the board has the visibility, the documentation, and the questions in hand to discharge its duties as the use of AI scales.</p>
+
+        <!-- Key terms (AEO defined-term block) -->
+        <section class="key-terms ned-brief" id="key-terms" aria-labelledby="key-terms-heading">
+            <h2 id="key-terms-heading">Key terms</h2>
+            <dl class="key-terms-list">
+                <div class="key-term">
+                    <dt>Fiduciary duty regarding AI</dt>
+                    <dd>The board's responsibility to ensure visibility, documentation and challenge of AI use across the organisation. The duty applies whether or not the executive team has formalised an AI strategy.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>EU AI Act literacy obligation</dt>
+                    <dd>The requirement under Article 4 of the EU AI Act, live since 2 February 2025, for organisations to ensure adequate AI literacy among staff and management dealing with AI systems.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>Risk classification</dt>
+                    <dd>The categorisation of an AI deployment under the EU AI Act risk hierarchy: unacceptable, high, limited or minimal. The classification determines documentation, oversight and reporting obligations.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>Reversal authority</dt>
+                    <dd>The named individual or body with the standing to suspend, redesign or shut down an AI deployment that underperforms or drifts. A core test of governance maturity.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>Minutes-ready paragraph</dt>
+                    <dd>A short, defensible board-level statement of position on AI risk, written so the chair or company secretary can lift it directly into the formal record without further drafting.</dd>
+                </div>
+            </dl>
+        </section>
+
 
         <!-- AI prompt component (teal variant) -->
         <div class="ai-prompt-card is-teal" data-wch-prompts>

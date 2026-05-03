@@ -337,7 +337,45 @@
         .authors-bio .bio-text { font-size: 0.85rem; line-height: 1.55; color: #2C2737; margin: 0; }
         @media (max-width: 680px) { .authors-bio .bio-row { grid-template-columns: 1fr; gap: 1.8rem; } }
 
-</style>
+
+        .key-terms {
+            background: linear-gradient(135deg, rgba(165,28,96,0.04) 0%, rgba(123,45,142,0.04) 100%);
+            border: 1px solid rgba(165,28,96,0.10);
+            border-radius: 14px;
+            padding: 1.75rem 1.85rem;
+            margin: 1.75rem 0 2.25rem;
+        }
+        .key-terms h2 {
+            font-size: 0.72rem !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.13em !important;
+            color: var(--key-terms-accent, #A51C60) !important;
+            margin: 0 0 1.1rem !important;
+            padding: 0 !important;
+            display: block !important;
+        }
+        .key-terms h2::before { content: none !important; }
+        .key-terms-list { margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
+        .key-terms .key-term { margin: 0; }
+        .key-terms dt {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #0D0618;
+            margin: 0 0 0.2rem;
+            line-height: 1.35;
+        }
+        .key-terms dd {
+            font-size: 0.86rem;
+            line-height: 1.55;
+            color: #2C2737;
+            margin: 0;
+            padding: 0;
+        }
+        .ned-brief .key-terms { background: linear-gradient(135deg, rgba(13,148,136,0.04) 0%, rgba(20,184,166,0.04) 100%); border-color: rgba(13,148,136,0.10); }
+        .ned-brief .key-terms h2 { color: #0d9488 !important; }
+
+    </style>
 
     <script type="application/ld+json">
     {
@@ -375,6 +413,47 @@
             "@type": "Answer",
             "text": "Shadow AI is unsanctioned use of AI tools by employees without IT or governance approval. It hits the P&L through breach premium, regulatory exposure, productivity illusion, and reversed AI-driven layoffs that come back as severance and rehire costs."
           }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTermSet",
+      "@id": "https://www.superogtm.com/perspectives/white-collar-horse-cfo-brief.html#key-terms",
+      "name": "Key terms",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "name": "Value-drift in the revenue engine",
+          "description": "The slow shift in what 'good' looks like inside the company because AI-mediated workflows are steering behaviour before leadership has consciously decided what behaviour to reward.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-cfo-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Shadow AI",
+          "description": "Unsanctioned use of AI tools by employees without IT or governance approval. Carries a $670,000 average breach premium according to IBM's 2025 Cost of a Data Breach Report.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-cfo-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "AI breach premium",
+          "description": "The additional cost of a data breach when shadow AI is present. The 2025 figure is $670,000 above the standard breach cost, with a longer detection window of 247 days.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-cfo-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "EU AI Act risk classification",
+          "description": "The regulatory tier into which an AI deployment falls under the EU AI Act, ranging from minimal to unacceptable. Determines the level of documentation, oversight and accountability the organisation must demonstrate.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-cfo-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Layoff reversal cost",
+          "description": "The full financial cost when an AI-driven workforce decision is reversed: the original severance, the rehire, and the productivity lost in between. Forrester expects more than half of all AI-attributed layoffs to be walked back.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-cfo-brief.html#key-terms"
         }
       ]
     }
@@ -433,6 +512,34 @@
     <div class="inner">
 
         <p class="brief-lede">AI is already inside your revenue engine. It is shaping lead scores, forecasts, pricing, outreach, and customer prioritisation. Much of it is doing useful work. Some of it is drifting in ways that will show up in your P&amp;L before they show up in any dashboard. This brief sets out the financial exposure, the three P&amp;L lines where the drift lands first, and the questions that will tell you whether your CRO or CIO is steering or being steered.</p>
+
+        <!-- Key terms (AEO defined-term block) -->
+        <section class="key-terms" id="key-terms" aria-labelledby="key-terms-heading">
+            <h2 id="key-terms-heading">Key terms</h2>
+            <dl class="key-terms-list">
+                <div class="key-term">
+                    <dt>Value-drift in the revenue engine</dt>
+                    <dd>The slow shift in what 'good' looks like inside the company because AI-mediated workflows are steering behaviour before leadership has consciously decided what behaviour to reward.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>Shadow AI</dt>
+                    <dd>Unsanctioned use of AI tools by employees without IT or governance approval. Carries a $670,000 average breach premium according to IBM's 2025 Cost of a Data Breach Report.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>AI breach premium</dt>
+                    <dd>The additional cost of a data breach when shadow AI is present. The 2025 figure is $670,000 above the standard breach cost, with a longer detection window of 247 days.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>EU AI Act risk classification</dt>
+                    <dd>The regulatory tier into which an AI deployment falls under the EU AI Act, ranging from minimal to unacceptable. Determines the level of documentation, oversight and accountability the organisation must demonstrate.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>Layoff reversal cost</dt>
+                    <dd>The full financial cost when an AI-driven workforce decision is reversed: the original severance, the rehire, and the productivity lost in between. Forrester expects more than half of all AI-attributed layoffs to be walked back.</dd>
+                </div>
+            </dl>
+        </section>
+
 
         <!-- AI prompt component -->
         <div class="ai-prompt-card" data-wch-prompts>
