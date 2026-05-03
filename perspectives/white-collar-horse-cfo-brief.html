@@ -40,7 +40,7 @@
         { "@type": "Person", "name": "Alex Abbott", "jobTitle": "Founder and Chief Revenue Officer", "worksFor": { "@type": "Organization", "name": "Supero" } }
       ],
       "datePublished": "2026-05-02",
-      "dateModified": "2026-05-02",
+      "dateModified": "2026-05-03",
       "publisher": { "@type": "Organization", "name": "Supero", "url": "https://www.superogtm.com", "logo": { "@type": "ImageObject", "url": "https://www.superogtm.com/assets/logo-dark.svg" } },
       "mainEntityOfPage": "https://www.superogtm.com/perspectives/white-collar-horse-cfo-brief.html",
       "isPartOf": { "@type": "Article", "@id": "https://www.superogtm.com/perspectives/white-collar-horse.html#article" }
@@ -325,7 +325,60 @@
             a { color: #A51C60 !important; text-decoration: none !important; }
             .related-back { display: none; }
         }
-    </style>
+    
+        .authors-bio { background: #ffffff; padding: 3.5rem 2rem; border-top: 1px solid rgba(0,0,0,0.06); }
+        .authors-bio .inner-narrow { max-width: 760px; margin: 0 auto; }
+        .authors-bio h2 { font-size: 1.3rem; font-weight: 700; color: #0D0618; margin: 0 0 1.6rem; letter-spacing: -0.01em; }
+        .authors-bio .bio-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2rem; }
+        .authors-bio .bio { display: flex; gap: 1rem; align-items: flex-start; }
+        .authors-bio .bio-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+        .authors-bio .bio-name { font-weight: 700; color: #0D0618; margin: 0 0 0.2rem; font-size: 0.92rem; }
+        .authors-bio .bio-title { font-size: 0.75rem; color: #A51C60; margin: 0 0 0.55rem; font-weight: 600; }
+        .authors-bio .bio-text { font-size: 0.85rem; line-height: 1.55; color: #2C2737; margin: 0; }
+        @media (max-width: 680px) { .authors-bio .bio-row { grid-template-columns: 1fr; gap: 1.8rem; } }
+
+</style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What is the financial cost of ungoverned AI in the revenue engine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "IBM's 2025 Cost of a Data Breach Report found that organisations with high levels of shadow AI carry a $670,000 breach premium, take 247 days on average to detect incidents, and that only 37% have any policy in place to govern AI usage. The remaining 63% are exposed by default."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is value-drift in the revenue engine?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Value-drift is the slow shift in what 'good' looks like inside the company because AI-mediated workflows are steering behaviour before leadership has consciously decided what behaviour to reward. It shows up first in three P&L lines: revenue mix, customer acquisition cost, and workforce cost."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which questions should a CFO ask the CRO about AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Where is AI already influencing commercial decisions and who owns each one. Whether the lead score, forecast tool and churn predictor are still optimising for the strategy-deck definition of a good customer. Which AI deployments lack a documented business case and root-cause diagnosis. Which sit at higher risk under the EU AI Act. And what financial exposure exists today from breach risk, layoff reversal, and value-drift in the revenue engine."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is shadow AI and why does it hit the P&L?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Shadow AI is unsanctioned use of AI tools by employees without IT or governance approval. It hits the P&L through breach premium, regulatory exposure, productivity illusion, and reversed AI-driven layoffs that come back as severance and rehire costs."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -363,7 +416,7 @@
                 </div>
                 <div class="brief-byline-text">
                     <p class="names">Cumai Aboul Housn and Alex Abbott</p>
-                    <p class="meta">Supero &middot; 2 May 2026 &middot; 5 min read</p>
+                    <p class="meta">Supero &middot; Published 2 May 2026 &middot; Updated 3 May 2026 &middot; 5 min read</p>
                 </div>
             </div>
             <div class="brief-actions">
@@ -440,11 +493,11 @@
         <div class="exposure-grid">
             <div class="exposure-tile">
                 <p class="stat">$670,000</p>
-                <p class="label">The average breach premium carried by organisations with high levels of shadow AI. Source: IBM 2025 Cost of a Data Breach Report.</p>
+                <p class="label">The average breach premium carried by organisations with high levels of shadow AI. Source: <a href="https://www.ibm.com/reports/data-breach" target="_blank" rel="noopener noreferrer">IBM 2025 Cost of a Data Breach Report</a>.</p>
             </div>
             <div class="exposure-tile">
                 <p class="stat">247 days</p>
-                <p class="label">The average time to detect and contain an incident when shadow AI is present. Source: IBM 2025 Cost of a Data Breach Report.</p>
+                <p class="label">The average time to detect and contain an incident when shadow AI is present. Source: <a href="https://www.ibm.com/reports/data-breach" target="_blank" rel="noopener noreferrer">IBM 2025 Cost of a Data Breach Report</a>.</p>
             </div>
             <div class="exposure-tile">
                 <p class="stat">37%</p>
@@ -452,7 +505,7 @@
             </div>
         </div>
 
-        <p>Forrester expects more than half of all layoffs attributed to AI to be walked back, the result of decisions taken under pressure rather than through diagnosis. The cost of that reversal, the severance, the rehire, the knowledge lost in between, rarely appears in the business case for the original approval.</p>
+        <p><a href="https://www.forrester.com/blogs/predictions-2025-the-year-tech-execs-balance-ai-investment-with-business-priorities/" target="_blank" rel="noopener noreferrer">Forrester</a> expects more than half of all layoffs attributed to AI to be walked back, the result of decisions taken under pressure rather than through diagnosis. The cost of that reversal, the severance, the rehire, the knowledge lost in between, rarely appears in the business case for the original approval.</p>
 
         <h2><span class="count">2</span>The three P&amp;L lines where value-drift shows up first</h2>
 
@@ -514,6 +567,32 @@
 
     </div>
 </article>
+
+
+<!-- About the authors -->
+<section class="authors-bio" id="authors">
+    <div class="inner-narrow">
+        <h2>About the authors</h2>
+        <div class="bio-row">
+            <div class="bio">
+                <img src="../assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn" class="bio-avatar">
+                <div>
+                    <p class="bio-name">Cumai Aboul Housn</p>
+                    <p class="bio-title">Enterprise Transformation Architect, AI and Digital Innovation</p>
+                    <p class="bio-text">Cumai architects the technical and risk-committee view of AI in the revenue engine. He works with CFOs, audit committees and risk leads to make AI exposure visible and accountable.</p>
+                </div>
+            </div>
+            <div class="bio">
+                <img src="../assets/alex-abbott.png" alt="Alex Abbott" class="bio-avatar">
+                <div>
+                    <p class="bio-name">Alex Abbott</p>
+                    <p class="bio-title">Founder and Chief Revenue Officer, Supero</p>
+                    <p class="bio-text">Alex commissions Supero diagnostics and runs the executive conversations that sit behind each brief. He works with CROs, CFOs and boards to keep AI decisions deliberate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer style="background:#0D0618; padding:3rem 2rem 2rem; border-top:1px solid rgba(255,255,255,0.06);">
     <div style="max-width:1200px; margin:0 auto;">

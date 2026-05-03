@@ -40,7 +40,7 @@
         { "@type": "Person", "name": "Alex Abbott", "jobTitle": "Founder and Chief Revenue Officer", "worksFor": { "@type": "Organization", "name": "Supero" } }
       ],
       "datePublished": "2026-05-02",
-      "dateModified": "2026-05-02",
+      "dateModified": "2026-05-03",
       "publisher": { "@type": "Organization", "name": "Supero", "url": "https://www.superogtm.com", "logo": { "@type": "ImageObject", "url": "https://www.superogtm.com/assets/logo-dark.svg" } },
       "mainEntityOfPage": "https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html",
       "isPartOf": { "@type": "Article", "@id": "https://www.superogtm.com/perspectives/white-collar-horse.html#article" }
@@ -327,7 +327,60 @@
             a { color: #0d9488 !important; text-decoration: none !important; }
             .related-back { display: none; }
         }
-    </style>
+    
+        .authors-bio { background: #ffffff; padding: 3.5rem 2rem; border-top: 1px solid rgba(0,0,0,0.06); }
+        .authors-bio .inner-narrow { max-width: 760px; margin: 0 auto; }
+        .authors-bio h2 { font-size: 1.3rem; font-weight: 700; color: #0D0618; margin: 0 0 1.6rem; letter-spacing: -0.01em; }
+        .authors-bio .bio-row { display: grid; grid-template-columns: 1fr 1fr; gap: 2.2rem; }
+        .authors-bio .bio { display: flex; gap: 1rem; align-items: flex-start; }
+        .authors-bio .bio-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+        .authors-bio .bio-name { font-weight: 700; color: #0D0618; margin: 0 0 0.2rem; font-size: 0.92rem; }
+        .authors-bio .bio-title { font-size: 0.75rem; color: #0d9488; margin: 0 0 0.55rem; font-weight: 600; }
+        .authors-bio .bio-text { font-size: 0.85rem; line-height: 1.55; color: #2C2737; margin: 0; }
+        @media (max-width: 680px) { .authors-bio .bio-row { grid-template-columns: 1fr; gap: 1.8rem; } }
+
+</style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What questions should a non-executive director ask before the board approves an AI initiative?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Where AI is already influencing commercial decisions and who owns each one. Whether the executive team can name the human owner for any AI system the board has approved. Whether the EU AI Act risk classification has been documented. Whether the organisation has the literacy obligations met. Whether reversal authority is named and tested. And whether the cost of getting AI wrong sits on any line of the risk register."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the board's fiduciary duty regarding AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The risk is not absence of AI. It is absence of governance over AI that has already arrived. The board's duty is to ensure visibility, documentation, and challenge of AI use across the organisation, including where it is shaping commercial, regulatory and reputational outcomes."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the EU AI Act require boards of UK companies to do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "AI literacy obligations have been live since 2 February 2025. The wider high-risk regime is arriving in stages. Boards should document risk classification of each AI deployment, maintain auditable records, and ensure literacy is provided across leadership and frontline teams. UK companies serving EU customers or processing EU data are within scope."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should a board minute its position on AI risk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A short minutes-ready paragraph: AI is already embedded across executive systems. The board has reviewed the regulatory, reputational and commercial risk profile, and has asked the executive to map where AI is influencing decisions, name the human owner of each, document the EU AI Act risk classification, and report any deployments without those controls in place to the next risk committee."
+          }
+        }
+      ]
+    }
+    </script>
 </head>
 <body>
 
@@ -365,7 +418,7 @@
                 </div>
                 <div class="brief-byline-text">
                     <p class="names">Cumai Aboul Housn and Alex Abbott</p>
-                    <p class="meta">Supero &middot; 2 May 2026 &middot; 5 min read</p>
+                    <p class="meta">Supero &middot; Published 2 May 2026 &middot; Updated 3 May 2026 &middot; 5 min read</p>
                 </div>
             </div>
             <div class="brief-actions">
@@ -437,7 +490,7 @@
 
         <h2><span class="count">1</span>The position in three lines</h2>
 
-        <p><strong>The risk is not absence of AI. It is absence of governance over AI that has already arrived.</strong> Inside most enterprises, AI sits across multiple functions, purchased separately, configured locally, and owned nowhere with a full view of consequence. The EU AI Act has already begun to reframe AI as a managed system rather than a clever tool, with literacy obligations live since 2 February 2025 and the wider high-risk regime arriving in stages.</p>
+        <p><strong>The risk is not absence of AI. It is absence of governance over AI that has already arrived.</strong> Inside most enterprises, AI sits across multiple functions, purchased separately, configured locally, and owned nowhere with a full view of consequence. The <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener noreferrer">EU AI Act</a> has already begun to reframe AI as a managed system rather than a clever tool, with literacy obligations live since 2 February 2025 and the wider high-risk regime arriving in stages.</p>
 
         <p>The board is one of the few bodies in the organisation with the standing to ask the diagnostic questions before the system answers for it.</p>
 
@@ -510,6 +563,32 @@
 
     </div>
 </article>
+
+
+<!-- About the authors -->
+<section class="authors-bio" id="authors">
+    <div class="inner-narrow">
+        <h2>About the authors</h2>
+        <div class="bio-row">
+            <div class="bio">
+                <img src="../assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn" class="bio-avatar">
+                <div>
+                    <p class="bio-name">Cumai Aboul Housn</p>
+                    <p class="bio-title">Enterprise Transformation Architect, AI and Digital Innovation</p>
+                    <p class="bio-text">Cumai carries the technical authority for risk and audit committees. He helps boards translate AI use across the organisation into structured, EU AI Act aligned, board-ready oversight.</p>
+                </div>
+            </div>
+            <div class="bio">
+                <img src="../assets/alex-abbott.png" alt="Alex Abbott" class="bio-avatar">
+                <div>
+                    <p class="bio-name">Alex Abbott</p>
+                    <p class="bio-title">Founder and Chief Revenue Officer, Supero</p>
+                    <p class="bio-text">Alex briefs the executive in advance of board meetings and runs the diagnostic that sits behind each Supero perspective. He works with CEOs, CROs and boards to keep AI decisions documented and defensible.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <footer style="background:#0D0618; padding:3rem 2rem 2rem; border-top:1px solid rgba(255,255,255,0.06);">
     <div style="max-width:1200px; margin:0 auto;">
