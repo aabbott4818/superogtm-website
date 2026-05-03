@@ -632,6 +632,109 @@
         .authors-bio .bio-title { font-size: 0.78rem; color: #A51C60; margin: 0 0 0.6rem; font-weight: 600; }
         .authors-bio .bio-text { font-size: 0.88rem; line-height: 1.55; color: #2C2737; margin: 0; }
         @media (max-width: 720px) { .authors-bio .bio-row { grid-template-columns: 1fr; gap: 2rem; } }
+
+        /* On-this-page TOC */
+        .article-toc {
+            position: fixed;
+            top: 110px;
+            right: 2.5rem;
+            width: 240px;
+            max-height: calc(100vh - 140px);
+            overflow-y: auto;
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(165,28,96,0.10);
+            border-radius: 14px;
+            padding: 1.25rem 1.4rem;
+            font-family: 'DM Sans', sans-serif;
+            z-index: 50;
+            box-shadow: 0 4px 20px rgba(13,6,24,0.04);
+        }
+        .article-toc .toc-toggle {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 0;
+            cursor: default;
+            font-family: inherit;
+        }
+        .article-toc .toc-label {
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 0.13em;
+            text-transform: uppercase;
+            color: #A51C60;
+        }
+        .article-toc .toc-chevron {
+            color: #A51C60;
+            display: none;
+        }
+        .article-toc nav {
+            background: transparent;
+            padding: 0;
+            margin: 0;
+        }
+        .article-toc .toc-list {
+            list-style: none;
+            padding: 0;
+            margin: 1rem 0 0;
+            counter-reset: toc-count;
+        }
+        .article-toc .toc-list li {
+            counter-increment: toc-count;
+            margin-bottom: 0.55rem;
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .article-toc .toc-list li::before {
+            content: counter(toc-count, decimal-leading-zero);
+            position: absolute;
+            left: 0;
+            top: 0.05rem;
+            font-size: 0.66rem;
+            font-weight: 700;
+            color: #A51C60;
+            opacity: 0.55;
+            font-variant-numeric: tabular-nums;
+        }
+        .article-toc .toc-list a {
+            color: #2C2737;
+            text-decoration: none;
+            font-size: 0.82rem;
+            line-height: 1.4;
+            display: block;
+            transition: color 0.15s ease;
+        }
+        .article-toc .toc-list a:hover { color: #A51C60; }
+        .article-toc .toc-list a.is-current { color: #A51C60; font-weight: 600; }
+
+        /* Hide on narrower screens, replace with floating button */
+        @media (max-width: 1280px) {
+            .article-toc {
+                position: fixed;
+                top: auto;
+                bottom: 1.5rem;
+                right: 1.5rem;
+                left: auto;
+                width: auto;
+                max-width: calc(100vw - 3rem);
+                max-height: 60vh;
+                padding: 0.75rem 1rem;
+            }
+            .article-toc .toc-toggle { cursor: pointer; gap: 0.6rem; }
+            .article-toc .toc-chevron { display: block; transition: transform 0.2s ease; }
+            .article-toc[aria-expanded="false"] .toc-list { display: none; }
+            .article-toc[aria-expanded="true"] .toc-chevron { transform: rotate(180deg); }
+            .article-toc .toc-list { margin-top: 0.85rem; }
+        }
+        @media (max-width: 560px) {
+            .article-toc { right: 1rem; bottom: 1rem; padding: 0.65rem 0.9rem; }
+            .article-toc .toc-list a { font-size: 0.78rem; }
+        }
+
     </style>
     <link rel="stylesheet" href="./_wch-prompt.css">
 </head>
@@ -687,12 +790,40 @@
 </section>
 
 <!-- BODY -->
+
+<aside class="article-toc" id="article-toc" aria-label="On this page">
+    <button class="toc-toggle" aria-expanded="false" aria-controls="toc-list">
+        <span class="toc-label">On this page</span>
+        <svg class="toc-chevron" width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <path d="M3 6l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+    </button>
+    <nav>
+        <ol class="toc-list" id="toc-list">
+                    <li><a href="#ai-not-waiting">AI is not waiting</a></li>
+                    <li><a href="#the-horse">The horse that did not know the car was coming</a></li>
+                    <li><a href="#redesign-not-replacement">Replacement vs redesign</a></li>
+                    <li><a href="#value-drift">Value-drift in the revenue engine</a></li>
+                    <li><a href="#whats-happening">What is actually happening today</a></li>
+                    <li><a href="#llm-vs-ml">LLM versus ML</a></li>
+                    <li><a href="#boardroom-habit">The most dangerous boardroom habit</a></li>
+                    <li><a href="#board-questions">Questions a serious board should ask</a></li>
+                    <li><a href="#why-it-matters">Why this matters</a></li>
+                    <li><a href="#ai-changes-behaviour">AI changes behaviour</a></li>
+                    <li><a href="#governance">Governance as leadership discipline</a></li>
+                    <li><a href="#ai-act-gift">The AI Act as a gift</a></li>
+                    <li><a href="#asks-of-leaders">What this asks of leaders</a></li>
+                    <li><a href="#keep-the-pen">Keep the pen in your hand</a></li>
+        </ol>
+    </nav>
+</aside>
+
 <article class="article-body">
     <div class="inner">
 
         <p class="lede drop-cap">The biggest risk AI poses to business is not the dramatic story we keep returning to. It is not the sudden disappearance of white-collar work, or the overnight replacement of teams by machines. That version is easy to see, easy to debate, and easy to resist. The more serious risk is quieter.</p>
 
-        <h2>AI is not waiting for permission anymore</h2>
+        <h2 id="ai-not-waiting">AI is not waiting for permission anymore</h2>
 
         <p>It happens while the organisation still looks normal from the outside. The sales team is still selling, the hiring team is still screening, the customer team is still serving, and the finance team is still forecasting. But underneath, the logic of the business has already started to move.</p>
 
@@ -768,7 +899,7 @@
             </div>
         </div>
 
-        <h2>The horse that did not know the car was coming</h2>
+        <h2 id="the-horse">The horse that did not know the car was coming</h2>
 
         <p>For most of the nineteenth century, the horse was the engine of the economy. It pulled ploughs, carriages, trams, and freight. Whole cities were designed around it. Power was visible. Whoever held the reins, led.</p>
 
@@ -784,7 +915,7 @@
             <p>This is not a story of replacement. It is a story of redesign, and of who gets to hold the pen.</p>
         </blockquote>
 
-        <h2>The real issue is not replacement. It is redesign.</h2>
+        <h2 id="redesign-not-replacement">The real issue is not replacement. It is redesign.</h2>
 
         <p>This is where many leadership conversations about AI are still too shallow. We keep asking whether AI will replace people, when the more urgent question is whether AI is already redesigning the work around them.</p>
 
@@ -794,7 +925,7 @@
 
         <p>When AI enters those workflows, it does not simply make them faster. It changes their centre of gravity.</p>
 
-        <h2>The hidden risk is value-drift in the revenue engine</h2>
+        <h2 id="value-drift">The hidden risk is value-drift in the revenue engine</h2>
 
         <p>There is a name for what is happening inside many organisations right now.</p>
 
@@ -810,7 +941,7 @@
 
         <p>That is why value-drift is more dangerous than a visible failure. A business does not usually decide to become more transactional. It gets there through hundreds of small optimisations. Over time, the organisation is still busy, still productive, still hitting some numbers, but it may be drifting away from the value it thought it was protecting.</p>
 
-        <h2>What is actually happening inside organisations today</h2>
+        <h2 id="whats-happening">What is actually happening inside organisations today</h2>
 
         <p>If you walk the floor of almost any mid-to-large company right now, you will find the same pattern.</p>
 
@@ -822,7 +953,7 @@
 
         <p>The problem is not that AI is absent. The problem is that it is already inside the operating system of the business but often owned nowhere. It is purchased by one function, configured by another, used by a third, and governed by no one with a full view of the consequences.</p>
 
-        <h2>We also need to stop saying "AI" as if it means one thing</h2>
+        <h2 id="llm-vs-ml">We also need to stop saying "AI" as if it means one thing</h2>
 
         <p>There is a small joke hidden in the language: LLM is only one letter away from ML. Unfortunately, that extra letter is where many business cases start to wobble. Leaders talk about AI as if it were one technology with one business logic. It is not.</p>
 
@@ -866,7 +997,7 @@
 
         <div class="section-divider"><span class="tag">Part two &middot; boardroom discipline</span></div>
 
-        <h2>The most dangerous boardroom habit in 2026</h2>
+        <h2 id="boardroom-habit">The most dangerous boardroom habit in 2026</h2>
 
         <p>This is also why leaders must slow down before they speed up. A slow start does not mean losing the race when it is guided by a data-driven, well-planned strategy.</p>
 
@@ -888,7 +1019,7 @@
 
         <p>That is the trap.</p>
 
-        <h2>The questions a serious board should ask</h2>
+        <h2 id="board-questions">The questions a serious board should ask</h2>
 
         <p>There is a simple, respectful way to interrupt this pattern. Change the first question the board asks when an AI proposal lands.</p>
 
@@ -900,7 +1031,7 @@
 
         <p>None of these questions are hostile. They protect the organisation, and they also protect the executive proposing the initiative.</p>
 
-        <h2>Why this matters more than any single AI decision</h2>
+        <h2 id="why-it-matters">Why this matters more than any single AI decision</h2>
 
         <p>When AI is approved as a cure without a diagnosis, three things tend to happen, almost always in this order.</p>
 
@@ -950,7 +1081,7 @@
 
         <p>The danger is not that people stop working. The danger is that they start working for the logic of the system without noticing.</p>
 
-        <h2>AI changes behaviour</h2>
+        <h2 id="ai-changes-behaviour">AI changes behaviour</h2>
 
         <p>This is the behavioural side of AI transformation, and it is still under-discussed.</p>
 
@@ -958,7 +1089,7 @@
 
         <p>Over time, employees optimise their behaviour around the machine's definition of success. We have already seen a version of this story play out in public. Social media algorithms did not simply recommend content; over the last two decades, they gradually trained people to post, react, argue, perform, and measure themselves in ways that satisfied the platform. The same behavioural pattern can enter the enterprise, only this time through sales scores, hiring filters, service priorities, and performance dashboards. This is not because employees are careless. It is because every operating system teaches people what matters. If leaders do not define that deliberately, the tools will define it by implication.</p>
 
-        <h2>Governance is now a leadership discipline</h2>
+        <h2 id="governance">Governance is now a leadership discipline</h2>
 
         <p>That is why governance and AI literacy are no longer optional technical topics. They are leadership responsibilities.</p>
 
@@ -966,7 +1097,7 @@
 
         <p>AI literacy does not mean turning every employee into a data scientist. It means giving people enough understanding to know when they are using a language model, when they are relying on a predictive score, when the output needs review, and when the tool should not be used at all.</p>
 
-        <h2>The AI Act as a gift to serious leaders</h2>
+        <h2 id="ai-act-gift">The AI Act as a gift to serious leaders</h2>
 
         <p>Many executives still read the EU AI Act as a brake. It is more useful to read it as a gift.</p>
 
@@ -976,7 +1107,7 @@
 
         <p>Treat it as a floor, and it becomes bureaucracy. Treat it as a design principle, and it becomes a competitive advantage in talent, trust, and resilience.</p>
 
-        <h2>What this asks of revenue leaders</h2>
+        <h2 id="asks-of-leaders">What this asks of revenue leaders</h2>
 
         <p>This is, in the end, a leadership story. Not a technology story.</p>
 
@@ -994,7 +1125,7 @@
 
         <div class="section-divider"><span class="tag">In closing</span></div>
 
-        <h2>Keep the pen in your own hand</h2>
+        <h2 id="keep-the-pen">Keep the pen in your own hand</h2>
 
         <p>The horse did not get to choose the terms of its obsolescence. The modern white-collar worker does. And the leaders of this generation get to choose whether that choice is made in the open, with care, craft, and conviction, or quietly, one uninspected workflow at a time.</p>
 
@@ -1213,6 +1344,67 @@ hamburger.addEventListener('click', () => { if (overlay) closeMobileNav(); else 
 </script>
 
 <script src="./_wch-prompt.js" defer></script>
+
+
+<script>
+(function() {
+    var toc = document.getElementById('article-toc');
+    if (!toc) return;
+    var list = toc.querySelector('#toc-list');
+    var btn = toc.querySelector('.toc-toggle');
+    var collapsed = window.innerWidth <= 1280;
+
+    // Initial expanded state
+    toc.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+    btn.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
+
+    btn.addEventListener('click', function() {
+        if (window.innerWidth > 1280) return; // sticky mode, no toggle
+        var isOpen = toc.getAttribute('aria-expanded') === 'true';
+        toc.setAttribute('aria-expanded', String(!isOpen));
+        btn.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    // Smooth scroll
+    Array.prototype.forEach.call(list.querySelectorAll('a'), function(a) {
+        a.addEventListener('click', function(e) {
+            var id = a.getAttribute('href').slice(1);
+            var target = document.getElementById(id);
+            if (!target) return;
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            history.pushState(null, '', '#' + id);
+            // GA4 event
+            if (typeof gtag === 'function') {
+                gtag('event', 'wch_toc_click', { section: id });
+            }
+            if (window.innerWidth <= 1280) {
+                toc.setAttribute('aria-expanded', 'false');
+                btn.setAttribute('aria-expanded', 'false');
+            }
+        });
+    });
+
+    // Highlight current section while scrolling
+    var headings = Array.prototype.slice.call(document.querySelectorAll('article.article-body h2[id]'));
+    var links = {};
+    Array.prototype.forEach.call(list.querySelectorAll('a'), function(a) {
+        links[a.getAttribute('href').slice(1)] = a;
+    });
+    if ('IntersectionObserver' in window) {
+        var io = new IntersectionObserver(function(entries) {
+            entries.forEach(function(e) {
+                if (e.isIntersecting) {
+                    Object.values(links).forEach(function(l) { l.classList.remove('is-current'); });
+                    var l = links[e.target.id];
+                    if (l) l.classList.add('is-current');
+                }
+            });
+        }, { rootMargin: '-100px 0px -65% 0px', threshold: 0 });
+        headings.forEach(function(h) { io.observe(h); });
+    }
+})();
+</script>
 
 </body>
 </html>
