@@ -382,7 +382,84 @@
         .key-terms.ned-brief { background: linear-gradient(135deg, rgba(13,148,136,0.04) 0%, rgba(20,184,166,0.04) 100%); border-color: rgba(13,148,136,0.12); }
         .key-terms.ned-brief h2 { color: #0d9488 !important; }
 
-    </style>
+    
+        /* Forward-this row */
+        .forward-row-share {
+            margin: 2rem 0 1.5rem;
+            padding: 1.5rem 1.6rem;
+            background: rgba(165,28,96,0.045);
+            border: 1px solid rgba(165,28,96,0.10);
+            border-radius: 14px;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .forward-row-share.is-teal {
+            background: rgba(13,148,136,0.045);
+            border-color: rgba(13,148,136,0.12);
+        }
+        .forward-row-share .forward-eyebrow {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            color: var(--forward-accent, #A51C60);
+            margin: 0 0 0.5rem;
+        }
+        .forward-row-share.is-teal .forward-eyebrow { color: #0d9488; }
+        .forward-row-share .forward-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0D0618;
+            margin: 0 0 0.3rem;
+            letter-spacing: -0.005em;
+        }
+        .forward-row-share .forward-help {
+            font-size: 0.83rem;
+            color: #6b6680;
+            margin: 0 0 1.05rem;
+            line-height: 1.5;
+        }
+        .forward-row-share .forward-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+        }
+        .forward-row-share .forward-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 0.95rem;
+            background: #ffffff;
+            border: 1px solid rgba(13,6,24,0.10);
+            border-radius: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.86rem;
+            font-weight: 600;
+            color: #0D0618;
+            text-decoration: none;
+            cursor: pointer;
+            transition: border-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+        }
+        .forward-row-share .forward-btn:hover {
+            border-color: var(--forward-accent, #A51C60);
+            color: var(--forward-accent, #A51C60);
+            transform: translateY(-1px);
+        }
+        .forward-row-share.is-teal .forward-btn:hover { border-color: #0d9488; color: #0d9488; }
+        .forward-row-share .forward-btn svg { flex-shrink: 0; }
+        .forward-row-share .forward-btn.is-copied {
+            background: #0d9488;
+            color: #ffffff;
+            border-color: #0d9488;
+        }
+        @media (max-width: 560px) {
+            .forward-row-share { padding: 1.25rem 1.2rem; }
+            .forward-row-share .forward-buttons { gap: 0.4rem; }
+            .forward-row-share .forward-btn { padding: 0.55rem 0.8rem; font-size: 0.82rem; }
+        }
+        @media print { .forward-row-share { display: none; } }
+
+</style>
 
     <script type="application/ld+json">
     {
@@ -689,6 +766,34 @@
             <p class="note">Adapt the language to match your committee's existing minute style. The substance, register, classification, ownership, oversight, literacy, drift, remediation, is what carries the discharge of duty.</p>
         </div>
 
+        
+        <!-- Forward this -->
+        <section class="forward-row-share is-teal" aria-label="Send this to a colleague">
+            <span class="forward-eyebrow">Send this to a colleague</span>
+            <p class="forward-title">Forward this in two clicks</p>
+            <p class="forward-help">Most of the value in this piece arrives when it lands on the right desk. Pick how you want to send it.</p>
+            <div class="forward-buttons">
+                <a href="mailto:?subject=Worth%20a%20read%3A%20AI%20and%20the%20board%27s%20fiduciary%20view%20%7C%20NED%20brief&body=Plain-English%20NED%20brief%20on%20AI%20risk%20for%20the%20board%2C%20with%20a%20risk%20matrix%20and%20six%20questions%20to%20table%20at%20the%20next%20meeting.%20Includes%20a%20minutes-ready%20paragraph%20for%20the%20risk%20committee.%0A%0Ahttps%3A//www.superogtm.com/perspectives/white-collar-horse-ned-brief.html%3Futm_source%3Dforward-email%26utm_medium%3Dbrief%26utm_campaign%3Dwch-ned%0A%0A%E2%80%94%20sent%20via%20supero" class="forward-btn" data-share="email" data-campaign="wch-ned">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M2 4l6 4 6-4M2 4v8h12V4M2 4h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Email a colleague
+                </a>
+                <a href="https://www.linkedin.com/messaging/compose/?body=A%20short%2C%20defensible%20NED%20brief%20on%20AI%20for%20the%20board%2C%20with%20six%20questions%20and%20a%20minutes-ready%20paragraph%3A%20https%3A//www.superogtm.com/perspectives/white-collar-horse-ned-brief.html%3Futm_source%3Dforward-linkedin%26utm_medium%3Dbrief%26utm_campaign%3Dwch-ned" target="_blank" rel="noopener noreferrer" class="forward-btn" data-share="linkedin" data-campaign="wch-ned">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                        <path d="M4.5 13H2V5.5h2.5V13zM3.25 4.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9zM14 13h-2.5V9.4c0-.9-.4-1.4-1.1-1.4-.7 0-1.2.5-1.2 1.4V13H6.75V5.5H9v1c.4-.6 1.1-1.1 2-1.1 1.7 0 3 1 3 3.4V13z"/>
+                    </svg>
+                    Send on LinkedIn
+                </a>
+                <button type="button" class="forward-btn" data-share="copy" data-copy-url="https://www.superogtm.com/perspectives/white-collar-horse-ned-brief.html?utm_source=forward-copy&utm_medium=brief&utm_campaign=wch-ned" data-campaign="wch-ned">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M4 4V2h10v10h-2M2 5h10v9H2V5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                    </svg>
+                    <span data-copy-label>Copy share link</span>
+                </button>
+            </div>
+        </section>
+
         <div class="close-card">
             <h3>The conversation this brief is built for</h3>
             <p>The most fiduciarily exposed AI decisions in the next twelve months will be the ones the board never saw. Most of those decisions will already be inside an approved system, configured by a function the board does not normally interact with, owned by a person the board has not met. The remedy is not more reporting. It is the right reporting, asked for at the right cadence.</p>
@@ -830,6 +935,51 @@ function openMobileNav() {
 }
 function closeMobileNav() { if (overlay) { overlay.remove(); overlay = null; document.body.style.overflow = ''; } }
 hamburger.addEventListener('click', () => { if (overlay) closeMobileNav(); else openMobileNav(); });
+</script>
+
+
+<script>
+(function() {
+    var rows = document.querySelectorAll('.forward-row-share');
+    if (!rows.length) return;
+    function track(name, params) {
+        if (typeof gtag === 'function') {
+            try { gtag('event', name, params || {}); } catch(e) {}
+        }
+    }
+    rows.forEach(function(row) {
+        // Track email and LinkedIn clicks
+        Array.prototype.forEach.call(row.querySelectorAll('[data-share="email"], [data-share="linkedin"]'), function(el) {
+            el.addEventListener('click', function() {
+                track('wch_forward_click', {
+                    method: el.getAttribute('data-share'),
+                    campaign: el.getAttribute('data-campaign')
+                });
+            });
+        });
+        // Copy link with feedback
+        var copyBtn = row.querySelector('[data-share="copy"]');
+        if (!copyBtn) return;
+        copyBtn.addEventListener('click', function() {
+            var url = copyBtn.getAttribute('data-copy-url');
+            var label = copyBtn.querySelector('[data-copy-label]');
+            var done = function() {
+                copyBtn.classList.add('is-copied');
+                if (label) { var prev = label.textContent; label.textContent = 'Link copied'; setTimeout(function() { copyBtn.classList.remove('is-copied'); if (label) label.textContent = prev; }, 2200); }
+                track('wch_forward_click', { method: 'copy', campaign: copyBtn.getAttribute('data-campaign') });
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(done).catch(function() {
+                    var t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0';
+                    document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done();
+                });
+            } else {
+                var t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0';
+                document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done();
+            }
+        });
+    });
+})();
 </script>
 
 </body>
