@@ -114,9 +114,12 @@
             });
         }
 
-        // Init: respect any pre-selected tab in the markup, default to CRO
+        // Init: a card can lock to a fixed persona via data-persona (tab-less cards,
+        // e.g. a persona-specific brief). Otherwise respect any pre-selected tab, then default to CRO.
+        const fixedPersona = card.dataset.persona;
         const preActive = card.querySelector('.ai-prompt-tab.is-active');
-        const startPersona = preActive ? preActive.dataset.persona : 'cro';
+        const startPersona = (fixedPersona && PROMPTS[fixedPersona]) ? fixedPersona
+            : (preActive ? preActive.dataset.persona : 'cro');
         update(startPersona);
     }
 
