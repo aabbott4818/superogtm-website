@@ -59,7 +59,7 @@
     border:1px solid var(--line);
     border-radius:14px;
     padding:18px 16px;
-    margin-bottom:20px;
+    margin-bottom:14px;
   }
   audio{width:100%;display:block;outline:none}
   .fallback{
@@ -72,6 +72,9 @@
   .divider{height:1px;background:var(--line);margin:22px 0}
   .settings{font-size:13px;color:var(--muted);line-height:1.6;margin:0}
   .settings strong{color:#fff;font-weight:600}
+  .vlabel{font-size:14px;font-weight:600;margin:0 0 10px;color:#fff}
+  .vmeta{font-size:12px;color:var(--muted);margin:12px 0 0;line-height:1.5}
+  .settings em{color:#fff;font-style:normal;font-weight:600}
   .quote{
     font-size:14px;
     line-height:1.6;
@@ -88,23 +91,37 @@
   <div class="card">
     <p class="eyebrow">Voice clone preview</p>
     <h1>The White-Collar Horse — narrated in Alex's voice</h1>
-    <p class="sub">A 48-second sample from the opening of the article, generated with your trained professional voice clone. Listen for accent, pacing and naturalness.</p>
+    <p class="sub">Same 48-second passage, three settings. Listen to all three and tell me which sounds most like you — A, B, C, or none.</p>
 
     <div class="player">
-      <audio controls preload="auto">
-        <source src="audio/alex-voice-preview.mp3" type="audio/mpeg">
-        <source src="audio/alex-voice-preview.m4a" type="audio/mp4">
-        Your browser does not support the audio element.
+      <p class="vlabel">Variant A — natural intonation</p>
+      <audio controls preload="none">
+        <source src="audio/variant_A.mp3" type="audio/mpeg">
       </audio>
-      <p class="fallback">Can't hear it? <a href="audio/alex-voice-preview.mp3" download>Download the MP3</a> or <a href="audio/alex-voice-preview.m4a" download>the M4A</a> and play locally.</p>
+      <p class="vmeta">Stability 0.35 · Similarity 0.95 · Style 0 — tracks your natural rhythm, high fidelity to your recording.</p>
+    </div>
+
+    <div class="player">
+      <p class="vlabel">Variant B — balanced &amp; tight</p>
+      <audio controls preload="none">
+        <source src="audio/variant_B.mp3" type="audio/mpeg">
+      </audio>
+      <p class="vmeta">Stability 0.55 · Similarity 0.92 · Style 0 — steadier, more even delivery.</p>
+    </div>
+
+    <div class="player">
+      <p class="vlabel">Variant C — most expressive</p>
+      <audio controls preload="none">
+        <source src="audio/variant_C.mp3" type="audio/mpeg">
+      </audio>
+      <p class="vmeta">Stability 0.25 · Similarity 0.98 · Style 0 — loosest, closest hug to your voice, most variation.</p>
     </div>
 
     <p class="quote">"The biggest risk that A.I. poses to business is not the dramatic story we keep returning to… The more serious risk is quieter."</p>
 
     <div class="divider"></div>
 
-    <p class="settings"><strong>Settings used (all adjustable):</strong><br>
-    Stability 0.5 · Similarity 0.85 · Style 0.15 · Speaker boost on.<br>
+    <p class="settings"><strong>How to judge:</strong> If one is close but the <em>delivery</em> is off, that's fixable with more tuning. If none sound like <em>you</em> at all, it's the source recording — and we retrain on a cleaned-up sample.<br>
     Model: ElevenLabs multilingual v2 (premium). British English.</p>
 
     <p class="foot">Private preview · not indexed · Supero GTM</p>
