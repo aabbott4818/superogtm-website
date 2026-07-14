@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI value-drift as a portfolio risk | Operating Partner Brief | Supero</title>
+    <meta name="description" content="A one-page brief for a private equity operating partner. Where AI value-drift shows up across a portfolio, a portfolio risk lens, seven questions to ask a portfolio CEO or CRO, and a value-creation-plan-ready paragraph. Companion to The White-Collar Horse.">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="AI value-drift as a portfolio risk">
+    <meta property="og:description" content="A one-page brief for a private equity operating partner. Where AI value-drift shows up across a portfolio, a portfolio risk lens, seven questions to ask a portfolio CEO or CRO, and a value-creation-plan-ready paragraph.">
+    <meta property="og:url" content="https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html">
+    <meta property="og:image" content="https://www.superogtm.com/assets/wch/hero.png">
+    <meta property="article:author" content="Cumai Aboul Housn">
+    <meta property="article:author" content="Alex Abbott">
+    <meta property="article:published_time" content="2026-05-02">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="./_wch-prompt.css">
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/favicon-180.png">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-41ZC9G3HZJ"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-41ZC9G3HZJ');</script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "AI value-drift as a portfolio risk",
+      "description": "A one-page brief for a private equity operating partner. Where AI value-drift shows up across a portfolio, a portfolio risk lens, seven questions to ask a portfolio CEO or CRO, and a value-creation-plan-ready paragraph.",
+      "image": "https://www.superogtm.com/assets/wch/hero.png",
+      "author": [
+        { "@type": "Person", "name": "Cumai Aboul Housn", "jobTitle": "Enterprise Transformation Architect, AI and Digital Innovation", "worksFor": { "@type": "Organization", "name": "Supero" } },
+        { "@type": "Person", "name": "Iga Sloan", "jobTitle": "EU AI Act and Regulatory Strategy", "worksFor": { "@type": "Organization", "name": "Supero" } },
+        { "@type": "Person", "name": "Alex Abbott", "jobTitle": "Founder and Chief Revenue Officer", "worksFor": { "@type": "Organization", "name": "Supero" } }
+      ],
+      "datePublished": "2026-05-02",
+      "dateModified": "2026-07-14",
+      "publisher": { "@type": "Organization", "name": "Supero", "url": "https://www.superogtm.com", "logo": { "@type": "ImageObject", "url": "https://www.superogtm.com/assets/logo-dark.svg" } },
+      "speakable": {
+            "@type": "SpeakableSpecification",
+            "cssSelector": [".brief-lede", ".key-terms"],
+            "xpath": ["/html/body//*[contains(@class, 'brief-lede')]", "/html/body//*[contains(@class, 'key-terms')]"]
+          },
+      "mainEntityOfPage": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html",
+      "isPartOf": { "@type": "Article", "@id": "https://www.superogtm.com/perspectives/white-collar-horse.html#article" }
+    }
+    </script>
+
+    <style>
+        .footer-5col { grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr; }
+        @media (max-width: 900px) { .footer-5col { grid-template-columns: 1fr 1fr !important; } }
+        @media (max-width: 560px) { .footer-5col { grid-template-columns: 1fr !important; } }
+
+        /* OP brief uses indigo/violet accent (value-creation lane) instead of magenta or teal.
+           Magenta is retained for brand wordmark and CTA buttons only. */
+
+        .brief-hero {
+            background: var(--bg-dark);
+            padding: 7rem 2rem 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+        .brief-hero::before {
+            content: ''; position: absolute; inset: 0;
+            background: radial-gradient(ellipse at 15% 0%, rgba(99,102,241,0.12) 0%, transparent 55%);
+            pointer-events: none;
+        }
+        .brief-hero-inner { max-width: 820px; margin: 0 auto; position: relative; }
+        .brief-eyebrow {
+            display: inline-block;
+            font-size: 0.7rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.14em;
+            color: #818CF8;
+            margin: 0 0 1.25rem; padding: 0.4rem 0.9rem;
+            border: 1px solid rgba(129,140,248,0.4);
+            border-radius: 100px;
+            background: rgba(129,140,248,0.06);
+        }
+        .brief-hero h1 {
+            font-size: clamp(1.6rem, 3.4vw, 2.4rem);
+            font-weight: 700; color: var(--text-light, #f1eff5);
+            line-height: 1.15; letter-spacing: -0.02em;
+            margin: 0 0 1rem;
+        }
+        .brief-hero .deck {
+            font-size: 1rem; color: rgba(241,239,245,0.68);
+            line-height: 1.6; margin: 0 0 2rem; max-width: 680px;
+        }
+        .brief-meta {
+            display: flex; align-items: center; gap: 1.25rem;
+            padding-top: 1.25rem;
+            border-top: 1px solid rgba(255,255,255,0.08);
+            flex-wrap: wrap;
+        }
+        .brief-byline { display: flex; align-items: center; gap: 0.75rem; }
+        .brief-avatars { display: flex; }
+        .brief-avatars img {
+            width: 36px; height: 36px; border-radius: 50%;
+            border: 2px solid var(--bg-dark); object-fit: cover;
+        }
+        .brief-avatars img:not(:first-child) { margin-left: -10px; }
+        .brief-byline-text p { margin: 0; line-height: 1.3; }
+        .brief-byline-text .names { font-size: 0.825rem; font-weight: 600; color: rgba(241,239,245,0.9); }
+        .brief-byline-text .meta { font-size: 0.72rem; color: rgba(241,239,245,0.45); }
+        .brief-actions { margin-left: auto; display: flex; gap: 0.5rem; }
+        .brief-action {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            padding: 0.5rem 1rem; border-radius: 100px;
+            font-size: 0.8rem; font-weight: 600;
+            border: 1px solid rgba(255,255,255,0.15);
+            color: rgba(241,239,245,0.85);
+            text-decoration: none;
+            transition: border-color 0.2s, background 0.2s;
+        }
+        .brief-action:hover {
+            border-color: rgba(255,255,255,0.4);
+            background: rgba(255,255,255,0.04);
+        }
+
+        .brief-body { background: #fff; padding: 3.5rem 2rem 4rem; }
+        .brief-body .inner { max-width: 820px; margin: 0 auto; }
+
+        .brief-lede {
+            font-size: 1.075rem;
+            color: var(--text, #110e1a);
+            line-height: 1.7;
+            margin: 0 0 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #ebe8f0;
+            font-weight: 500;
+        }
+
+        .brief-body h2 {
+            font-size: 1.25rem; font-weight: 700;
+            color: var(--text, #110e1a);
+            line-height: 1.25; letter-spacing: -0.01em;
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.6rem;
+            border-bottom: 1px solid #ebe8f0;
+        }
+        .brief-body h2 .count {
+            display: inline-block;
+            width: 28px; height: 28px; line-height: 28px;
+            text-align: center;
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: #fff; border-radius: 50%;
+            font-size: 0.8rem; font-weight: 700;
+            margin-right: 0.6rem;
+            vertical-align: middle;
+        }
+        .brief-body p {
+            font-size: 0.975rem; color: #2c2737;
+            line-height: 1.75; margin: 0 0 1rem;
+        }
+        .brief-body strong { color: var(--text, #110e1a); font-weight: 700; }
+
+        /* Exposure tiles */
+        .exposure-tiles {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.85rem;
+            margin: 1.5rem 0 0.5rem;
+        }
+        .exposure-tile {
+            padding: 1.15rem 1rem;
+            border: 1px solid #ebe8f0;
+            border-radius: 12px;
+            background: linear-gradient(135deg, #fafaff 0%, #f4f4ff 100%);
+        }
+        .exposure-tile .num {
+            font-size: 1.5rem; font-weight: 800;
+            color: #4F46E5; line-height: 1.1;
+            letter-spacing: -0.02em; margin: 0 0 0.35rem;
+        }
+        .exposure-tile .label {
+            font-size: 0.75rem; color: #4a4558;
+            line-height: 1.4; margin: 0;
+        }
+        @media (max-width: 700px) {
+            .exposure-tiles { grid-template-columns: 1fr 1fr; }
+        }
+
+        /* Risk matrix */
+        .risk-table {
+            border: 1px solid #ebe8f0;
+            border-radius: 12px;
+            overflow: hidden;
+            margin: 1.5rem 0;
+            background: #fff;
+        }
+        .risk-row {
+            display: grid;
+            grid-template-columns: 1.1fr 1.6fr 1.6fr;
+            border-bottom: 1px solid #ebe8f0;
+        }
+        .risk-row:last-child { border-bottom: none; }
+        .risk-row.head {
+            background: rgba(99,102,241,0.08);
+            font-size: 0.68rem; font-weight: 700;
+            text-transform: uppercase; letter-spacing: 0.1em;
+            color: #4F46E5;
+        }
+        .risk-cell {
+            padding: 0.95rem 1.1rem;
+            font-size: 0.9rem; line-height: 1.55; color: #2c2737;
+            border-right: 1px solid #ebe8f0;
+        }
+        .risk-cell:last-child { border-right: none; }
+        .risk-row.head .risk-cell { padding: 0.7rem 1.1rem; }
+        .risk-row:not(.head) .risk-cell:first-child {
+            font-weight: 700; color: var(--text, #110e1a);
+        }
+        @media (max-width: 700px) {
+            .risk-row { grid-template-columns: 1fr; }
+            .risk-row.head { display: none; }
+            .risk-cell { border-right: none; border-bottom: 1px solid #f4f0f8; }
+            .risk-row .risk-cell:first-child { background: rgba(99,102,241,0.08); font-weight: 700; }
+        }
+
+        /* Numbered question list - indigo */
+        .q-list {
+            list-style: none;
+            padding: 0; margin: 1rem 0 1.5rem;
+            counter-reset: qcount;
+        }
+        .q-list li {
+            counter-increment: qcount;
+            padding: 1rem 0 1rem 2.5rem;
+            border-bottom: 1px solid #ebe8f0;
+            position: relative;
+            font-size: 0.95rem;
+            line-height: 1.65;
+            color: #2c2737;
+        }
+        .q-list li:last-child { border-bottom: none; }
+        .q-list li::before {
+            content: counter(qcount);
+            position: absolute; left: 0; top: 1rem;
+            width: 28px; height: 28px;
+            line-height: 28px; text-align: center;
+            background: linear-gradient(135deg, #6366F1 0%, #4F46E5 100%);
+            color: #fff; border-radius: 50%;
+            font-size: 0.75rem; font-weight: 700;
+        }
+
+        /* Value-creation-plan paragraph block */
+        .minutes-block {
+            margin: 1.25rem 0 0.5rem;
+            padding: 1.25rem 1.5rem;
+            background: #fbfbff;
+            border: 1px dashed rgba(99,102,241,0.4);
+            border-radius: 10px;
+            position: relative;
+        }
+        .minutes-block .label {
+            font-size: 0.65rem; font-weight: 700;
+            letter-spacing: 0.18em; text-transform: uppercase;
+            color: #4F46E5; margin: 0 0 0.65rem;
+        }
+        .minutes-block p {
+            font-size: 0.925rem; color: #2c2737;
+            line-height: 1.7; margin: 0;
+            font-family: 'DM Sans', sans-serif;
+            font-style: normal;
+        }
+        .minutes-block .note {
+            font-size: 0.78rem; color: #4a4558;
+            margin-top: 0.85rem; padding-top: 0.6rem;
+            border-top: 1px solid rgba(99,102,241,0.2);
+            font-style: italic;
+        }
+
+        /* Closing card */
+        .close-card {
+            margin-top: 2.5rem;
+            padding: 1.75rem 2rem;
+            background: linear-gradient(135deg, #f6f6fe 0%, #eeeefb 100%);
+            border: 1px solid rgba(99,102,241,0.2);
+            border-radius: 14px;
+        }
+        .close-card h3 {
+            font-size: 1.05rem; font-weight: 700;
+            color: var(--text, #110e1a);
+            margin: 0 0 0.6rem; letter-spacing: -0.01em;
+        }
+        .close-card p {
+            font-size: 0.925rem; color: #4a4558;
+            line-height: 1.65; margin: 0 0 1rem;
+        }
+        .close-card .authors-note {
+            font-size: 0.85rem; color: #4a4558;
+            margin: 1rem 0 1rem; font-style: italic;
+            padding: 0.85rem 1rem;
+            border-left: 2px solid #6366F1;
+            background: rgba(255,255,255,0.5);
+        }
+        .tile-source { font-size: 0.7rem; color: #8a8598; line-height: 1.5; margin: -0.4rem 0 0.5rem; }
+        .close-card .engagement-shape {
+            font-size: 0.9rem; color: #2C2737; font-weight: 500;
+            line-height: 1.6; margin: 0 0 1.4rem;
+            padding: 1rem 1.15rem;
+            border-radius: 10px;
+            background: linear-gradient(135deg, rgba(99,102,241,0.09) 0%, rgba(79,70,229,0.09) 100%);
+            border: 1px solid rgba(99,102,241,0.18);
+        }
+        .close-card .cta-row {
+            display: flex; gap: 0.7rem; flex-wrap: wrap;
+        }
+        .close-card .btn-primary {
+            display: inline-block;
+            padding: 0.7rem 1.35rem;
+            background: var(--magenta, #A51C60);
+            color: #fff !important;
+            text-decoration: none;
+            border-radius: 100px;
+            font-size: 0.825rem;
+            font-weight: 600;
+        }
+        .close-card .btn-primary:hover { background: #bd2971; }
+        .close-card .btn-ghost {
+            display: inline-block;
+            padding: 0.7rem 1.35rem;
+            background: transparent;
+            color: var(--text, #110e1a) !important;
+            text-decoration: none;
+            border: 1px solid rgba(13,6,24,0.15);
+            border-radius: 100px;
+            font-size: 0.825rem;
+            font-weight: 600;
+        }
+        .close-card .btn-ghost:hover { border-color: rgba(13,6,24,0.4); }
+
+        .related-back {
+            margin-top: 2rem;
+            padding: 1.25rem 1.5rem;
+            border: 1px dashed rgba(99,102,241,0.3);
+            border-radius: 12px;
+            text-align: center;
+        }
+        .related-back a {
+            font-size: 0.85rem;
+            color: #4F46E5;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-flex; align-items: center; gap: 0.4rem;
+        }
+        .related-back a:hover { text-decoration: underline; }
+
+        /* Print */
+        @media print {
+            header, footer, .brief-actions { display: none !important; }
+            body { background: #fff !important; }
+            .brief-hero { background: #fff !important; padding: 1.5rem 0 1rem !important; page-break-inside: avoid; }
+            .brief-hero::before { display: none; }
+            .brief-hero h1, .brief-hero .deck, .brief-byline-text .names, .brief-byline-text .meta { color: #110e1a !important; }
+            .brief-avatars img { border-color: #fff !important; }
+            .brief-body { padding: 0.5rem 0 1rem !important; }
+            .brief-body h2 { page-break-after: avoid; margin-top: 1.5rem !important; }
+            .risk-row, .q-list li, .minutes-block, .close-card, .exposure-tiles { page-break-inside: avoid; }
+            .close-card .cta-row { display: none; }
+            a { color: #4F46E5 !important; text-decoration: none !important; }
+            .related-back { display: none; }
+        }
+
+        .authors-bio { background: #ffffff; padding: 3.5rem 2rem; border-top: 1px solid rgba(0,0,0,0.06); }
+        .authors-bio .inner-narrow { max-width: 980px; margin: 0 auto; }
+        .authors-bio h2 { font-size: 1.3rem; font-weight: 700; color: #0D0618; margin: 0 0 1.6rem; letter-spacing: -0.01em; }
+        .authors-bio .bio-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .authors-bio .bio { display: flex; flex-direction: column; gap: 0.85rem; align-items: flex-start; }
+        .authors-bio .bio-avatar { width: 56px; height: 56px; border-radius: 50%; object-fit: cover; flex-shrink: 0; }
+        .authors-bio .bio-name { font-weight: 700; color: #0D0618; margin: 0 0 0.2rem; font-size: 0.92rem; }
+        .authors-bio .bio-title { font-size: 0.75rem; color: #4F46E5; margin: 0 0 0.55rem; font-weight: 600; }
+        .authors-bio .bio-text { font-size: 0.85rem; line-height: 1.55; color: #2C2737; margin: 0; }
+        @media (max-width: 860px) { .authors-bio .bio-row { grid-template-columns: 1fr; gap: 1.8rem; } .authors-bio .bio { flex-direction: row; } }
+
+        .key-terms {
+            background: linear-gradient(135deg, rgba(99,102,241,0.045) 0%, rgba(79,70,229,0.045) 100%);
+            border: 1px solid rgba(99,102,241,0.12);
+            border-radius: 14px;
+            padding: 1.75rem 1.85rem;
+            margin: 1.75rem 0 2.25rem;
+        }
+        .key-terms h2 {
+            font-size: 0.72rem !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.13em !important;
+            color: #4F46E5 !important;
+            margin: 0 0 1.1rem !important;
+            padding: 0 !important;
+            display: block !important;
+        }
+        .key-terms h2::before { content: none !important; }
+        .key-terms-list { margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.85rem; }
+        .key-terms .key-term { margin: 0; }
+        .key-terms dt {
+            font-size: 0.92rem;
+            font-weight: 700;
+            color: #0D0618;
+            margin: 0 0 0.2rem;
+            line-height: 1.35;
+        }
+        .key-terms dd {
+            font-size: 0.86rem;
+            line-height: 1.55;
+            color: #2C2737;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Forward-this row */
+        .forward-row-share {
+            margin: 2rem 0 1.5rem;
+            padding: 1.5rem 1.6rem;
+            background: rgba(99,102,241,0.045);
+            border: 1px solid rgba(99,102,241,0.12);
+            border-radius: 14px;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .forward-row-share .forward-eyebrow {
+            display: inline-block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.13em;
+            color: #4F46E5;
+            margin: 0 0 0.5rem;
+        }
+        .forward-row-share .forward-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #0D0618;
+            margin: 0 0 0.3rem;
+            letter-spacing: -0.005em;
+        }
+        .forward-row-share .forward-help {
+            font-size: 0.83rem;
+            color: #6b6680;
+            margin: 0 0 1.05rem;
+            line-height: 1.5;
+        }
+        .forward-row-share .forward-buttons {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.55rem;
+        }
+        .forward-row-share .forward-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.6rem 0.95rem;
+            background: #ffffff;
+            border: 1px solid rgba(13,6,24,0.10);
+            border-radius: 10px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.86rem;
+            font-weight: 600;
+            color: #0D0618;
+            text-decoration: none;
+            cursor: pointer;
+            transition: border-color 0.15s ease, transform 0.15s ease, color 0.15s ease;
+        }
+        .forward-row-share .forward-btn:hover {
+            border-color: #4F46E5;
+            color: #4F46E5;
+            transform: translateY(-1px);
+        }
+        .forward-row-share .forward-btn svg { flex-shrink: 0; }
+        .forward-row-share .forward-btn.is-copied {
+            background: #4F46E5;
+            color: #ffffff;
+            border-color: #4F46E5;
+        }
+        @media (max-width: 560px) {
+            .forward-row-share { padding: 1.25rem 1.2rem; }
+            .forward-row-share .forward-buttons { gap: 0.4rem; }
+            .forward-row-share .forward-btn { padding: 0.55rem 0.8rem; font-size: 0.82rem; }
+        }
+        @media print { .forward-row-share { display: none; } }
+
+        /* PDF print refinements */
+        @media print {
+            .ai-prompt-card, .forward-row-share, .related-back, .brief-footer-cta { display: none !important; }
+            .authors-bio { padding: 1.25rem 0 0 !important; border-top: 1px solid rgba(0,0,0,0.10) !important; page-break-inside: avoid; }
+            .authors-bio h2 { font-size: 0.95rem !important; margin: 0 0 0.65rem !important; }
+            .authors-bio .bio-avatar { width: 44px !important; height: 44px !important; }
+            .authors-bio .bio-text { font-size: 0.78rem !important; line-height: 1.45 !important; }
+            .key-terms { padding: 1rem 1.1rem !important; margin: 1.1rem 0 1.4rem !important; page-break-inside: avoid; }
+            .key-terms dt { font-size: 0.8rem !important; }
+            .key-terms dd { font-size: 0.75rem !important; }
+            .brief-body p, .brief-body li { font-size: 0.82rem !important; line-height: 1.5 !important; }
+            .brief-body h1 { font-size: 1.6rem !important; }
+            .brief-body h2 { font-size: 1.1rem !important; margin-top: 1.1rem !important; }
+            .brief-body h3 { font-size: 0.95rem !important; }
+            .brief-lede { font-size: 0.95rem !important; line-height: 1.5 !important; }
+            .exposure-tiles { gap: 0.6rem !important; }
+            .exposure-tile { padding: 0.85rem !important; }
+            .exposure-tile .num { font-size: 1.2rem !important; }
+            .exposure-tile .label { font-size: 0.7rem !important; }
+            .brief-body p { orphans: 3; widows: 3; }
+        }
+    </style>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What questions should a private equity operating partner ask a portfolio company about AI?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Where AI is already shaping commercial decisions across the revenue engine, and who owns each one. Whether lead scoring, forecasting, pricing and churn models still optimise for the ICP in the value-creation plan. Whether AI usage has a written policy and named human owners with authority to pause or withdraw a system. Whether each material AI system's EU AI Act risk classification is documented. And whether the AI inventory would survive buyer or lender diligence at exit."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why does AI value-drift matter for private equity value creation and exit?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "For a PE-backed company, or for an operating partner supporting a portfolio, ungoverned AI is not only an operational issue. It is a board issue, a diligence issue, and eventually an exit-value issue. Value-drift can flatter dashboards while quietly moving the revenue engine away from the strategy the value-creation plan is underwriting, and an AI inventory that cannot be evidenced becomes a discount at exit rather than a proof point."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is an AI governance inventory and why does it protect exit multiple?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "An AI governance inventory is a register of the AI systems in use across a company, each with its decision influence, data dependency, EU AI Act risk classification, named human owner, and reversal authority. The same inventory that reduces regulatory exposure today becomes evidence of control, maturity, and explainability in future investor or buyer diligence, protecting the multiple rather than surfacing as a late-stage risk."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How should an operating partner standardise AI oversight across a portfolio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Set one portfolio-wide standard: every company maintains an AI inventory with classifications, named owners, and reversal authority; every new AI initiative defines the root problem before naming the tool; and value-drift against the approved commercial strategy is monitored on a fixed cadence. The standard is applied once and reported the same way across every asset, so the operating partner compares like for like."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DefinedTermSet",
+      "@id": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html#key-terms",
+      "name": "Key terms",
+      "hasDefinedTerm": [
+        {
+          "@type": "DefinedTerm",
+          "name": "Value-drift in the revenue engine",
+          "description": "The slow shift in what good looks like inside a company because AI-mediated workflows are steering behaviour before leadership has consciously decided what to reward. Across a portfolio it compounds asset by asset, unseen on the dashboards.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "AI governance inventory",
+          "description": "A register of the AI systems in use across a company, each with its decision influence, data dependency, EU AI Act risk classification, named human owner and reversal authority. The core diligence artefact for AI at entry and exit.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Exit-value exposure",
+          "description": "The discount a buyer or lender applies when a company cannot evidence how AI shapes its commercial decisions. The gap between a dashboard that looks healthy and a revenue engine that can be explained under diligence.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Reversal authority",
+          "description": "The named individual with the standing to suspend, retrain or withdraw an AI deployment that underperforms or drifts. A core test of governance maturity, and one of the cheapest to check across a portfolio.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html#key-terms"
+        },
+        {
+          "@type": "DefinedTerm",
+          "name": "Portfolio-ready paragraph",
+          "description": "A short, defensible statement of position on AI value-drift, written so an operating partner can lift it directly into a value-creation plan, a board pack, or a monthly portfolio review without further drafting.",
+          "inDefinedTermSet": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html#key-terms"
+        }
+      ]
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.superogtm.com/" },
+            { "@type": "ListItem", "position": 2, "name": "Perspectives", "item": "https://www.superogtm.com/perspectives.html" },
+            { "@type": "ListItem", "position": 3, "name": "The White-Collar Horse", "item": "https://www.superogtm.com/perspectives/white-collar-horse.html" },
+            { "@type": "ListItem", "position": 4, "name": "Operating Partner Brief: AI value-drift as a portfolio risk", "item": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html" }
+        ]
+    }
+    </script>
+</head>
+<body>
+
+<header>
+<nav id="main-nav">
+    <div class="nav-inner">
+        <a href="../index.html" class="nav-logo" aria-label="Supero GTM home">
+            <img src="../assets/logo-dark.svg" alt="Supero" height="60">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="../revenue-ai-diagnostic.html">AI Revenue Sprint</a></li>
+            <li><a href="../team-performance-diagnostic.html">Team Revenue Sprint</a></li>
+            <li><a href="../full-revenue-diagnostic.html">Full Revenue Sprint</a></li>
+            <li><a href="../about.html">About</a></li>
+            <li><a href="../perspectives.html">Perspectives</a></li>
+        </ul>
+        <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="nav-cta btn-primary">Book a conversation</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+</header>
+
+<section class="brief-hero">
+    <div class="brief-hero-inner">
+        <span class="brief-eyebrow">Operating Partner Brief &middot; Companion to The White-Collar Horse</span>
+        <h1>AI value-drift as a portfolio risk</h1>
+        <p class="deck">A one-page brief for a private equity operating partner. Where AI value-drift shows up across a portfolio, a portfolio risk lens, seven questions worth asking a portfolio CEO or CRO, and a paragraph ready to drop into a value-creation plan. Designed to read in five minutes before a monthly portfolio review.</p>
+        <div class="brief-meta">
+            <div class="brief-byline">
+                <div class="brief-avatars">
+                    <img src="../assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn">
+                    <img src="../assets/iga-sloan.jpg" alt="Iga Sloan">
+                    <img src="../assets/alex-abbott.png" alt="Alex Abbott">
+                </div>
+                <div class="brief-byline-text">
+                    <p class="names">Cumai Aboul Housn, Iga Sloan and Alex Abbott</p>
+                    <p class="meta">Supero &middot; Published 2 May 2026 &middot; Updated 14 July 2026 &middot; 5 min read</p>
+                </div>
+            </div>
+            <div class="brief-actions">
+                <a href="#" class="brief-action" onclick="window.print();return false;" aria-label="Print this brief">
+                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M4 4V1h8v3M4 11H2V5h12v6h-2M4 9h8v6H4V9z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
+                    Print or save PDF
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<article class="brief-body">
+    <div class="inner">
+
+        <p class="brief-lede">AI is now embedded inside the revenue engine of most companies in a portfolio. It is shaping lead scores, forecasts, pricing, and customer prioritisation, quietly and asset by asset. For an operating partner, the question is not whether each management team is using AI well. It is whether the portfolio has the visibility, the standard, and the questions in hand to protect the value-creation plan, and the exit multiple, before the drift shows up in the numbers.</p>
+
+        <!-- Key terms (AEO defined-term block) -->
+        <section class="key-terms" id="key-terms" aria-labelledby="key-terms-heading">
+            <h2 id="key-terms-heading">Key terms</h2>
+            <dl class="key-terms-list">
+                <div class="key-term">
+                    <dt>Value-drift in the revenue engine</dt>
+                    <dd>The slow shift in what "good" looks like inside a company because AI-mediated workflows are steering behaviour before leadership has consciously decided what to reward. Across a portfolio it compounds asset by asset, unseen on the dashboards.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>AI governance inventory</dt>
+                    <dd>A register of the AI systems in use across a company, each with its decision influence, data dependency, EU AI Act risk classification, named human owner, and reversal authority. The core diligence artefact for AI, at entry and at exit.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>Exit-value exposure</dt>
+                    <dd>The discount a buyer or lender applies when a company cannot evidence how AI shapes its commercial decisions. The gap between a dashboard that looks healthy and a revenue engine that can be explained under diligence.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>Reversal authority</dt>
+                    <dd>The named individual with the standing to suspend, retrain, or withdraw an AI deployment that underperforms or drifts. A core test of governance maturity, and one of the cheapest to check across a portfolio.</dd>
+                </div>
+                <div class="key-term">
+                    <dt>Portfolio-ready paragraph</dt>
+                    <dd>A short, defensible statement of position on AI value-drift, written so an operating partner can lift it directly into a value-creation plan, a board pack, or a monthly portfolio review without further drafting.</dd>
+                </div>
+            </dl>
+        </section>
+
+        <!-- AI prompt component (indigo variant) -->
+        <div class="ai-prompt-card" data-wch-prompts>
+            <div class="ai-prompt-header">
+                <div class="ai-prompt-eyebrow">
+                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L9.5 5.5L14 7L9.5 8.5L8 13L6.5 8.5L2 7L6.5 5.5L8 1Z" fill="currentColor"/></svg>
+                    AI companion
+                </div>
+                <h3 class="ai-prompt-title">Read it with your AI</h3>
+                <p class="ai-prompt-desc"><strong>Step one: copy the prompt below.</strong> Then open your chosen AI and paste it in. That route works every time. The shortcut buttons try to pre-fill the prompt and pass the article link, but how reliably they do that depends on the AI, your subscription, and how it is configured (Claude tends to be most reliable today). If a shortcut underperforms, fall back to copy and paste.</p>
+            </div>
+            <div class="ai-prompt-preview">
+                <div class="ai-prompt-preview-label">Prompt preview</div>
+                <p class="ai-prompt-preview-text" data-preview>Read The White-Collar Horse and the linked Operating Partner brief. Act as a PE operating partner. Give me the three places AI value-drift most threatens a portfolio company's revenue engine, the single question most worth asking a portfolio CEO this month, and one line for the value-creation plan.</p>
+            </div>
+            <div class="ai-prompt-primary">
+                <button class="ai-prompt-copy-primary" data-copy>
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 4V2h10v10h-2M2 5h10v9H2V5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
+                    <span data-copy-label>Copy the prompt</span>
+                </button>
+                <p class="ai-prompt-primary-help">Paste into ChatGPT, Claude, Perplexity, Gemini, or any other AI.</p>
+            </div>
+            <div class="ai-prompt-foot">
+                <p class="ai-prompt-caveat">We use AI to help leaders prepare. We do not use it to replace judgement.</p>
+            </div>
+        </div>
+
+        <h2><span class="count">1</span>The position in three lines</h2>
+
+        <p><strong>The risk is not the absence of AI in the portfolio. It is the absence of a shared standard for AI that has already arrived inside every asset.</strong> Each company has bought AI separately, configured it locally, and, in most cases, owns it nowhere with a full view of consequence. What looks like productivity on a monthly dashboard can be value-drift, the revenue engine slowly optimising for something other than the strategy the value-creation plan is underwriting.</p>
+
+        <p>For a PE-backed company, or for an operating partner supporting a portfolio, this is not only an operational issue. It is also a board issue, a diligence issue, and eventually an <strong>exit-value issue</strong>. The same AI inventory that reduces regulatory exposure today becomes evidence of control, maturity, and explainability in future investor or buyer diligence. The operating partner is one of the few people with the standing to set that standard once and apply it across every asset.</p>
+
+        <h2><span class="count">2</span>The value at risk, not just the breach cost</h2>
+
+        <p>With operational improvement now driving more of the return than leverage and multiple expansion, the first exposure is not a breach. It is upside quietly not landing: AI inside the revenue engine optimising for something other than the thesis the value-creation plan underwrites. The downside numbers are real too. Both belong on the same page.</p>
+
+        <div class="exposure-tiles">
+            <div class="exposure-tile">
+                <p class="num">200&ndash;500 bps</p>
+                <p class="label">Margin, plus 5&ndash;10% revenue growth, a disciplined AI programme can add to a portfolio company over the hold, if it is pointed at the plan rather than at whatever converts fastest.</p>
+            </div>
+            <div class="exposure-tile">
+                <p class="num">7.8 months</p>
+                <p class="label">Time to impact for pricing, the fastest value lever, at a 4% failure rate. Value-drift is the tax on that speed when AI is shaping price, mix and prioritisation off-thesis.</p>
+            </div>
+            <div class="exposure-tile">
+                <p class="num">63%</p>
+                <p class="label">Share of organisations with no policy governing AI usage, exposed by default, and with no line of sight to whether AI is helping or drifting (IBM, 2025).</p>
+            </div>
+            <div class="exposure-tile">
+                <p class="num">&euro;620k</p>
+                <p class="label">Average breach premium carried by organisations with high shadow-AI use (roughly $670k, IBM, 2025), on top of &gt;50% of AI-attributed layoffs Forrester expects to be reversed.</p>
+            </div>
+        </div>
+
+        <p>The upside lines never reach a board pack because no one is measuring drift; the downside lines only reach it once an incident forces them to. The operating partner's advantage is that the same short set of questions surfaces both, at the same cadence, across every company in the fund.</p>
+
+        <p class="tile-source">Sources: margin and revenue uplift, Gorilla Logic AI value-creation analysis, 2026; pricing lever speed and failure rate, Simon-Kucher PE Value Creation Study, 2025; policy and breach figures, IBM Cost of a Data Breach, 2025; layoff reversal, Forrester. Operational improvement now drives the majority of PE value creation (Bain; Apollo; McKinsey Global Private Markets Report, 2026).</p>
+
+        <h2><span class="count">3</span>The portfolio risk lens</h2>
+
+        <p>Three lenses, each with a worst-case an operating partner should be prepared to discuss at the investment committee, not just at the portfolio board.</p>
+
+        <div class="risk-table">
+            <div class="risk-row head">
+                <div class="risk-cell">Lens</div>
+                <div class="risk-cell">Where it lands in the portfolio</div>
+                <div class="risk-cell">Worst case</div>
+            </div>
+            <div class="risk-row">
+                <div class="risk-cell">Value creation</div>
+                <div class="risk-cell">Value-drift in the revenue engine. AI shaping lead scores, forecasts, pricing and customer prioritisation in ways that drift from the ICP and strategy the value-creation plan is underwriting.</div>
+                <div class="risk-cell">A company on plan by activity and dashboard, but off plan on win rate, deal size, and retention, drifting hardest in the final year of the hold, when the largest share of exit-year EBITDA is meant to be made.</div>
+            </div>
+            <div class="risk-row">
+                <div class="risk-cell">Diligence &amp; exit</div>
+                <div class="risk-cell">The ability to evidence, on demand, how AI influences commercial decisions, who owns each system, and how it is classified and controlled.</div>
+                <div class="risk-cell">A buyer or lender diligence team finds AI shaping revenue with no inventory, no owners, and no documentation, and prices the uncertainty as a discount to the multiple.</div>
+            </div>
+            <div class="risk-row">
+                <div class="risk-cell">Regulatory &amp; reputational</div>
+                <div class="risk-cell">EU AI Act risk classification and literacy obligations across the portfolio; AI decisions affecting customers, candidates or employees with no defensible rationale.</div>
+                <div class="risk-cell">A high-risk system identified post-deployment in one asset, documentation reconstructed retrospectively, in front of a regulator, an LP, or a press cycle that has already asked.</div>
+            </div>
+        </div>
+
+        <h2><span class="count">4</span>Seven questions to ask a portfolio CEO or CRO</h2>
+
+        <p>None of these questions are hostile. They protect the management team and the value-creation plan. The first asks where AI is meant to be creating value; the rest make sure it still is. Ask them the same way in every company, and the portfolio becomes comparable.</p>
+
+        <ol class="q-list">
+            <li>Where is AI supposed to be adding growth or margin in this company, is that tied to a specific line in the value-creation plan, and can you show me it is actually landing, not just running?</li>
+            <li>Where is AI already making, or materially shaping, commercial decisions in your revenue engine, and can you give me that as a list with a named human owner for each, not a discussion?</li>
+            <li>When did you last check that all the AI-powered use cases supporting your GTM operating model are still optimising for the ICP and the strategy in the value-creation plan, rather than for whatever converts fastest?</li>
+            <li>If you needed to pause or withdraw any AI system from the revenue engine tomorrow, how quickly could you do it, and who has the authority to sign that off?</li>
+            <li>Which of your AI systems sit in the EU AI Act risk classification, what oversight does that require, and are you ahead of the deadlines or behind them?</li>
+            <li>If a buyer's diligence team asked you to evidence how AI shapes your commercial decisions, what could you produce in 48 hours, and what would you rather they did not find?</li>
+            <li>What is your written policy on AI usage at work, and how do you know your people are operating inside it rather than improvising?</li>
+        </ol>
+
+        <h2><span class="count">5</span>Value-creation-plan-ready paragraph</h2>
+
+        <p>If you want to record a portfolio-wide position, the following paragraph is drafted to be transferred directly into a value-creation plan, a portfolio board pack, or a monthly review.</p>
+
+        <div class="minutes-block">
+            <p class="label">Suggested wording</p>
+            <p>AI is now embedded across the productivity and revenue-generating decisions of the portfolio, from the tools that shape the commercial pipeline to those that manage people and operations. As a standard condition of the value-creation plan, each company will maintain and present, at the agreed cadence, a register of the AI use cases in operation, each ranked by its level of risk under the EU AI Act and mapped to the date enforcement takes effect, with a named human owner accountable for each and evidence of meaningful human oversight. Management teams will confirm that AI literacy obligations, in force since 2 February 2025, are met; that they are ready for the general application of the Act from 2 August 2026; and that any high-risk use case is on a plan to meet the 2 December 2027 deadline (2 August 2028 for AI embedded in regulated products). A process for monitoring value-drift against the approved commercial strategy will be agreed and assigned. Any material AI use case without documented ownership, risk classification, or oversight will be flagged with a remediation timeline, so that the same inventory that manages regulatory and operational risk today also stands as diligence-ready evidence of control and maturity at exit.</p>
+            <p class="note">Apply the same standard across every asset. The substance, inventory, classification, ownership, oversight, literacy, drift, remediation, is what turns a scattered set of AI pilots into a defensible position at the investment committee and in the data room.</p>
+        </div>
+
+        <!-- Forward this -->
+        <section class="forward-row-share" aria-label="Send this to a colleague">
+            <span class="forward-eyebrow">Send this to a portfolio team</span>
+            <p class="forward-title">Forward this in two clicks</p>
+            <p class="forward-help">Most of the value in this piece arrives when it lands on the right desk, a portfolio CEO, a CRO, a fellow partner, or the deal team ahead of diligence. Pick how you want to send it.</p>
+            <div class="forward-buttons">
+                <a href="mailto:?subject=A%20one-page%20operating%20partner%20brief%20on%20AI%20value-drift%20across%20a%20portfolio&body=A%20short%2C%20defensible%20operating%20partner%20brief%20on%20AI%20value-drift%20as%20a%20portfolio%20risk%2C%20with%20seven%20questions%20for%20a%20portfolio%20CEO%20and%20a%20value-creation-plan-ready%20paragraph%3A%20https%3A//www.superogtm.com/perspectives/white-collar-horse-op-brief.html%3Futm_source%3Dforward-email%26utm_medium%3Dbrief%26utm_campaign%3Dwch-op" class="forward-btn" data-share="email" data-campaign="wch-op">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M2 4l6 4 6-4M2 4v8h12V4M2 4h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    Email a colleague
+                </a>
+                <a href="https://www.linkedin.com/messaging/compose/?body=A%20short%2C%20defensible%20operating%20partner%20brief%20on%20AI%20value-drift%20as%20a%20portfolio%20risk%2C%20with%20seven%20questions%20for%20a%20portfolio%20CEO%20and%20a%20value-creation-plan-ready%20paragraph%3A%20https%3A//www.superogtm.com/perspectives/white-collar-horse-op-brief.html%3Futm_source%3Dforward-linkedin%26utm_medium%3Dbrief%26utm_campaign%3Dwch-op" target="_blank" rel="noopener noreferrer" class="forward-btn" data-share="linkedin" data-campaign="wch-op">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
+                        <path d="M4.5 13H2V5.5h2.5V13zM3.25 4.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9zM14 13h-2.5V9.4c0-.9-.4-1.4-1.1-1.4-.7 0-1.2.5-1.2 1.4V13H6.75V5.5H9v1c.4-.6 1.1-1.1 2-1.1 1.7 0 3 1 3 3.4V13z"/>
+                    </svg>
+                    Send on LinkedIn
+                </a>
+                <button type="button" class="forward-btn" data-share="copy" data-copy-url="https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html?utm_source=forward-copy&utm_medium=brief&utm_campaign=wch-op" data-campaign="wch-op">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                        <path d="M4 4V2h10v10h-2M2 5h10v9H2V5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+                    </svg>
+                    <span data-copy-label>Copy share link</span>
+                </button>
+            </div>
+        </section>
+
+        <div class="close-card">
+            <h3>The conversation this brief is built for</h3>
+            <p>The most expensive AI decisions across a portfolio in the next twelve months will be the ones no operating partner ever saw, already inside an approved system, configured by a function the board rarely meets, owned by no one with authority to intervene. The remedy is not more reporting from each asset. It is one standard, asked for the same way across every company, so drift surfaces while it is still cheap to correct, and the AI inventory becomes an exit proof point rather than a diligence discount.</p>
+            <p class="authors-note">This is the standard Supero sets. Alex Abbott runs the diagnostic with each management team and holds the portfolio-wide line. Cumai Aboul Housn carries the technical authority for the AI inventory and the infrastructure beneath it. Iga Sloan brings the EU AI Act risk classification and the documentation that survives buyer and lender diligence, and turns the regulatory clock from a liability into a plan. Together they are the standard, and the people who install it.</p>
+            <p class="engagement-shape">What that looks like in practice: one AI value-drift diagnostic, run the same way across every asset in the fund, producing a ranked red-amber-green scorecard for the investment committee and a value-creation-plan clause for each portfolio company. The fund sets the standard once; each company executes it. Fixed scope, comparable output, done before the next quarterly review.</p>
+            <div class="cta-row">
+                <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary" data-analytics="wch-op-book">Book the portfolio diagnostic conversation</a>
+                <p style="font-size:0.78rem; color:#6b6680; margin:0.6rem 0 0; font-style:italic; width:100%;">Prefer email? <a href="mailto:alex@superogtm.com" style="color:#A51C60;">alex@superogtm.com</a></p>
+                <a href="./wch-op-brief.pdf" class="btn-ghost btn-pdf" download data-analytics="wch-op-pdf" onclick="if(typeof gtag==='function'){gtag('event','file_download',{file_name:'wch-op-brief.pdf',campaign:'wch-op'});}">
+                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="margin-right:0.4rem;vertical-align:-2px;"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Download PDF for portfolio pack</a>
+            </div>
+        </div>
+
+        <div class="related-back">
+            <a href="./white-collar-horse.html">
+                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M10 6H2M2 6l4-4M2 6l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Read the full article: The White-Collar Horse
+            </a>
+        </div>
+
+    </div>
+</article>
+
+<!-- About the authors -->
+<section class="authors-bio" id="authors">
+    <div class="inner-narrow">
+        <h2>About the authors</h2>
+        <div class="bio-row">
+            <div class="bio">
+                <img src="../assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn" class="bio-avatar">
+                <div>
+                    <p class="bio-name">Cumai Aboul Housn</p>
+                    <p class="bio-title">Enterprise Transformation Architect, AI and Digital Innovation</p>
+                    <p class="bio-text">Cumai carries the technical authority for the AI inventory that sits behind a value-creation plan. He helps portfolio companies translate AI use into structured, EU AI Act aligned, diligence-ready evidence of control.</p>
+                </div>
+            </div>
+            <div class="bio">
+                <img src="../assets/iga-sloan.jpg" alt="Iga Sloan" class="bio-avatar">
+                <div>
+                    <p class="bio-name">Iga Sloan</p>
+                    <p class="bio-title">EU AI Act and Regulatory Strategy</p>
+                    <p class="bio-text">Iga brings the regulatory acumen that helps operating partners treat the EU AI Act as a springboard for performance rather than a compliance cost. She classifies each AI use case by risk, maps it to the enforcement clock, and turns balanced governance into a competitive advantage the value-creation plan can underwrite and a buyer can price.</p>
+                </div>
+            </div>
+            <div class="bio">
+                <img src="../assets/alex-abbott.png" alt="Alex Abbott" class="bio-avatar">
+                <div>
+                    <p class="bio-name">Alex Abbott</p>
+                    <p class="bio-title">Founder and Chief Revenue Officer, Supero</p>
+                    <p class="bio-text">Alex runs the diagnostic with management teams and works with operating partners to set one AI oversight standard across a portfolio, so revenue-engine decisions stay documented, defensible, and on plan through to exit.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer style="background:#0D0618; padding:3rem 2rem 2rem; border-top:1px solid rgba(255,255,255,0.06);">
+    <div style="max-width:1200px; margin:0 auto;">
+        <div class="footer-5col" style="display:grid; gap:2.5rem; margin-bottom:2.5rem;">
+            <div>
+                <a href="../index.html" aria-label="Supero GTM home" style="display:inline-block; margin-bottom:1rem;">
+                    <img src="../assets/logo-dark.svg" alt="Supero" height="40">
+                </a>
+                <p style="font-size:0.825rem; color:rgba(241,239,245,0.55); line-height:1.6; margin:0; max-width:280px;">Advisory that helps revenue leaders map, govern, and steer AI through the revenue engine.</p>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Revenue Sprints</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../revenue-ai-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">AI Revenue Sprint</a></li>
+                    <li><a href="../team-performance-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Team Revenue Sprint</a></li>
+                    <li><a href="../full-revenue-diagnostic.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Full Revenue Sprint</a></li>
+                    <li><a href="../full-revenue-diagnostic.html#for-ceos" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">For CEOs: AI Governance</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Proof &amp; Insight</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../case-studies.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Case Studies</a></li>
+                    <li><a href="../perspectives.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Perspectives</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Company</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="../index.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Home</a></li>
+                    <li><a href="../about.html" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">About</a></li>
+                    <li><a href="https://beardedsalesguy.substack.com" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Newsletter</a></li>
+                </ul>
+            </div>
+            <div>
+                <p style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:rgba(241,239,245,0.5); margin-bottom:1rem;">Connect</p>
+                <ul style="list-style:none; padding:0; margin:0; display:flex; flex-direction:column; gap:0.6rem;">
+                    <li><a href="https://www.linkedin.com/in/alex-bsg" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">LinkedIn</a></li>
+                    <li><a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" style="font-size:0.825rem; color:rgba(241,239,245,0.55); text-decoration:none;">Book a conversation</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding:1.25rem 0; display:flex; align-items:center; justify-content:center; gap:1rem; flex-wrap:wrap;">
+            <span style="font-size:0.7rem; font-weight:700; text-transform:uppercase; letter-spacing:0.1em; color:var(--magenta, #A51C60);">Explainable &middot; Responsible &middot; Transparent</span>
+            <span style="font-size:0.75rem; color:rgba(241,239,245,0.45);">Supero foundations, EU AI Act aligned by design</span>
+            <a href="../ai-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.7); text-decoration:underline;">Read our AI Policy</a>
+        </div>
+        <div style="border-top:1px solid rgba(255,255,255,0.06); padding-top:1.5rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+            <p style="font-size:0.75rem; color:rgba(241,239,245,0.3); margin:0;">&copy; 2026 Supero Ltd</p>
+            <div style="display:flex; gap:1.5rem;">
+                <a href="../ai-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">AI Policy</a>
+                <a href="../privacy-policy.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Privacy Policy</a>
+                <a href="../terms.html" style="font-size:0.75rem; color:rgba(241,239,245,0.3); text-decoration:none;">Terms</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="../analytics.js" defer></script>
+<script src="./_wch-prompt.js" defer></script>
+<script>
+const nav = document.getElementById('main-nav');
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+let overlay = null;
+function openMobileNav() {
+    if (overlay) return;
+    overlay = document.createElement('div');
+    overlay.style.cssText = 'position:fixed;inset:0;width:100vw;height:100vh;background:#0D0618;z-index:9999;display:flex;flex-direction:column;padding:6rem 2rem 2rem;gap:0.25rem;overflow-y:auto;';
+    navLinks.querySelectorAll('a').forEach(a => {
+        const link = document.createElement('a');
+        link.href = a.href;
+        link.textContent = a.textContent;
+        link.style.cssText = 'font-size:1.25rem;color:rgba(241,239,245,0.85);text-decoration:none;padding:0.75rem 0;font-family:DM Sans,sans-serif;font-weight:600;';
+        link.addEventListener('click', closeMobileNav);
+        overlay.appendChild(link);
+    });
+    const cta = document.createElement('a');
+    cta.href = 'https://calendly.com/alex_abbott/chat-with-alex';
+    cta.target = '_blank';
+    cta.textContent = 'Book a conversation';
+    cta.style.cssText = 'font-size:1rem;color:#fff;text-decoration:none;padding:0.75rem 1.5rem;font-family:DM Sans,sans-serif;font-weight:600;background:#A51C60;border-radius:100px;margin-top:1.5rem;display:inline-block;';
+    overlay.appendChild(cta);
+    const closeBtn = document.createElement('button');
+    closeBtn.innerHTML = '<svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M18 6L6 18M6 6l12 12" stroke="white" stroke-width="2" stroke-linecap="round"/></svg>';
+    closeBtn.style.cssText = 'position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;cursor:pointer;padding:0.5rem;';
+    closeBtn.addEventListener('click', closeMobileNav);
+    overlay.appendChild(closeBtn);
+    document.body.appendChild(overlay);
+    document.body.style.overflow = 'hidden';
+}
+function closeMobileNav() { if (overlay) { overlay.remove(); overlay = null; document.body.style.overflow = ''; } }
+hamburger.addEventListener('click', () => { if (overlay) closeMobileNav(); else openMobileNav(); });
+</script>
+
+<script>
+(function() {
+    var rows = document.querySelectorAll('.forward-row-share');
+    if (!rows.length) return;
+    function track(name, params) {
+        if (typeof gtag === 'function') {
+            try { gtag('event', name, params || {}); } catch(e) {}
+        }
+    }
+    rows.forEach(function(row) {
+        Array.prototype.forEach.call(row.querySelectorAll('[data-share="email"], [data-share="linkedin"]'), function(el) {
+            el.addEventListener('click', function() {
+                track('wch_forward_click', {
+                    method: el.getAttribute('data-share'),
+                    campaign: el.getAttribute('data-campaign')
+                });
+            });
+        });
+        var copyBtn = row.querySelector('[data-share="copy"]');
+        if (!copyBtn) return;
+        copyBtn.addEventListener('click', function() {
+            var url = copyBtn.getAttribute('data-copy-url');
+            var label = copyBtn.querySelector('[data-copy-label]');
+            var done = function() {
+                copyBtn.classList.add('is-copied');
+                if (label) { var prev = label.textContent; label.textContent = 'Link copied'; setTimeout(function() { copyBtn.classList.remove('is-copied'); if (label) label.textContent = prev; }, 2200); }
+                track('wch_forward_click', { method: 'copy', campaign: copyBtn.getAttribute('data-campaign') });
+            };
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(url).then(done).catch(function() {
+                    var t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0';
+                    document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done();
+                });
+            } else {
+                var t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0';
+                document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done();
+            }
+        });
+    });
+})();
+</script>
+
+</body>
+</html>
