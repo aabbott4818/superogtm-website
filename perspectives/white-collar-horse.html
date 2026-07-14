@@ -336,6 +336,63 @@
         }
         .use-guide .use-roles a:hover { border-bottom-color: currentColor; }
 
+        /* ===== Listen / audio player ===== */
+        .listen-player {
+            background: linear-gradient(180deg, #17102a 0%, #0D0618 100%);
+            border: 1px solid rgba(165,28,96,0.35);
+            border-radius: 14px;
+            padding: 1.3rem 1.5rem 1.15rem;
+            margin: 2.5rem 0;
+            color: #ede9f5;
+            font-family: 'DM Sans', sans-serif;
+        }
+        .listen-head { display: flex; align-items: center; gap: 0.7rem; margin-bottom: 1rem; }
+        .listen-head .lp-icon { flex-shrink: 0; color: #A51C60; }
+        .listen-head .lp-title { font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.14em; color: #d98cb4; margin: 0; }
+        .listen-head .lp-sub { font-size: 0.86rem; color: #b8b2c8; margin: 0.1rem 0 0; }
+        .lp-controls { display: flex; align-items: center; gap: 0.9rem; }
+        .lp-play {
+            flex-shrink: 0; width: 46px; height: 46px; border-radius: 50%;
+            border: none; background: #A51C60; color: #fff; cursor: pointer;
+            display: flex; align-items: center; justify-content: center;
+            transition: background 0.2s, transform 0.1s;
+        }
+        .lp-play:hover { background: #c2246f; }
+        .lp-play:active { transform: scale(0.94); }
+        .lp-play svg { display: block; }
+        .lp-play .icon-pause { display: none; }
+        .lp-play.is-playing .icon-play { display: none; }
+        .lp-play.is-playing .icon-pause { display: block; }
+        .lp-mid { flex: 1; min-width: 0; }
+        .lp-scrub-row { display: flex; align-items: center; gap: 0.7rem; }
+        .lp-scrub {
+            flex: 1; -webkit-appearance: none; appearance: none; height: 4px; border-radius: 3px;
+            background: rgba(255,255,255,0.18); cursor: pointer; outline: none;
+        }
+        .lp-scrub::-webkit-slider-thumb {
+            -webkit-appearance: none; appearance: none; width: 13px; height: 13px;
+            border-radius: 50%; background: #A51C60; cursor: pointer; border: 2px solid #17102a;
+        }
+        .lp-scrub::-moz-range-thumb { width: 13px; height: 13px; border-radius: 50%; background: #A51C60; cursor: pointer; border: 2px solid #17102a; }
+        .lp-time { font-size: 0.76rem; color: #9d97ad; font-variant-numeric: tabular-nums; white-space: nowrap; }
+        .lp-actions { display: flex; align-items: center; gap: 0.5rem; }
+        .lp-speed, .lp-chapters {
+            background: rgba(255,255,255,0.07); border: 1px solid rgba(255,255,255,0.14);
+            color: #d7d2e3; font-size: 0.76rem; font-weight: 600; border-radius: 8px;
+            padding: 0.35rem 0.55rem; cursor: pointer; font-family: inherit;
+        }
+        .lp-speed:hover, .lp-chapters:hover { background: rgba(255,255,255,0.12); }
+        .lp-chapters { max-width: 150px; }
+        .lp-second-row { display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; margin-top: 0.85rem; flex-wrap: wrap; }
+        .lp-disclosure { font-size: 0.74rem; line-height: 1.5; color: #8f89a3; margin: 0; flex: 1; min-width: 200px; }
+        .lp-disclosure a { color: #d98cb4; text-decoration: none; border-bottom: 1px solid rgba(217,140,180,0.4); }
+        .lp-disclosure a:hover { border-bottom-color: #d98cb4; }
+        .lp-badge { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #7d7791; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 0.2rem 0.5rem; white-space: nowrap; }
+        @media (max-width: 620px) {
+            .lp-actions { flex-wrap: wrap; justify-content: flex-end; }
+            .lp-chapters { max-width: 120px; }
+        }
+
         /* Figure block: image + caption + follow-on paragraph lives separately */
         .figure-block {
             margin: 3rem 0 2.5rem;
@@ -1081,6 +1138,54 @@
 <article class="article-body">
     <div class="inner">
 
+        <!-- Listen: audio narration of the article -->
+        <div class="listen-player" id="listen-player" data-audio="">
+            <div class="listen-head">
+                <svg class="lp-icon" width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3a4 4 0 0 0-4 4v5a4 4 0 0 0 8 0V7a4 4 0 0 0-4-4z" stroke="currentColor" stroke-width="1.6"/><path d="M5 11v1a7 7 0 0 0 14 0v-1M12 19v3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                <div>
+                    <p class="lp-title">Listen to this piece</p>
+                    <p class="lp-sub">Narrated in Alex&rsquo;s voice &middot; approx. 14 min</p>
+                </div>
+            </div>
+            <div class="lp-controls">
+                <button class="lp-play" type="button" aria-label="Play narration">
+                    <svg class="icon-play" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                    <svg class="icon-pause" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+                </button>
+                <div class="lp-mid">
+                    <div class="lp-scrub-row">
+                        <input class="lp-scrub" type="range" min="0" max="100" value="0" step="0.1" aria-label="Seek">
+                        <span class="lp-time"><span class="lp-current">0:00</span> / <span class="lp-total">14:00</span></span>
+                    </div>
+                </div>
+                <div class="lp-actions">
+                    <button class="lp-speed" type="button" aria-label="Playback speed">1&times;</button>
+                    <select class="lp-chapters" aria-label="Jump to chapter">
+                        <option value="" selected>Chapters</option>
+                        <option value="ai-not-waiting">AI is not waiting</option>
+                        <option value="the-horse">The horse and the car</option>
+                        <option value="redesign-not-replacement">Replacement vs redesign</option>
+                        <option value="value-drift">Value-drift in the revenue engine</option>
+                        <option value="whats-happening">What is happening today</option>
+                        <option value="llm-vs-ml">LLM versus ML</option>
+                        <option value="boardroom-habit">The dangerous boardroom habit</option>
+                        <option value="board-questions">Questions a board should ask</option>
+                        <option value="why-it-matters">Why this matters</option>
+                        <option value="ai-changes-behaviour">AI changes behaviour</option>
+                        <option value="governance">Governance as discipline</option>
+                        <option value="ai-act-gift">The AI Act as a gift</option>
+                        <option value="asks-of-leaders">What this asks of leaders</option>
+                        <option value="keep-the-pen">Keep the pen in your hand</option>
+                    </select>
+                </div>
+            </div>
+            <div class="lp-second-row">
+                <p class="lp-disclosure">Narrated in Alex&rsquo;s voice using AI, with his consent. This is how we use AI: to extend judgement, not replace it. <a href="../ai-policy.html">How we use AI</a></p>
+                <span class="lp-badge">Coming soon</span>
+            </div>
+            <audio class="lp-audio" preload="none"></audio>
+        </div>
+
         <!-- How to use this piece: orients the reader before they start + surfaces the briefs -->
         <div class="use-guide">
             <p class="use-label">How to use this piece</p>
@@ -1652,6 +1757,7 @@
 
 <script src="../analytics.js" defer></script>
 <script src="./_wch-prompt.js" defer></script>
+<script src="./_wch-audio.js" defer></script>
 <script>
 const nav = document.getElementById('main-nav');
 window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 20));
