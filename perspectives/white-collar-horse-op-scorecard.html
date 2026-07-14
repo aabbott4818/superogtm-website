@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI value-drift as a portfolio risk | Operating Partner Brief | Supero</title>
-    <meta name="description" content="A one-page brief for a private equity operating partner. Where AI value-drift shows up across a portfolio, a portfolio risk lens, seven questions to ask a portfolio CEO or CRO, and a value-creation-plan-ready paragraph. Companion to The White-Collar Horse.">
+    <title>Portfolio AI value-drift scorecard | Operating Partner tool | Supero</title>
+    <meta name="description" content="A one-page red-amber-green scorecard for a private equity operating partner to run the same AI value-drift diagnostic across every portfolio company and rank the results for the investment committee. Companion to The White-Collar Horse.">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html">
+    <link rel="canonical" href="https://www.superogtm.com/perspectives/white-collar-horse-op-scorecard.html">
 
     <meta property="og:type" content="article">
-    <meta property="og:title" content="AI value-drift as a portfolio risk">
-    <meta property="og:description" content="A one-page brief for a private equity operating partner. Where AI value-drift shows up across a portfolio, a portfolio risk lens, seven questions to ask a portfolio CEO or CRO, and a value-creation-plan-ready paragraph.">
-    <meta property="og:url" content="https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html">
+    <meta property="og:title" content="Portfolio AI value-drift scorecard">
+    <meta property="og:description" content="One RAG scorecard, run the same way across every portfolio company, ranked for the investment committee.">
+    <meta property="og:url" content="https://www.superogtm.com/perspectives/white-collar-horse-op-scorecard.html">
     <meta property="og:image" content="https://www.superogtm.com/assets/wch/hero.png">
     <meta property="article:author" content="Cumai Aboul Housn">
     <meta property="article:author" content="Alex Abbott">
@@ -32,7 +32,7 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "AI value-drift as a portfolio risk",
+      "headline": "Portfolio AI value-drift scorecard",
       "description": "A one-page brief for a private equity operating partner. Where AI value-drift shows up across a portfolio, a portfolio risk lens, seven questions to ask a portfolio CEO or CRO, and a value-creation-plan-ready paragraph.",
       "image": "https://www.superogtm.com/assets/wch/hero.png",
       "author": [
@@ -48,7 +48,7 @@
             "cssSelector": [".brief-lede", ".key-terms"],
             "xpath": ["/html/body//*[contains(@class, 'brief-lede')]", "/html/body//*[contains(@class, 'key-terms')]"]
           },
-      "mainEntityOfPage": "https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html",
+      "mainEntityOfPage": "https://www.superogtm.com/perspectives/white-collar-horse-op-scorecard.html",
       "isPartOf": { "@type": "Article", "@id": "https://www.superogtm.com/perspectives/white-collar-horse.html#article" }
     }
     </script>
@@ -506,6 +506,76 @@
             .exposure-tile .label { font-size: 0.7rem !important; }
             .brief-body p { orphans: 3; widows: 3; }
         }
+
+        /* ---- Scorecard (scoped + !important to beat site style.css cascade) ---- */
+        .sc-wrap { max-width: 1080px; margin: 0 auto; padding: 2.5rem 1.5rem 3.5rem; }
+        .sc-wrap .sc-intro { max-width: 780px; margin: 0 auto 2rem; }
+        .sc-wrap .sc-intro p { font-size: 0.95rem; color: #4a4558 !important; line-height: 1.7; margin: 0 0 1rem; }
+        .sc-wrap .sc-intro .lead { font-size: 1.08rem; color: #2C2737 !important; font-weight: 500; line-height: 1.6; }
+        .sc-wrap .sc-howto { display: flex; gap: 1rem; flex-wrap: wrap; margin: 1.75rem 0 0.5rem; }
+        .sc-wrap .sc-key { display: flex; align-items: center; gap: 0.5rem; font-size: 0.8rem; color: #4a4558 !important; }
+        .sc-wrap .sc-dot { width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .sc-wrap .sc-dot.g { background: #16A34A !important; } .sc-wrap .sc-dot.a { background: #D97706 !important; } .sc-wrap .sc-dot.r { background: #DC2626 !important; }
+        .sc-wrap .sc-table-wrap { overflow-x: auto; margin: 1.75rem 0; border-radius: 12px; border: 1px solid rgba(13,6,24,0.1); }
+        .sc-wrap table.sc { width: 100%; border-collapse: collapse; min-width: 860px; font-size: 0.83rem; margin: 0; }
+        .sc-wrap table.sc thead th { background: #4F46E5 !important; background-image: linear-gradient(135deg, #4F46E5 0%, #6366F1 100%) !important; color: #ffffff !important;
+            text-align: left; padding: 0.85rem 0.8rem; font-weight: 600; font-size: 0.8rem; vertical-align: bottom; border: none;
+            -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .sc-wrap table.sc thead th.co { min-width: 150px; }
+        .sc-wrap table.sc thead th small { display: block; font-weight: 400; opacity: 0.82; font-size: 0.7rem; margin-top: 0.2rem; line-height: 1.35; color: #ffffff !important; }
+        .sc-wrap table.sc tbody td { padding: 0.7rem 0.8rem; border-top: 1px solid rgba(13,6,24,0.08); vertical-align: top; color: #2C2737 !important; background: #ffffff; }
+        .sc-wrap table.sc tbody tr:nth-child(even) td { background: #F4F4FB; }
+        .sc-wrap table.sc td.co-name { font-weight: 600; color: #1a1626 !important; }
+        .sc-wrap table.sc td.co-name small { display:block; font-weight: 400; color: #8a8598 !important; font-size: 0.72rem; margin-top: 0.15rem; }
+        .sc-wrap .rag { display: inline-flex; align-items: center; justify-content: center; width: 26px; height: 26px;
+            border-radius: 6px; font-weight: 700; font-size: 0.78rem; color: #ffffff !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+        .sc-wrap .rag.g { background: #16A34A !important; } .sc-wrap .rag.a { background: #D97706 !important; } .sc-wrap .rag.r { background: #DC2626 !important; }
+        .sc-wrap .rag.empty { background: #E7E5EC !important; color: #b8b4c4 !important; font-weight: 400; }
+        .sc-wrap td.rating-cell { text-align: center; }
+        .sc-wrap td.overall { text-align: center; font-weight: 700; }
+        .sc-wrap .sc-section-title { font-size: 1.15rem; font-weight: 700; color: #1a1626 !important; margin: 2.5rem 0 0.4rem;
+            display: flex; align-items: center; gap: 0.6rem; }
+        .sc-wrap .sc-section-title::before { content: ""; width: 4px; height: 20px; background: #6366F1; border-radius: 2px; }
+        .sc-wrap .sc-dims { display: grid !important; grid-template-columns: repeat(2, 1fr) !important; gap: 0.9rem; margin: 1.25rem 0; }
+        @media (max-width: 720px) { .sc-wrap .sc-dims { grid-template-columns: 1fr !important; } }
+        .sc-wrap .sc-dim { padding: 0.95rem 1.1rem; border-radius: 10px; background: #ffffff !important; border: 1px solid rgba(13,6,24,0.1);
+            border-left: 3px solid #6366F1 !important; }
+        .sc-wrap .sc-dim h4 { font-size: 0.9rem; font-weight: 700; color: #1a1626 !important; margin: 0 0 0.35rem; }
+        .sc-wrap .sc-dim p { font-size: 0.8rem; color: #4a4558 !important; line-height: 1.55; margin: 0; }
+        .sc-wrap .sc-dim .rag-guide { font-size: 0.74rem; color: #6b6680 !important; margin-top: 0.5rem; line-height: 1.5; }
+        .sc-wrap .sc-dim .rag-guide b { color: #2C2737 !important; }
+        .sc-wrap .sc-ic { margin: 2rem 0; padding: 1.4rem 1.5rem; border-radius: 12px;
+            background: #EEEEFB !important; background-image: linear-gradient(135deg, rgba(99,102,241,0.09) 0%, rgba(79,70,229,0.09) 100%) !important;
+            border: 1px solid rgba(99,102,241,0.2); }
+        .sc-wrap .sc-ic h4 { font-size: 0.95rem; font-weight: 700; color: #1a1626 !important; margin: 0 0 0.6rem; }
+        .sc-wrap .sc-ic ol { margin: 0; padding-left: 1.25rem; }
+        .sc-wrap .sc-ic li { font-size: 0.86rem; color: #2C2737 !important; line-height: 1.6; margin-bottom: 0.5rem; }
+        .sc-wrap .sc-note { font-size: 0.72rem; color: #8a8598 !important; line-height: 1.5; margin: 0.75rem 0 0; }
+        .sc-wrap .sc-cta { text-align: center; margin: 3rem auto 0; max-width: 700px; }
+        .sc-wrap .sc-cta h3 { font-size: 1.3rem; color: #1a1626 !important; margin: 0 0 0.75rem; }
+        .sc-wrap .sc-cta p { font-size: 0.92rem; color: #4a4558 !important; line-height: 1.65; margin: 0 0 1.4rem; }
+        .sc-wrap .sc-cta-row { display: flex; gap: 0.7rem; flex-wrap: wrap; justify-content: center; }
+        .sc-wrap .sc-cta-row .btn-primary { background: #A51C60 !important; color: #fff !important; padding: 0.8rem 1.6rem; border-radius: 100px;
+            text-decoration: none; font-weight: 600; font-size: 0.9rem; }
+        .sc-wrap .sc-cta-row .btn-primary:hover { background: #bd2971 !important; }
+        .sc-wrap .sc-cta-row .btn-ghost { border: 1px solid rgba(13,6,24,0.25); color: #2C2737 !important; padding: 0.8rem 1.4rem;
+            border-radius: 100px; text-decoration: none; font-weight: 600; font-size: 0.9rem; display: inline-flex; align-items: center; background: transparent; }
+        .sc-wrap .sc-cta-row .btn-ghost:hover { border-color: rgba(13,6,24,0.5); }
+        .sc-wrap .sc-print { text-align: center; margin: 1.5rem 0 0; }
+        .sc-wrap .sc-print button { background: none; border: 1px solid rgba(13,6,24,0.2); color: #4a4558; cursor: pointer;
+            padding: 0.55rem 1.1rem; border-radius: 100px; font-family: inherit; font-size: 0.82rem; }
+        .sc-wrap .sc-print button:hover { border-color: #6366F1; color: #4F46E5; }
+        @media print {
+            #main-nav, header, footer, .sc-print, .sc-cta-row { display: none !important; }
+            body { background: #fff !important; }
+            .sc-wrap { padding: 0.5rem 0.5rem 1rem; max-width: 100%; }
+            table.sc { min-width: 0; font-size: 0.68rem; }
+            .sc-table-wrap { overflow: visible; }
+            table.sc thead th { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .rag, .sc-dot { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            .sc-dims, .sc-ic, .sc-table-wrap, table.sc tr { page-break-inside: avoid; }
+        }
+
     </style>
 
     <script type="application/ld+json">
@@ -628,9 +698,9 @@
 
 <section class="brief-hero">
     <div class="brief-hero-inner">
-        <span class="brief-eyebrow">Operating Partner Brief &middot; Companion to The White-Collar Horse</span>
-        <h1>AI value-drift as a portfolio risk</h1>
-        <p class="deck">A one-page brief for a private equity operating partner. Where AI value-drift shows up across a portfolio, a portfolio risk lens, seven questions worth asking a portfolio CEO or CRO, and a paragraph ready to drop into a value-creation plan. Designed to read in five minutes before a monthly portfolio review.</p>
+        <span class="brief-eyebrow">Operating Partner tool &middot; Companion to The White-Collar Horse</span>
+        <h1>Portfolio AI value-drift scorecard</h1>
+        <p class="deck">One red-amber-green scorecard, run the same way across every company in the fund, so AI value-drift becomes comparable, rankable, and ready to put in front of the investment committee. Seven dimensions, drawn from the seven questions in the Operating Partner brief.</p>
         <div class="brief-meta">
             <div class="brief-byline">
                 <div class="brief-avatars">
@@ -640,244 +710,102 @@
                 </div>
                 <div class="brief-byline-text">
                     <p class="names">Cumai Aboul Housn, Iga Sloan and Alex Abbott</p>
-                    <p class="meta">Supero &middot; Published 2 May 2026 &middot; Updated 14 July 2026 &middot; 5 min read</p>
+                    <p class="meta">Supero &middot; Updated 14 July 2026 &middot; Print or fill on screen</p>
                 </div>
-            </div>
-            <div class="brief-actions">
-                <a href="#" class="brief-action" onclick="window.print();return false;" aria-label="Print this brief">
-                    <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M4 4V1h8v3M4 11H2V5h12v6h-2M4 9h8v6H4V9z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/></svg>
-                    Print or save PDF
-                </a>
             </div>
         </div>
     </div>
 </section>
 
-<article class="brief-body">
-    <div class="inner">
-
-        <p class="brief-lede">AI is now embedded inside the revenue engine of most companies in a portfolio. It is shaping lead scores, forecasts, pricing, and customer prioritisation, quietly and asset by asset. For an operating partner, the question is not whether each management team is using AI well. It is whether the portfolio has the visibility, the standard, and the questions in hand to protect the value-creation plan, and the exit multiple, before the drift shows up in the numbers.</p>
-
-        <!-- Key terms (AEO defined-term block) -->
-        <section class="key-terms" id="key-terms" aria-labelledby="key-terms-heading">
-            <h2 id="key-terms-heading">Key terms</h2>
-            <dl class="key-terms-list">
-                <div class="key-term">
-                    <dt>Value-drift in the revenue engine</dt>
-                    <dd>The slow shift in what "good" looks like inside a company because AI-mediated workflows are steering behaviour before leadership has consciously decided what to reward. Across a portfolio it compounds asset by asset, unseen on the dashboards.</dd>
-                </div>
-                <div class="key-term">
-                    <dt>AI governance inventory</dt>
-                    <dd>A register of the AI systems in use across a company, each with its decision influence, data dependency, EU AI Act risk classification, named human owner, and reversal authority. The core diligence artefact for AI, at entry and at exit.</dd>
-                </div>
-                <div class="key-term">
-                    <dt>Exit-value exposure</dt>
-                    <dd>The discount a buyer or lender applies when a company cannot evidence how AI shapes its commercial decisions. The gap between a dashboard that looks healthy and a revenue engine that can be explained under diligence.</dd>
-                </div>
-                <div class="key-term">
-                    <dt>Reversal authority</dt>
-                    <dd>The named individual with the standing to suspend, retrain, or withdraw an AI deployment that underperforms or drifts. A core test of governance maturity, and one of the cheapest to check across a portfolio.</dd>
-                </div>
-                <div class="key-term">
-                    <dt>Portfolio-ready paragraph</dt>
-                    <dd>A short, defensible statement of position on AI value-drift, written so an operating partner can lift it directly into a value-creation plan, a board pack, or a monthly portfolio review without further drafting.</dd>
-                </div>
-            </dl>
-        </section>
-
-        <!-- AI prompt component (indigo variant) -->
-        <div class="ai-prompt-card" data-wch-prompts>
-            <div class="ai-prompt-header">
-                <div class="ai-prompt-eyebrow">
-                    <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 1L9.5 5.5L14 7L9.5 8.5L8 13L6.5 8.5L2 7L6.5 5.5L8 1Z" fill="currentColor"/></svg>
-                    AI companion
-                </div>
-                <h3 class="ai-prompt-title">Read it with your AI</h3>
-                <p class="ai-prompt-desc"><strong>Step one: copy the prompt below.</strong> Then open your chosen AI and paste it in. That route works every time. The shortcut buttons try to pre-fill the prompt and pass the article link, but how reliably they do that depends on the AI, your subscription, and how it is configured (Claude tends to be most reliable today). If a shortcut underperforms, fall back to copy and paste.</p>
-            </div>
-            <div class="ai-prompt-preview">
-                <div class="ai-prompt-preview-label">Prompt preview</div>
-                <p class="ai-prompt-preview-text" data-preview>Read The White-Collar Horse and the linked Operating Partner brief. Act as a PE operating partner. Give me the three places AI value-drift most threatens a portfolio company's revenue engine, the single question most worth asking a portfolio CEO this month, and one line for the value-creation plan.</p>
-            </div>
-            <div class="ai-prompt-primary">
-                <button class="ai-prompt-copy-primary" data-copy>
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 4V2h10v10h-2M2 5h10v9H2V5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/></svg>
-                    <span data-copy-label>Copy the prompt</span>
-                </button>
-                <p class="ai-prompt-primary-help">Paste into ChatGPT, Claude, Perplexity, Gemini, or any other AI.</p>
-            </div>
-            <div class="ai-prompt-foot">
-                <p class="ai-prompt-caveat">We use AI to help leaders prepare. We do not use it to replace judgement.</p>
-            </div>
+<div class="sc-wrap">
+    <div class="sc-intro">
+        <p class="lead">The brief gives you the seven questions. This turns the answers into a single view you can compare across the portfolio and rank for the IC.</p>
+        <p>Score each company against the seven dimensions below. The example rows are illustrative &mdash; replace them with your own assets, or print this page and mark it up by hand in a portfolio review. The overall rating is worst-weighted on purpose: a single red in value intent, drift, or kill-switch authority pulls the company red, because that is where a quiet problem becomes an expensive one.</p>
+        <div class="sc-howto">
+            <div class="sc-key"><span class="sc-dot g"></span><span><b>Green</b> &mdash; governed and on-thesis</span></div>
+            <div class="sc-key"><span class="sc-dot a"></span><span><b>Amber</b> &mdash; visible gap, fixable this quarter</span></div>
+            <div class="sc-key"><span class="sc-dot r"></span><span><b>Red</b> &mdash; drift or exposure, needs an owner now</span></div>
         </div>
+    </div>
 
-        <h2><span class="count">1</span>The position in three lines</h2>
+    <div class="sc-table-wrap">
+        <table class="sc">
+            <thead><tr><th class="co">Portfolio company<small>Newest checked first</small></th><th>1. Value intent</th><th>2. Inventory & ownership</th><th>3. Drift check cadence</th><th>4. Kill-switch & authority</th><th>5. EU AI Act posture</th><th>6. Diligence readiness</th><th>7. Usage policy</th><th>Overall<small>Worst-weighted</small></th></tr></thead>
+            <tbody>
+<tr><td class="co-name">Asset A<small>Vertical SaaS · exit &lt;18mo</small></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="overall"><span class="rag r">R</span></td></tr>
+<tr><td class="co-name">Asset B<small>Data / analytics</small></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="overall"><span class="rag a">A</span></td></tr>
+<tr><td class="co-name">Asset C<small>Cyber</small></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="overall"><span class="rag g">G</span></td></tr>
+<tr><td class="co-name">Asset D<small>Cloud infra</small></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="overall"><span class="rag a">A</span></td></tr>
+<tr><td class="co-name">Asset E<small>Fintech · regulated</small></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="rating-cell"><span class="rag g">G</span></td><td class="overall"><span class="rag a">A</span></td></tr>
+<tr><td class="co-name">Asset F<small>Marketplace</small></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag a">A</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="rating-cell"><span class="rag r">R</span></td><td class="overall"><span class="rag r">R</span></td></tr>
+            </tbody>
+        </table>
+    </div>
+    <p class="sc-note">Illustrative portfolio. Ratings shown are examples to demonstrate how the scorecard reads across assets; they are not assessments of any real company. Column numbers map to the seven dimensions defined below and to the seven questions in the Operating Partner brief.</p>
 
-        <p><strong>The risk is not the absence of AI in the portfolio. It is the absence of a shared standard for AI that has already arrived inside every asset.</strong> Each company has bought AI separately, configured it locally, and, in most cases, owns it nowhere with a full view of consequence. What looks like productivity on a monthly dashboard can be value-drift, the revenue engine slowly optimising for something other than the strategy the value-creation plan is underwriting.</p>
-
-        <p>For a PE-backed company, or for an operating partner supporting a portfolio, this is not only an operational issue. It is also a board issue, a diligence issue, and eventually an <strong>exit-value issue</strong>. The same AI inventory that reduces regulatory exposure today becomes evidence of control, maturity, and explainability in future investor or buyer diligence. The operating partner is one of the few people with the standing to set that standard once and apply it across every asset.</p>
-
-        <h2><span class="count">2</span>The value at risk, not just the breach cost</h2>
-
-        <p>With operational improvement now driving more of the return than leverage and multiple expansion, the first exposure is not a breach. It is upside quietly not landing: AI inside the revenue engine optimising for something other than the thesis the value-creation plan underwrites. The downside numbers are real too. Both belong on the same page.</p>
-
-        <div class="exposure-tiles">
-            <div class="exposure-tile">
-                <p class="num">200&ndash;500 bps</p>
-                <p class="label">Margin, plus 5&ndash;10% revenue growth, a disciplined AI programme can add to a portfolio company over the hold, if it is pointed at the plan rather than at whatever converts fastest.</p>
+    <h2 class="sc-section-title">The seven dimensions</h2>
+    <div class="sc-dims">
+            <div class="sc-dim">
+                <h4>1. Value intent</h4>
+                <p>Is AI tied to a named line in the value-creation plan, with evidence it is landing, not just running?</p>
+                <p class="rag-guide"><b>Green</b>: growth/margin target named, owned, tracked. <b>Amber</b>: intent stated, no measurement. <b>Red</b>: AI running with no link to the plan.</p>
             </div>
-            <div class="exposure-tile">
-                <p class="num">7.8 months</p>
-                <p class="label">Time to impact for pricing, the fastest value lever, at a 4% failure rate. Value-drift is the tax on that speed when AI is shaping price, mix and prioritisation off-thesis.</p>
+            <div class="sc-dim">
+                <h4>2. Inventory & ownership</h4>
+                <p>Is there a list of where AI shapes commercial decisions, each with a named human owner?</p>
+                <p class="rag-guide"><b>Green</b>: complete list, owners named. <b>Amber</b>: partial or informal. <b>Red</b>: no inventory.</p>
             </div>
-            <div class="exposure-tile">
-                <p class="num">63%</p>
-                <p class="label">Share of organisations with no policy governing AI usage, exposed by default, and with no line of sight to whether AI is helping or drifting (IBM, 2025).</p>
+            <div class="sc-dim">
+                <h4>3. Drift check cadence</h4>
+                <p>When was AI last checked for optimising to the ICP and strategy rather than to whatever converts fastest?</p>
+                <p class="rag-guide"><b>Green</b>: checked within the quarter. <b>Amber</b>: over a quarter ago. <b>Red</b>: never checked.</p>
             </div>
-            <div class="exposure-tile">
-                <p class="num">&euro;620k</p>
-                <p class="label">Average breach premium carried by organisations with high shadow-AI use (roughly $670k, IBM, 2025), on top of &gt;50% of AI-attributed layoffs Forrester expects to be reversed.</p>
+            <div class="sc-dim">
+                <h4>4. Kill-switch & authority</h4>
+                <p>How fast could an AI system be paused or withdrawn, and who has authority to sign it off?</p>
+                <p class="rag-guide"><b>Green</b>: same-day, authority named. <b>Amber</b>: days, unclear owner. <b>Red</b>: no route to pause.</p>
             </div>
-        </div>
-
-        <p>The upside lines never reach a board pack because no one is measuring drift; the downside lines only reach it once an incident forces them to. The operating partner's advantage is that the same short set of questions surfaces both, at the same cadence, across every company in the fund.</p>
-
-        <p class="tile-source">Sources: margin and revenue uplift, Gorilla Logic AI value-creation analysis, 2026; pricing lever speed and failure rate, Simon-Kucher PE Value Creation Study, 2025; policy and breach figures, IBM Cost of a Data Breach, 2025; layoff reversal, Forrester. Operational improvement now drives the majority of PE value creation (Bain; Apollo; McKinsey Global Private Markets Report, 2026).</p>
-
-        <h2><span class="count">3</span>The portfolio risk lens</h2>
-
-        <p>Three lenses, each with a worst-case an operating partner should be prepared to discuss at the investment committee, not just at the portfolio board.</p>
-
-        <div class="risk-table">
-            <div class="risk-row head">
-                <div class="risk-cell">Lens</div>
-                <div class="risk-cell">Where it lands in the portfolio</div>
-                <div class="risk-cell">Worst case</div>
+            <div class="sc-dim">
+                <h4>5. EU AI Act posture</h4>
+                <p>Which systems sit in the risk classification, what oversight is required, ahead of or behind the deadlines?</p>
+                <p class="rag-guide"><b>Green</b>: classified, ahead of deadlines. <b>Amber</b>: aware, work outstanding. <b>Red</b>: unclassified.</p>
             </div>
-            <div class="risk-row">
-                <div class="risk-cell">Value creation</div>
-                <div class="risk-cell">Value-drift in the revenue engine. AI shaping lead scores, forecasts, pricing and customer prioritisation in ways that drift from the ICP and strategy the value-creation plan is underwriting.</div>
-                <div class="risk-cell">A company on plan by activity and dashboard, but off plan on win rate, deal size, and retention, drifting hardest in the final year of the hold, when the largest share of exit-year EBITDA is meant to be made.</div>
+            <div class="sc-dim">
+                <h4>6. Diligence readiness</h4>
+                <p>What could be evidenced in 48 hours on how AI shapes commercial decisions?</p>
+                <p class="rag-guide"><b>Green</b>: documentation ready. <b>Amber</b>: reconstructable with effort. <b>Red</b>: nothing to show.</p>
             </div>
-            <div class="risk-row">
-                <div class="risk-cell">Diligence &amp; exit</div>
-                <div class="risk-cell">The ability to evidence, on demand, how AI influences commercial decisions, who owns each system, and how it is classified and controlled.</div>
-                <div class="risk-cell">A buyer or lender diligence team finds AI shaping revenue with no inventory, no owners, and no documentation, and prices the uncertainty as a discount to the multiple.</div>
+            <div class="sc-dim">
+                <h4>7. Usage policy</h4>
+                <p>Is there a written AI-usage policy, and is there evidence people operate inside it?</p>
+                <p class="rag-guide"><b>Green</b>: policy live and adopted. <b>Amber</b>: policy exists, adoption unknown. <b>Red</b>: no policy.</p>
             </div>
-            <div class="risk-row">
-                <div class="risk-cell">Regulatory &amp; reputational</div>
-                <div class="risk-cell">EU AI Act risk classification and literacy obligations across the portfolio; AI decisions affecting customers, candidates or employees with no defensible rationale.</div>
-                <div class="risk-cell">A high-risk system identified post-deployment in one asset, documentation reconstructed retrospectively, in front of a regulator, an LP, or a press cycle that has already asked.</div>
-            </div>
-        </div>
+    </div>
 
-        <h2><span class="count">4</span>Seven questions to ask a portfolio CEO or CRO</h2>
-
-        <p>None of these questions are hostile. They protect the management team and the value-creation plan. The first asks where AI is meant to be creating value; the rest make sure it still is. Ask them the same way in every company, and the portfolio becomes comparable.</p>
-
-        <ol class="q-list">
-            <li>Where is AI supposed to be adding growth or margin in this company, is that tied to a specific line in the value-creation plan, and can you show me it is actually landing, not just running?</li>
-            <li>Where is AI already making, or materially shaping, commercial decisions in your revenue engine, and can you give me that as a list with a named human owner for each, not a discussion?</li>
-            <li>When did you last check that all the AI-powered use cases supporting your GTM operating model are still optimising for the ICP and the strategy in the value-creation plan, rather than for whatever converts fastest?</li>
-            <li>If you needed to pause or withdraw any AI system from the revenue engine tomorrow, how quickly could you do it, and who has the authority to sign that off?</li>
-            <li>Which of your AI systems sit in the EU AI Act risk classification, what oversight does that require, and are you ahead of the deadlines or behind them?</li>
-            <li>If a buyer's diligence team asked you to evidence how AI shapes your commercial decisions, what could you produce in 48 hours, and what would you rather they did not find?</li>
-            <li>What is your written policy on AI usage at work, and how do you know your people are operating inside it rather than improvising?</li>
+    <div class="sc-ic">
+        <h4>How to read it at the investment committee</h4>
+        <ol>
+            <li><b>Rank by overall, then by value intent.</b> A red on value intent is a company where AI may be running hard in the wrong direction &mdash; the most expensive kind of drift, and the hardest to see on a dashboard.</li>
+            <li><b>Read the pattern down each column, not just across each row.</b> If most of the portfolio is red on drift-check cadence or diligence readiness, that is a fund-level standard gap, not six separate company problems.</li>
+            <li><b>Watch the assets nearing exit.</b> Value creation concentrates in the final year of the hold; a company amber-to-red on value intent or diligence readiness within 18 months of exit is carrying that risk into the room where it costs the most.</li>
+            <li><b>Turn each red into a value-creation-plan clause with an owner and a date,</b> then re-score at the next quarterly review. The scorecard is only useful if the colours move.</li>
         </ol>
-
-        <h2><span class="count">5</span>Value-creation-plan-ready paragraph</h2>
-
-        <p>If you want to record a portfolio-wide position, the following paragraph is drafted to be transferred directly into a value-creation plan, a portfolio board pack, or a monthly review.</p>
-
-        <div class="minutes-block">
-            <p class="label">Suggested wording</p>
-            <p>AI is now embedded across the productivity and revenue-generating decisions of the portfolio, from the tools that shape the commercial pipeline to those that manage people and operations. As a standard condition of the value-creation plan, each company will maintain and present, at the agreed cadence, a register of the AI use cases in operation, each ranked by its level of risk under the EU AI Act and mapped to the date enforcement takes effect, with a named human owner accountable for each and evidence of meaningful human oversight. Management teams will confirm that AI literacy obligations, in force since 2 February 2025, are met; that they are ready for the general application of the Act from 2 August 2026; and that any high-risk use case is on a plan to meet the 2 December 2027 deadline (2 August 2028 for AI embedded in regulated products). A process for monitoring value-drift against the approved commercial strategy will be agreed and assigned. Any material AI use case without documented ownership, risk classification, or oversight will be flagged with a remediation timeline, so that the same inventory that manages regulatory and operational risk today also stands as diligence-ready evidence of control and maturity at exit.</p>
-            <p class="note">Apply the same standard across every asset. The substance, inventory, classification, ownership, oversight, literacy, drift, remediation, is what turns a scattered set of AI pilots into a defensible position at the investment committee and in the data room.</p>
-        </div>
-
-        <!-- Forward this -->
-        <section class="forward-row-share" aria-label="Send this to a colleague">
-            <span class="forward-eyebrow">Send this to a portfolio team</span>
-            <p class="forward-title">Forward this in two clicks</p>
-            <p class="forward-help">Most of the value in this piece arrives when it lands on the right desk, a portfolio CEO, a CRO, a fellow partner, or the deal team ahead of diligence. Pick how you want to send it.</p>
-            <div class="forward-buttons">
-                <a href="mailto:?subject=A%20one-page%20operating%20partner%20brief%20on%20AI%20value-drift%20across%20a%20portfolio&body=A%20short%2C%20defensible%20operating%20partner%20brief%20on%20AI%20value-drift%20as%20a%20portfolio%20risk%2C%20with%20seven%20questions%20for%20a%20portfolio%20CEO%20and%20a%20value-creation-plan-ready%20paragraph%3A%20https%3A//www.superogtm.com/perspectives/white-collar-horse-op-brief.html%3Futm_source%3Dforward-email%26utm_medium%3Dbrief%26utm_campaign%3Dwch-op" class="forward-btn" data-share="email" data-campaign="wch-op">
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                        <path d="M2 4l6 4 6-4M2 4v8h12V4M2 4h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Email a colleague
-                </a>
-                <a href="https://www.linkedin.com/messaging/compose/?body=A%20short%2C%20defensible%20operating%20partner%20brief%20on%20AI%20value-drift%20as%20a%20portfolio%20risk%2C%20with%20seven%20questions%20for%20a%20portfolio%20CEO%20and%20a%20value-creation-plan-ready%20paragraph%3A%20https%3A//www.superogtm.com/perspectives/white-collar-horse-op-brief.html%3Futm_source%3Dforward-linkedin%26utm_medium%3Dbrief%26utm_campaign%3Dwch-op" target="_blank" rel="noopener noreferrer" class="forward-btn" data-share="linkedin" data-campaign="wch-op">
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true">
-                        <path d="M4.5 13H2V5.5h2.5V13zM3.25 4.4a1.45 1.45 0 1 1 0-2.9 1.45 1.45 0 0 1 0 2.9zM14 13h-2.5V9.4c0-.9-.4-1.4-1.1-1.4-.7 0-1.2.5-1.2 1.4V13H6.75V5.5H9v1c.4-.6 1.1-1.1 2-1.1 1.7 0 3 1 3 3.4V13z"/>
-                    </svg>
-                    Send on LinkedIn
-                </a>
-                <button type="button" class="forward-btn" data-share="copy" data-copy-url="https://www.superogtm.com/perspectives/white-collar-horse-op-brief.html?utm_source=forward-copy&utm_medium=brief&utm_campaign=wch-op" data-campaign="wch-op">
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true">
-                        <path d="M4 4V2h10v10h-2M2 5h10v9H2V5z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
-                    </svg>
-                    <span data-copy-label>Copy share link</span>
-                </button>
-            </div>
-        </section>
-
-        <div class="close-card">
-            <h3>The conversation this brief is built for</h3>
-            <p>The most expensive AI decisions across a portfolio in the next twelve months will be the ones no operating partner ever saw, already inside an approved system, configured by a function the board rarely meets, owned by no one with authority to intervene. The remedy is not more reporting from each asset. It is one standard, asked for the same way across every company, so drift surfaces while it is still cheap to correct, and the AI inventory becomes an exit proof point rather than a diligence discount.</p>
-            <p class="authors-note">This is the standard Supero sets. Alex Abbott runs the diagnostic with each management team and holds the portfolio-wide line. Cumai Aboul Housn carries the technical authority for the AI inventory and the infrastructure beneath it. Iga Sloan brings the EU AI Act risk classification and the documentation that survives buyer and lender diligence, and turns the regulatory clock from a liability into a plan. Together they are the standard, and the people who install it.</p>
-            <p class="engagement-shape">What that looks like in practice: one AI value-drift diagnostic, run the same way across every asset in the fund, producing a ranked red-amber-green scorecard for the investment committee and a value-creation-plan clause for each portfolio company. The fund sets the standard once; each company executes it. Fixed scope, comparable output, done before the next quarterly review.</p>
-            <div class="cta-row">
-                <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary" data-analytics="wch-op-book">Book the portfolio diagnostic conversation</a>
-                <p style="font-size:0.78rem; color:#6b6680; margin:0.6rem 0 0; font-style:italic; width:100%;">Prefer email? <a href="mailto:alex@superogtm.com" style="color:#A51C60;">alex@superogtm.com</a></p>
-                <a href="./white-collar-horse-op-scorecard.html" class="btn-ghost">Portfolio AI scorecard</a>
-                <a href="./wch-op-brief.pdf" class="btn-ghost btn-pdf" download data-analytics="wch-op-pdf" onclick="if(typeof gtag==='function'){gtag('event','file_download',{file_name:'wch-op-brief.pdf',campaign:'wch-op'});}">
-                    <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true" style="margin-right:0.4rem;vertical-align:-2px;"><path d="M8 2v8m0 0l-3-3m3 3l3-3M3 13h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>Download PDF for portfolio pack</a>
-            </div>
-        </div>
-
-        <div class="related-back">
-            <a href="./white-collar-horse.html">
-                <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M10 6H2M2 6l4-4M2 6l4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-                Read the full article: The White-Collar Horse
-            </a>
-        </div>
-
     </div>
-</article>
 
-<!-- About the authors -->
-<section class="authors-bio" id="authors">
-    <div class="inner-narrow">
-        <h2>About the authors</h2>
-        <div class="bio-row">
-            <div class="bio">
-                <img src="../assets/cumai-aboul-housn.jpg" alt="Cumai Aboul Housn" class="bio-avatar">
-                <div>
-                    <p class="bio-name">Cumai Aboul Housn</p>
-                    <p class="bio-title">Enterprise Transformation Architect, AI and Digital Innovation</p>
-                    <p class="bio-text">Cumai carries the technical authority for the AI inventory that sits behind a value-creation plan. He helps portfolio companies translate AI use into structured, EU AI Act aligned, diligence-ready evidence of control.</p>
-                </div>
-            </div>
-            <div class="bio">
-                <img src="../assets/iga-sloan.jpg" alt="Iga Sloan" class="bio-avatar">
-                <div>
-                    <p class="bio-name">Iga Sloan</p>
-                    <p class="bio-title">EU AI Act and Regulatory Strategy</p>
-                    <p class="bio-text">Iga brings the regulatory acumen that helps operating partners treat the EU AI Act as a springboard for performance rather than a compliance cost. She classifies each AI use case by risk, maps it to the enforcement clock, and turns balanced governance into a competitive advantage the value-creation plan can underwrite and a buyer can price.</p>
-                </div>
-            </div>
-            <div class="bio">
-                <img src="../assets/alex-abbott.png" alt="Alex Abbott" class="bio-avatar">
-                <div>
-                    <p class="bio-name">Alex Abbott</p>
-                    <p class="bio-title">Founder and Chief Revenue Officer, Supero</p>
-                    <p class="bio-text">Alex runs the diagnostic with management teams and works with operating partners to set one AI oversight standard across a portfolio, so revenue-engine decisions stay documented, defensible, and on plan through to exit.</p>
-                </div>
-            </div>
-        </div>
+    <div class="sc-print">
+        <button onclick="window.print()" type="button">Print or save this scorecard as PDF</button>
     </div>
-</section>
+
+    <div class="sc-cta">
+        <h3>Run it once, across the whole portfolio</h3>
+        <p>Supero runs this diagnostic with each management team and hands the fund a ranked scorecard for the IC and a value-creation-plan clause for each asset. Alex Abbott holds the portfolio-wide line, Cumai Aboul Housn carries the technical authority for the AI inventory, and Iga Sloan brings the EU AI Act classification and the documentation that survives buyer and lender diligence. The fund sets the standard once; each company executes it.</p>
+        <div class="sc-cta-row">
+            <a href="https://calendly.com/alex_abbott/chat-with-alex" target="_blank" rel="noopener noreferrer" class="btn-primary" data-analytics="wch-op-sc-book">Book the portfolio diagnostic conversation</a>
+            <a href="./white-collar-horse-op-brief.html" class="btn-ghost">Read the Operating Partner brief</a>
+        </div>
+        <p class="sc-note" style="margin-top:1rem;">Prefer email? <a href="mailto:alex@superogtm.com" style="color:#A51C60;">alex@superogtm.com</a></p>
+    </div>
+</div>
 
 <footer style="background:#0D0618; padding:3rem 2rem 2rem; border-top:1px solid rgba(255,255,255,0.06);">
     <div style="max-width:1200px; margin:0 auto;">
@@ -973,48 +901,6 @@ function openMobileNav() {
 }
 function closeMobileNav() { if (overlay) { overlay.remove(); overlay = null; document.body.style.overflow = ''; } }
 hamburger.addEventListener('click', () => { if (overlay) closeMobileNav(); else openMobileNav(); });
-</script>
-
-<script>
-(function() {
-    var rows = document.querySelectorAll('.forward-row-share');
-    if (!rows.length) return;
-    function track(name, params) {
-        if (typeof gtag === 'function') {
-            try { gtag('event', name, params || {}); } catch(e) {}
-        }
-    }
-    rows.forEach(function(row) {
-        Array.prototype.forEach.call(row.querySelectorAll('[data-share="email"], [data-share="linkedin"]'), function(el) {
-            el.addEventListener('click', function() {
-                track('wch_forward_click', {
-                    method: el.getAttribute('data-share'),
-                    campaign: el.getAttribute('data-campaign')
-                });
-            });
-        });
-        var copyBtn = row.querySelector('[data-share="copy"]');
-        if (!copyBtn) return;
-        copyBtn.addEventListener('click', function() {
-            var url = copyBtn.getAttribute('data-copy-url');
-            var label = copyBtn.querySelector('[data-copy-label]');
-            var done = function() {
-                copyBtn.classList.add('is-copied');
-                if (label) { var prev = label.textContent; label.textContent = 'Link copied'; setTimeout(function() { copyBtn.classList.remove('is-copied'); if (label) label.textContent = prev; }, 2200); }
-                track('wch_forward_click', { method: 'copy', campaign: copyBtn.getAttribute('data-campaign') });
-            };
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-                navigator.clipboard.writeText(url).then(done).catch(function() {
-                    var t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0';
-                    document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done();
-                });
-            } else {
-                var t = document.createElement('textarea'); t.value = url; t.style.position = 'fixed'; t.style.opacity = '0';
-                document.body.appendChild(t); t.select(); document.execCommand('copy'); document.body.removeChild(t); done();
-            }
-        });
-    });
-})();
 </script>
 
 </body>
