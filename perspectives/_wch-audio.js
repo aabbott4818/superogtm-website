@@ -18,6 +18,10 @@
   var scrub     = root.querySelector('.lp-scrub');
   var curEl     = root.querySelector('.lp-current');
   var totEl     = root.querySelector('.lp-total');
+  var curElM    = root.querySelector('.lp-current-m');
+  var totElM    = root.querySelector('.lp-total-m');
+  function setCur(v){ curEl.textContent = v; if (curElM) curElM.textContent = v; }
+  function setTot(v){ totEl.textContent = v; if (totElM) totElM.textContent = v; }
   var speedBtn  = root.querySelector('.lp-speed');
   var chapSel   = root.querySelector('.lp-chapters');
   var badge     = root.querySelector('.lp-badge');
@@ -99,20 +103,20 @@
   });
 
   audioEl.addEventListener('loadedmetadata', function () {
-    totEl.textContent = fmt(audioEl.duration);
+    setTot(fmt(audioEl.duration));
     scrub.max = audioEl.duration;
   });
 
   var scrubbing = false;
   audioEl.addEventListener('timeupdate', function () {
     if (scrubbing) return;
-    curEl.textContent = fmt(audioEl.currentTime);
+    setCur(fmt(audioEl.currentTime));
     scrub.value = audioEl.currentTime;
   });
 
   scrub.addEventListener('input', function () {
     scrubbing = true;
-    curEl.textContent = fmt(parseFloat(scrub.value));
+    setCur(fmt(parseFloat(scrub.value)));
   });
   scrub.addEventListener('change', function () {
     audioEl.currentTime = parseFloat(scrub.value);

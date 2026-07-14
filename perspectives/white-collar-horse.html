@@ -388,9 +388,20 @@
         .lp-disclosure a { color: #d98cb4; text-decoration: none; border-bottom: 1px solid rgba(217,140,180,0.4); }
         .lp-disclosure a:hover { border-bottom-color: #d98cb4; }
         .lp-badge { font-size: 0.66rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: #7d7791; border: 1px solid rgba(255,255,255,0.14); border-radius: 6px; padding: 0.2rem 0.5rem; white-space: nowrap; }
+        /* Mobile-only time element hidden on desktop (declared before the media query so the mobile override wins) */
+        .lp-time-mobile { display: none; }
         @media (max-width: 620px) {
-            .lp-actions { flex-wrap: wrap; justify-content: flex-end; }
-            .lp-chapters { max-width: 120px; }
+            /* Reflow the controls so nothing overlaps on narrow screens:
+               row 1 = play + scrubber; row 2 = time + speed + chapters. */
+            .lp-controls { flex-wrap: wrap; row-gap: 0.75rem; column-gap: 0.7rem; }
+            .lp-mid { flex: 1 1 auto; order: 1; min-width: 0; }
+            .lp-play { order: 0; }
+            .lp-actions { order: 2; width: 100%; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
+            /* Pull the time out of the scrub row on mobile and place it inline with the actions */
+            .lp-scrub-row .lp-time { display: none; }
+            .lp-time-mobile { display: inline-block; font-size: 0.76rem; color: #9d97ad; font-variant-numeric: tabular-nums; white-space: nowrap; }
+            .lp-chapters { max-width: none; flex: 1 1 auto; min-width: 0; }
+            .lp-speed { flex: 0 0 auto; }
         }
 
         /* Figure block: image + caption + follow-on paragraph lives separately */
@@ -1159,6 +1170,7 @@
                     </div>
                 </div>
                 <div class="lp-actions">
+                    <span class="lp-time-mobile"><span class="lp-current-m">0:00</span> / <span class="lp-total-m">37:47</span></span>
                     <button class="lp-speed" type="button" aria-label="Playback speed">1&times;</button>
                     <select class="lp-chapters" aria-label="Jump to chapter">
                         <option value="" selected>Chapters</option>
