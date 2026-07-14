@@ -91,38 +91,59 @@
   <div class="card">
     <p class="eyebrow">Voice clone preview</p>
     <h1>The White-Collar Horse — narrated in Alex's voice</h1>
-    <p class="sub">Same 48-second passage, three settings. Listen to all three and tell me which sounds most like you — A, B, C, or none.</p>
+    <p class="sub">Round 2 — built on Variant A (your pick), pushed further. A longer passage (~70s) so you can judge across full paragraphs. Which sounds most like you?</p>
 
     <div class="player">
-      <p class="vlabel">Variant A — natural intonation</p>
+      <p class="vlabel">A1 — max similarity, loose</p>
       <audio controls preload="none">
-        <source src="audio/variant_A.mp3" type="audio/mpeg">
+        <source src="audio/cand_A1.mp3" type="audio/mpeg">
       </audio>
-      <p class="vmeta">Stability 0.35 · Similarity 0.95 · Style 0 — tracks your natural rhythm, high fidelity to your recording.</p>
+      <p class="vmeta">Similarity 1.0 · Stability 0.30 — tightest hug to your recording, most natural rhythm.</p>
     </div>
 
     <div class="player">
-      <p class="vlabel">Variant B — balanced &amp; tight</p>
+      <p class="vlabel">A2 — max similarity, steadier</p>
       <audio controls preload="none">
-        <source src="audio/variant_B.mp3" type="audio/mpeg">
+        <source src="audio/cand_A2.mp3" type="audio/mpeg">
       </audio>
-      <p class="vmeta">Stability 0.55 · Similarity 0.92 · Style 0 — steadier, more even delivery.</p>
+      <p class="vmeta">Similarity 1.0 · Stability 0.40 — same fidelity, a touch more even.</p>
     </div>
 
     <div class="player">
-      <p class="vlabel">Variant C — most expressive</p>
+      <p class="vlabel">A3 — the Variant A recipe, longer</p>
       <audio controls preload="none">
-        <source src="audio/variant_C.mp3" type="audio/mpeg">
+        <source src="audio/cand_A3.mp3" type="audio/mpeg">
       </audio>
-      <p class="vmeta">Stability 0.25 · Similarity 0.98 · Style 0 — loosest, closest hug to your voice, most variation.</p>
+      <p class="vmeta">Similarity 0.98 · Stability 0.35 — exactly what you liked, on the longer passage.</p>
     </div>
 
-    <p class="quote">"The biggest risk that A.I. poses to business is not the dramatic story we keep returning to… The more serious risk is quieter."</p>
+    <div class="player">
+      <p class="vlabel">V3 — newest model (Eleven v3)</p>
+      <audio controls preload="none">
+        <source src="audio/cand_V3.mp3" type="audio/mpeg">
+      </audio>
+      <p class="vmeta">ElevenLabs' latest, most naturalistic model — different engine, often more human. Worth a listen even if it sounds different.</p>
+    </div>
 
     <div class="divider"></div>
 
-    <p class="settings"><strong>How to judge:</strong> If one is close but the <em>delivery</em> is off, that's fixable with more tuning. If none sound like <em>you</em> at all, it's the source recording — and we retrain on a cleaned-up sample.<br>
-    Model: ElevenLabs multilingual v2 (premium). British English.</p>
+    <p class="settings"><strong>If one nails it</strong> — tell me which and I render the full narration. <strong>If we're still short</strong>, the next lever is a short local re-record (bypassing Teams' processing) for a definitive master.<br>
+    Round 1 variants (A/B/C) are still <a href="#r1" onclick="document.getElementById('r1').style.display='block';return false;">available below</a>.</p>
+
+    <div id="r1" style="display:none;margin-top:20px">
+      <div class="player">
+        <p class="vlabel">Round 1 · Variant A</p>
+        <audio controls preload="none"><source src="audio/variant_A.mp3" type="audio/mpeg"></audio>
+      </div>
+      <div class="player">
+        <p class="vlabel">Round 1 · Variant B</p>
+        <audio controls preload="none"><source src="audio/variant_B.mp3" type="audio/mpeg"></audio>
+      </div>
+      <div class="player">
+        <p class="vlabel">Round 1 · Variant C</p>
+        <audio controls preload="none"><source src="audio/variant_C.mp3" type="audio/mpeg"></audio>
+      </div>
+    </div>
 
     <p class="foot">Private preview · not indexed · Supero GTM</p>
   </div>
