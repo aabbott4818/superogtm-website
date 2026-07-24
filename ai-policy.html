@@ -263,6 +263,61 @@
             line-height: 1.7;
         }
 
+        /* Regulatory clock table */
+        .reg-clock {
+            margin: 1.75rem 0 2rem;
+            border: 1px solid #e6e1ee;
+            border-radius: 10px;
+            overflow: hidden;
+            background: #fff;
+        }
+        .reg-clock .clock-row {
+            display: grid;
+            grid-template-columns: 190px 1fr;
+            gap: 1.5rem;
+            padding: 1.15rem 1.35rem;
+            border-bottom: 1px solid #ebe8f0;
+        }
+        .reg-clock .clock-row:last-child { border-bottom: none; }
+        .reg-clock .clock-row.live { background: #f4f8f2; }
+        .reg-clock .clock-row.next { background: #fdf6f0; }
+        .reg-clock .clock-date {
+            font-weight: 700;
+            color: var(--text, #110e1a);
+            font-size: 0.92rem;
+            line-height: 1.35;
+        }
+        .reg-clock .clock-date .clock-status {
+            display: block;
+            font-size: 0.68rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-top: 0.35rem;
+            color: #7a7387;
+        }
+        .reg-clock .clock-row.live .clock-status { color: #437A22; }
+        .reg-clock .clock-row.next .clock-status { color: #964219; }
+        .reg-clock .clock-body {
+            font-size: 0.92rem;
+            line-height: 1.65;
+            color: #3d3949;
+        }
+        .reg-clock .clock-body strong { color: var(--text, #110e1a); }
+        @media (max-width: 620px) {
+            .reg-clock .clock-row {
+                grid-template-columns: 1fr;
+                gap: 0.5rem;
+                padding: 1rem 1.1rem;
+            }
+        }
+        .clock-note {
+            font-size: 0.85rem;
+            color: #6b6680;
+            font-style: italic;
+            margin: -0.5rem 0 2rem;
+        }
+
         .trust-box {
             background: #0D0618;
             color: #f1eff5;
@@ -377,8 +432,8 @@
         <p class="eyebrow">Supero foundations</p>
         <h1>Explainable. Responsible. Transparent. By design.</h1>
         <p class="sub">Supero's methods were built on the same principles the EU AI Act now formalises. AI is held to the same bar as every other part of our work, applied case by case, with human oversight and clear documentation.</p>
-        <p class="support">From 2 August 2026, the EU AI Act formalises this standard across the European market. We treat it as ratification of how we already work, not a constraint to manage. Final legal approval for any live client deployment sits with the client's own legal team.</p>
-        <p class="meta">Last updated: 24 April 2026</p>
+        <p class="support">The EU AI Act arrives in stages, with prohibited practices and AI literacy live since 2 February 2025, general-purpose AI and governance rules live since 2 August 2025, and transparency and high-risk obligations phasing in through 2028. We treat the Act as ratification of how we already work, not a constraint to manage. Final legal approval for any live client deployment sits with the client's own legal team. See the <a href="#regulatory-clock">regulatory clock</a> below.</p>
+        <p class="meta">Last updated: 24 July 2026</p>
     </div>
 </section>
 
@@ -445,11 +500,40 @@
         <h2>Why our approach is natively AI Act aligned</h2>
         <p>Our methods were built on the same principles the EU AI Act now codifies. The Conversation Operating System, our diagnostic instruments, and the Financial Impact Model are all designed around traceability, human accountability, and quantified confidence. The Act is a regulatory expression of how we already work.</p>
 
-        <p>The <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener noreferrer">EU AI Act (Regulation (EU) 2024/1689)</a> establishes a risk-based framework for AI systems, with stronger obligations applying to certain categories of use. Most of its provisions become applicable on <strong>2 August 2026</strong>, with enforcement starting at national and EU level from that date.</p>
+        <p>The <a href="https://eur-lex.europa.eu/eli/reg/2024/1689/oj" target="_blank" rel="noopener noreferrer">EU AI Act (Regulation (EU) 2024/1689)</a> establishes a risk-based framework for AI systems, with stronger obligations applying to certain categories of use. The Act entered into force on 1 August 2024 and applies in stages, with obligations already live for prohibited practices, AI literacy, and general-purpose AI, and further obligations phasing in through 2028.</p>
 
         <p>The Act sorts AI systems into four broad risk categories: prohibited practices, high-risk systems, limited-risk systems (which carry transparency obligations under Article 50), and minimal-risk systems. Most AI-supported GTM activities (pipeline analysis, account research, content drafting, meeting summarisation, coaching support) are likely to fall outside the prohibited and high-risk categories. We apply the same explainable, responsible, transparent standard to every use case regardless of category.</p>
 
         <p>Supero reviews AI use cases case by case and flags any scenario that may require deeper legal, compliance, privacy, or employment review before implementation. Where a use case could carry elevated risk, for example AI involved in employment decisions, access to services, or significant customer-facing automation, we make that explicit and recommend the client's legal team is engaged early.</p>
+
+        <h3 id="regulatory-clock">The regulatory clock</h3>
+        <p>The Act arrives in stages. This is what has already applied, what applies next, and what is still ahead. Dates reflect the <a href="https://ai-act-service-desk.ec.europa.eu/en/ai-act/timeline/timeline-implementation-eu-ai-act" target="_blank" rel="noopener noreferrer">European Commission's official implementation timeline</a> as amended by the <a href="https://www.morganlewis.com/pubs/2026/06/eu-approves-delays-and-other-amendments-to-certain-eu-ai-act-obligations-what-businesses-should-know" target="_blank" rel="noopener noreferrer">Digital Omnibus package adopted in June 2026</a>, which delayed the standalone high-risk regime by roughly sixteen months.</p>
+
+        <div class="reg-clock" aria-label="EU AI Act implementation timeline">
+            <div class="clock-row live">
+                <div class="clock-date">2 February 2025<span class="clock-status">In force</span></div>
+                <div class="clock-body"><strong>Prohibited practices and AI literacy.</strong> Article 5 bans on unacceptable-risk AI (including social scoring, manipulative techniques causing material harm, workplace and educational emotion inference, and untargeted scraping of facial imagery). Article 4 requires providers and deployers to ensure staff and other people handling AI on their behalf have sufficient AI literacy. Fines for Article 5 breaches reach up to &euro;35m or 7% of global turnover.</div>
+            </div>
+            <div class="clock-row live">
+                <div class="clock-date">2 August 2025<span class="clock-status">In force</span></div>
+                <div class="clock-body"><strong>General-purpose AI and governance.</strong> Obligations on providers of general-purpose AI models (including systemic-risk models), plus the governance framework: national competent authorities, the AI Office, the AI Board, and the penalty regime. Providers of GPAI models placed on the market before this date have until 2 August 2027 to reach full compliance.</div>
+            </div>
+            <div class="clock-row next">
+                <div class="clock-date">2 August 2026<span class="clock-status">Next milestone</span></div>
+                <div class="clock-body"><strong>Transparency obligations and enforcement powers.</strong> Article 50 duties on limited-risk systems (chatbot disclosure, machine-readable marking of AI-generated content, deepfake labelling, notice when emotion recognition or biometric categorisation is in use). Full enforcement powers over general-purpose AI. Member-state AI regulatory sandboxes must be operational. Watermarking of pre-existing generative content has a further grace period to 2 December 2026.</div>
+            </div>
+            <div class="clock-row">
+                <div class="clock-date">2 December 2027<span class="clock-status">Ahead</span></div>
+                <div class="clock-body"><strong>Standalone high-risk systems.</strong> Full obligations for Annex III high-risk systems: risk management (Article 9), data governance (Article 10), technical documentation, logging, transparency to deployers, human oversight (Article 14), accuracy, robustness and cybersecurity, plus post-market monitoring, incident reporting and conformity assessment. Covers areas such as employment and worker management, education, credit scoring, essential services, biometrics, and law enforcement. <em>Delayed from 2 August 2026 by the Digital Omnibus.</em></div>
+            </div>
+            <div class="clock-row">
+                <div class="clock-date">2 August 2028<span class="clock-status">Ahead</span></div>
+                <div class="clock-body"><strong>High-risk systems embedded in regulated products.</strong> Annex I obligations for AI that is a safety component of, or is itself, a product covered by existing EU product-safety law (for example medical devices, machinery, in-vitro diagnostics, automotive). <em>Delayed from 2 August 2027 by the Digital Omnibus.</em></div>
+            </div>
+        </div>
+        <p class="clock-note">Grandfathering: AI systems and general-purpose AI models placed on the market before the relevant milestone are broadly covered by the Act only where a significant design change is made, or, for general-purpose AI, on the extended timeline set out in Article 111. This is a summary for orientation, not legal advice.</p>
+
+        <p>Read against this timeline, the Supero foundations, explainable, responsible, transparent, are not a response to any single date. They are the operating standard we already work to, whichever category a use case ultimately falls into, and whichever milestone is closest.</p>
 
         <div class="callout">
             <p><strong>Our position:</strong> Supero's foundations meet the EU AI Act's standard by design. They sit alongside, not in place of, the client's own legal review.</p>
